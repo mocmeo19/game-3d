@@ -3,35 +3,21 @@ import { SettingsLink } from '../../settings/SettingsLink';
 import { HelpCircle, Trash2 } from 'lucide-react';
 import { AudioControls } from './AudioControls';
 import { sound } from '../../audio/soundManager';
-import type { Step } from './RightPanel';
-
-const HINTS: Record<Step, string> = {
-  race: 'Hãy chọn chủng tộc cho nhân vật của bạn.',
-  class: 'Hãy chọn lớp nhân vật của bạn.',
-  appearance: 'Bạn có thể tùy chỉnh ngoại hình nhân vật theo ý muốn.'
-};
+const HINT = 'Bạn có thể tùy chỉnh ngoại hình nhân vật theo ý muốn.';
 
 interface BottomControlsProps {
-  step: Step;
-  canGoBack: boolean;
-  showBack: boolean;
-  onBack: () => void;
   onCancel: () => void;
   onDelete?: () => void;
-  onNext: () => void;
+  onSave: () => void;
   onManage: () => void;
   onShowHelp: () => void;
 }
 
-/** Bottom of the screen: system icons (left), Quản lý ngoại hình + hint (centre), Quay lại / Tiếp (right). */
+/** Bottom of the screen: system icons (left), Quản lý ngoại hình + hint (centre), Huỷ / Lưu (right). */
 export const BottomControls: React.FC<BottomControlsProps> = ({
-  step,
-  canGoBack,
-  showBack,
-  onBack,
   onCancel,
   onDelete,
-  onNext,
+  onSave,
   onManage,
   onShowHelp
 }) => (
@@ -58,7 +44,7 @@ export const BottomControls: React.FC<BottomControlsProps> = ({
     </div>
 
     <div className="absolute left-1/2 -translate-x-1/2 bottom-16 sm:bottom-3 flex flex-col items-center gap-2 w-max max-w-[calc(100vw-2rem)] pointer-events-auto">
-      <p className="text-gp-hot text-[13px] text-shadow text-center max-w-136">{HINTS[step]}</p>
+      <p className="text-gp-hot text-[13px] text-shadow text-center max-w-136">{HINT}</p>
       <button
         className="gp-btn gp-btn-big"
         onClick={() => {
@@ -86,24 +72,14 @@ export const BottomControls: React.FC<BottomControlsProps> = ({
       >
         Huỷ
       </button>
-      {showBack && <button
-        className="gp-btn gp-btn-big"
-        disabled={!canGoBack}
-        onClick={() => {
-          sound.playClick();
-          onBack();
-        }}
-      >
-        Quay lại
-      </button>}
       <button
         className="gp-btn gp-btn-big"
         onClick={() => {
           sound.playClick();
-          onNext();
+          onSave();
         }}
       >
-        {step === 'appearance' ? 'Lưu' : 'Tiếp'}
+        Lưu
       </button>
     </div>
   </div>

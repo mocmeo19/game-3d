@@ -5,7 +5,6 @@ Inspect it in DevTools → Application → IndexedDB.
 
 | Key | Configuration |
 | --- | --- |
-| `bns.model-settings.v1` | Body models, race scales, Lyn tails |
 | `bns.render-settings.v1` | Resolution, shadows, antialiasing |
 | `nams-testlab-game-settings-v1` | Test Nhân Vật game defaults |
 | `nams-battle-royal-animation-settings-v1` | Animation overrides |

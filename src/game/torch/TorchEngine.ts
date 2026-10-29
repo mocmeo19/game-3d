@@ -290,7 +290,7 @@ export class TorchEngine {
     this.model = new CharacterModel({ ...state, pose: 'idle' });
     this.model.setWeaponsVisible(true);
     this.world.scene.add(this.model.group);
-    this.classSkills = skillsFor(state.characterClass).map((s) => s.id);
+    this.classSkills = skillsFor(state.weapon).map((s) => s.id);
 
     this.stats = playerStats(1, this.gear);
     this.hp = this.stats.maxHp;

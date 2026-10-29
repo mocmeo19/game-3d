@@ -2,7 +2,7 @@ import { weaponStyleOf } from '../../constants/weaponStyles';
 import React, { useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { CharacterState } from '../../types/character';
-import { RACES, CLASSES } from '../../constants/presets';
+import { WEAPON_KINDS } from '../../constants/weaponKinds';
 import { ASSET_INFO, equipped } from '../../constants/equipment';
 import { Bi } from './Panels';
 import { ModalShell } from './Overlays';
@@ -24,23 +24,21 @@ export const CreationSummaryModal: React.FC<CreationSummaryModalProps> = ({
   onNotify,
   onConfirm
 }) => {
-  const classColor = CLASSES[characterState.characterClass]?.color ?? '#f0c64a';
+  const weaponColor = WEAPON_KINDS[characterState.weapon].color;
 
   useEffect(() => {
     if (!isOpen) return;
-    confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 }, colors: ['#f0c64a', '#ffffff', classColor] });
-  }, [isOpen, classColor]);
+    confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 }, colors: ['#f0c64a', '#ffffff', weaponColor] });
+  }, [isOpen, weaponColor]);
 
   if (!isOpen) return null;
 
-  const race = RACES[characterState.race];
-  const cls = CLASSES[characterState.characterClass];
+  const weapon = WEAPON_KINDS[characterState.weapon];
   const costume = ASSET_INFO[equipped(characterState, 'outfit') ?? ''];
 
   const rows: [string, string, string][] = [
-    ['Chủng tộc', 'Race', `${race?.name} · ${characterState.gender === 'female' ? 'Nữ' : 'Nam'}`],
-    ['Lớp nhân vật', 'Class', cls?.name ?? ''],
-    ['Vũ khí', 'Weapon', weaponStyleOf(characterState.race, characterState.characterClass, characterState.weaponStyle).name],
+    ['Giới tính', 'Gender', characterState.gender === 'female' ? 'Nữ' : 'Nam'],
+    ['Vũ khí', 'Weapon', weaponStyleOf(characterState.weapon, characterState.weaponStyle).name],
     ['Trang phục', 'Costume', costume?.name ?? '']
   ];
 
@@ -48,7 +46,7 @@ export const CreationSummaryModal: React.FC<CreationSummaryModalProps> = ({
     <ModalShell title={<Bi ko="Tạo nhân vật" en="Create character" />} onClose={onClose}>
       <div className="text-center mb-3">
         <div className="text-[22px] font-medium text-white">{characterState.name || 'Chưa đặt tên'}</div>
-        <div className="text-[11px] text-gp-hot mt-0.5">{cls?.title}</div>
+        <div className="text-[11px] text-gp-hot mt-0.5">{weapon.badge} {weapon.name}</div>
       </div>
 
       <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 border border-gp-line bg-black/30 p-3">

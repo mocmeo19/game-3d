@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useState, useRef, useEffect, useCallback, useRed
 import { CharacterCanvas, CharacterCanvasRef } from './renderer/CharacterCanvas';
 import { TitleBar } from './components/UI/TitleBar';
 import { DetailsPanel, CharacterPanel, VoicePanel } from './components/UI/LeftPanels';
-import { RightPanel, Step } from './components/UI/RightPanel';
+import { RightPanel } from './components/UI/RightPanel';
 import { BottomControls } from './components/UI/BottomControls';
 import { HomeScreen, GameKind } from './components/UI/HomeScreen';
 import { useStances } from './lib/useStances';
@@ -31,7 +31,6 @@ const HISTORY_LIMIT = 50;
 /** Slider drags fire many updates; merge changes made within this window into one undo step. */
 const COALESCE_MS = 500;
 const CAMERA_KEYS: CameraViewPreset[] = ['face', 'portrait', 'waist', 'full', 'shoes'];
-const STEP_ORDER: Step[] = ['race', 'class', 'appearance'];
 
 const pick = <T,>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
 const rand = (min: number, span: number) => Number((min + Math.random() * span).toFixed(2));
@@ -72,7 +71,6 @@ export const App: React.FC = () => {
   const lastPushRef = useRef<number>(0);
   const [, bump] = useReducer((n: number) => n + 1, 0);
 
-  const [category, setCategory] = useState<Step>('race');
   const [cameraView, setCameraView] = useState<CameraViewPreset>('full');
   const [turntableOn, setTurntableOn] = useState<boolean>(false);
   const [photoUrl, setPhotoUrl] = useState<string | null>(null);
@@ -251,18 +249,7 @@ export const App: React.FC = () => {
 
   const anyModalOpen = !!photoUrl || isSlotsOpen || isHelpOpen || deleteCharacterSlot !== null;
 
-  const stepBy = useCallback((delta: number) => {
-    setCategory((cur) => {
-      const idx = STEP_ORDER.indexOf(cur);
-      return STEP_ORDER[Math.min(STEP_ORDER.length - 1, Math.max(0, idx + delta))];
-    });
-  }, []);
-
-  const handleNext = () => {
-    if (category !== 'appearance') {
-      stepBy(1);
-      return;
-    }
+  const handleSave = () => {
     if (!isValidName(characterState.name)) {
       notify('Hãy nhập tên nhân vật hợp lệ trước (2–18 chữ cái hoặc số)');
       return;
@@ -318,7 +305,6 @@ export const App: React.FC = () => {
     activeSlot.current = i;
     setCharacterState(sl.state);
     resetHistory(sl.state);
-    setCategory('appearance');
     setScreen('creator');
     canvasRef.current?.setViewShift(0);
     canvasRef.current?.setCameraView('full');
@@ -329,7 +315,6 @@ export const App: React.FC = () => {
     activeSlot.current = null;
     setCharacterState(fresh);
     resetHistory(fresh);
-    setCategory('race');
     setScreen('creator');
     canvasRef.current?.setViewShift(0);
     canvasRef.current?.setCameraView('full');
@@ -430,7 +415,7 @@ export const App: React.FC = () => {
       notify('Không tìm thấy ô lưu của nhân vật');
       return;
     }
-    const state = { ...saved.state, weaponStyle: characterState.weaponStyle };
+    const state = { ...saved.state, weapon: characterState.weapon, weaponStyle: characterState.weaponStyle };
     setSavingWeapon(true);
     try {
       const thumb = await getThumb();
@@ -477,8 +462,6 @@ export const App: React.FC = () => {
         case 's': case 'S': setIsSlotsOpen(true); break;
         case 'p': case 'P': sound.playCameraShutter(); handleTakeScreenshot(); break;
         case '?': setIsHelpOpen(true); break;
-        case 'ArrowLeft': stepBy(-1); break;
-        case 'ArrowRight': stepBy(1); break;
         case '1': case '2': case '3': case '4': case '5':
           handleCameraChange(CAMERA_KEYS[Number(e.key) - 1]);
           break;
@@ -487,7 +470,7 @@ export const App: React.FC = () => {
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [handleUndo, handleRedo, handleRandomize, handleTakeScreenshot, handleCameraChange, stepBy, anyModalOpen, screen]);
+  }, [handleUndo, handleRedo, handleRandomize, handleTakeScreenshot, handleCameraChange, anyModalOpen, screen]);
 
   const hist = historyRef.current;
 
@@ -495,12 +478,12 @@ export const App: React.FC = () => {
     <div className="relative w-screen h-screen overflow-hidden bg-black select-none">
       {/* Full-bleed 3D stage */}
       <div className={`absolute inset-0 ${screen === 'game' ? 'invisible pointer-events-none' : ''}`}>
-        <CharacterCanvas ref={canvasRef} characterState={stageState} identity={activeSlot.current ?? 'new'} active={screen !== 'game'} autoRotate={turntableOn} lockView={screen === 'home'} showWeapons={screen !== 'creator' || category === 'class'} />
+        <CharacterCanvas ref={canvasRef} characterState={stageState} identity={activeSlot.current ?? 'new'} active={screen !== 'game'} autoRotate={turntableOn} lockView={screen === 'home'} showWeapons={screen !== 'creator'} />
       </div>
 
       {screen === 'creator' && (
         <>
-      <TitleBar step={category} />
+      <TitleBar />
 
       {/* Left column: Nhân vật + Xem chi tiết + Giọng nói */}
       <div className="absolute left-4 top-16 bottom-28 w-64 z-10 flex flex-col gap-2 animate-rise-in">
@@ -529,11 +512,9 @@ export const App: React.FC = () => {
       {/* Right column: tabs and designer presets */}
       <div className="absolute right-4 top-4 bottom-28 w-72 z-10 flex flex-col animate-rise-in">
         <RightPanel
-          key={category}
           characterState={characterState}
           onUpdateState={updateCharacterState}
           onCameraChange={handleCameraChange}
-          step={category}
           onUndo={handleUndo}
           onRedo={handleRedo}
           canUndo={hist.index > 0}
@@ -543,12 +524,8 @@ export const App: React.FC = () => {
       </div>
 
       <BottomControls
-        step={category}
-        canGoBack={category !== 'race'}
-        showBack={activeSlot.current === null}
-        onBack={() => stepBy(-1)}
         onCancel={showSelect}
-        onNext={handleNext}
+        onSave={handleSave}
         onManage={() => setIsSlotsOpen(true)}
         onShowHelp={() => setIsHelpOpen(true)}
       />

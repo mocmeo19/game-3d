@@ -4,9 +4,9 @@ import { withThumbRig } from './markingThumbs';
 
 /**
  * "Mẫu thiết kế" thumbnails: each designer preset (face sliders, skin tone, hair and lip colour) applied to the real avatar of
- * the current gender / race / skin and photographed head-on. The shipped images in public/designer/<race>_<gender>/ were made with
- * this function (one call per race / gender with the default skin, each image saved as a 200px WebP); the panel only loads those files.
- * To regenerate them, call this from a dev hook for each race / gender and save the results.
+ * the current gender / skin and photographed head-on. The shipped images in public/designer/jin_<gender>/ were made with
+ * this function (one call per gender with the default skin, each image saved as a 200px WebP); the panel only loads those files.
+ * To regenerate them, call this from a dev hook for each gender and save the results.
  */
 
 const cache = new Map<string, Promise<Record<string, string>>>();
@@ -31,7 +31,7 @@ const withPreset = (state: CharacterState, p: DesignerPreset): CharacterState =>
 });
 
 export const designerThumbs = (state: CharacterState): Promise<Record<string, string>> => {
-  const key = [state.gender, state.race, state.skin ?? '', state.body.height].join('|');
+  const key = [state.gender, state.skin ?? '', state.body.height].join('|');
   let p = cache.get(key);
   if (!p) {
     p = withThumbRig(state.gender, async (s) => {

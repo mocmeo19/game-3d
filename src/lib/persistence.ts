@@ -1,8 +1,7 @@
 import { CharacterState } from '../types/character';
 import { migrateEquipmentSlots } from '../constants/equipment';
+import { isWeaponKind, weaponKindFromLegacyClass } from '../constants/weaponKinds';
 import {
-  RACES,
-  CLASSES,
   DEFAULT_BODY,
   DEFAULT_FACE,
   DEFAULT_COSMETICS,
@@ -22,29 +21,38 @@ export interface Slot {
   state: CharacterState;
 }
 
+/** Fields of characters saved before race, class and the Lyn features were removed. */
+const RETIRED_STATE_KEYS = ['race', 'characterClass'];
+const RETIRED_COSMETIC_KEYS = ['earType', 'tailType', 'furColorPrimary', 'furColorSecondary'];
+
+const withoutKeys = (source: object, keys: string[]): Record<string, unknown> => {
+  const copy: Record<string, unknown> = { ...source };
+  keys.forEach((key) => delete copy[key]);
+  return copy;
+};
+
 /** Coerce arbitrary parsed JSON into a complete CharacterState, or null if it is not one. */
 export const sanitizeState = (raw: unknown): CharacterState | null => {
   if (!raw || typeof raw !== 'object') return null;
-  const r = raw as Partial<CharacterState>;
-  if (typeof r.race !== 'string' || !(r.race in RACES)) return null;
+  const r = raw as Partial<CharacterState> & { characterClass?: unknown };
   if (!r.body || typeof r.body !== 'object' || !r.face || typeof r.face !== 'object') return null;
 
   const base = getInitialCharacter();
-  const characterClass =
-    typeof r.characterClass === 'string' && r.characterClass in CLASSES ? r.characterClass : base.characterClass;
+  const weapon = isWeaponKind(r.weapon) ? r.weapon : weaponKindFromLegacyClass(r.characterClass) ?? base.weapon;
 
   const env = typeof r.environment === 'string' ? (LEGACY_ENVIRONMENTS[r.environment] ?? r.environment) : base.environment;
   const environment = (ENVIRONMENTS.some((e) => e.id === env) ? env : base.environment) as CharacterState['environment'];
+  const cosmetics = withoutKeys(r.cosmetics && typeof r.cosmetics === 'object' ? r.cosmetics : {}, RETIRED_COSMETIC_KEYS);
 
   return migrateEquipmentSlots({
     ...base,
-    ...r,
-    characterClass,
+    ...(withoutKeys(r, RETIRED_STATE_KEYS) as Partial<CharacterState>),
+    weapon,
     environment,
     name: typeof r.name === 'string' ? r.name.slice(0, 18) : base.name,
     body: { ...DEFAULT_BODY, ...r.body },
     face: { ...DEFAULT_FACE, ...r.face },
-    cosmetics: { ...DEFAULT_COSMETICS, ...(r.cosmetics ?? {}) }
+    cosmetics: { ...DEFAULT_COSMETICS, ...(cosmetics as Partial<CharacterState['cosmetics']>) }
   });
 };
 

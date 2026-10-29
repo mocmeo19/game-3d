@@ -1362,7 +1362,7 @@ export class TestLabEngine {
   private pressAttack() {
     // class weapon: a click performs one of the skills in turn; guns fire from the loop (auto weapons keep firing while held)
     if (this.weapon === 'class') {
-      const list = skillsFor(this.state.characterClass);
+      const list = skillsFor(this.state.weapon);
       if (list.length) this.playSkill(list[Math.floor(performance.now() / 700) % list.length].id);
     }
   }

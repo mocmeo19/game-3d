@@ -1,19 +1,10 @@
 import { SkinLibrary } from './SkinLibrary';
 import { BodyTypeEditor } from './BodyTypeEditor';
-import { LynAppearanceEditor } from './LynAppearanceEditor';
+import { GenderPicker } from './GenderPicker';
 import React, { useEffect, useState } from 'react';
 import { Dices, RotateCcw } from 'lucide-react';
+import { CharacterState, CameraViewPreset } from '../../types/character';
 import {
-  CharacterState,
-  CameraViewPreset,
-  RaceType,
-  ClassType,
-  GenderType
-} from '../../types/character';
-import {
-  RACES,
-  CLASSES,
-  MASTER_PRESETS,
   FACE_MARKINGS,
   SKIN_TONES,
   HAIR_PALETTE,
@@ -23,28 +14,20 @@ import {
 } from '../../constants/presets';
 import { BODY_SLIDERS, FACE_SLIDERS, BODY_GROUPS, FACE_GROUPS, FACE_BASE_KEYS, BODY_BASE_KEYS, SliderDef, SliderGroup } from '../../constants/sliders';
 import { DESIGNER_PRESETS, DesignerPreset } from '../../constants/designerPresets';
-import { Bi, Collapsible, ColorPicker, FaceAvatar, GamePanel, SliderRow, round2 } from './Panels';
+import { Bi, Collapsible, ColorPicker, FaceAvatar, SliderRow, round2 } from './Panels';
 import { EYE_STYLES, eyeStyleIcon } from '../../constants/eyes';
-import { weaponModelIcon } from '../../constants/weaponModels';
-import { weaponStyles, weaponStyleOf } from '../../constants/weaponStyles';
-import { equipped, skinsOf, skinUrl, skinThumbUrl, skinInfo, defaultSkin, SLOTS, withClassLoadout, FACE_HAIR_SLOTS, FaceHairSlot, defaultFaceHairColor } from '../../constants/equipment';
+import { equipped, skinInfo, defaultSkin, SLOTS, FACE_HAIR_SLOTS, FaceHairSlot, defaultFaceHairColor } from '../../constants/equipment';
+import { bodyModelKey } from '../../renderer/character/avatar';
 import { EquipmentGrid, MarkingIcon } from './EquipmentGrid';
 import { CostumeEditor } from './CostumeEditor';
 import { sound } from '../../audio/soundManager';
-import { RACE_MOD, STAT_LABELS, StatKey, heroStats, CLASS_SKILLS as HERO_SKILLS } from '../../constants/heroInfo';
-import { SKILL_EVENT, skillsFor } from '../../renderer/character/skills';
 
-export type Step = 'race' | 'class' | 'appearance';
-
-/** Accent colour of each race (matches the glow in its card art). */
-const RACE_ACCENT: Record<string, string> = { jin: '#2dd4bf', gon: '#c9a227', lyn: '#f59e0b', yun: '#f0a6c0' };
 type Tab = 'basic' | 'style' | 'face' | 'body';
 
 interface RightPanelProps {
   characterState: CharacterState;
   onUpdateState: (s: CharacterState) => void;
   onCameraChange: (p: CameraViewPreset) => void;
-  step: Step;
   onUndo: () => void;
   onRedo: () => void;
   canUndo: boolean;
@@ -73,7 +56,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
   characterState,
   onUpdateState,
   onCameraChange,
-  step,
   onUndo,
   onRedo,
   canUndo,
@@ -114,11 +96,11 @@ export const RightPanel: React.FC<RightPanelProps> = ({
     onUpdateState({ ...characterState, [group]: group === 'body' ? { ...DEFAULT_BODY } : { ...DEFAULT_FACE } });
   };
 
-  // pre-rendered photographs of every designer preset on the avatar of the current race and gender (public/designer/<race>_<gender>/<id>.webp)
+  // pre-rendered photographs of every designer preset on the base body of the gender (public/designer/<body>/<id>.webp)
   const [missingShots, setMissingShots] = useState<Record<string, boolean>>({});
-  // one set per skin (public/designer/<race>_<gender>/<skin>/<id>.webp); the default-skin set in the folder above is the fallback
+  // one set per skin (public/designer/<body>/<skin>/<id>.webp); the default-skin set in the folder above is the fallback
   const shotSkin = skinInfo(characterState.skin, characterState.gender)?.id ?? defaultSkin(characterState.gender);
-  const shotKey = (id: string, level: 0 | 1) => `${characterState.race}_${characterState.gender}/${level ? '' : shotSkin + '/'}${id}`;
+  const shotKey = (id: string, level: 0 | 1) => `${bodyModelKey(characterState.gender)}/${level ? '' : shotSkin + '/'}${id}`;
   const shotUrl = (id: string) => `/designer/${shotKey(id, missingShots[shotKey(id, 0)] ? 1 : 0)}.webp`;
 
   /** Palette + custom picker for one of the make-up / marking colours. */
@@ -192,35 +174,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
         lipColor: p.lipColor
       }
     });
-  };
-
-  const applyHero = (id: string) => {
-    const p = MASTER_PRESETS.find((m) => m.id === id);
-    if (!p) return;
-    sound.playTriumph();
-    onUpdateState({
-      ...characterState,
-      name: p.name,
-      race: p.race,
-      gender: p.gender,
-      characterClass: p.characterClass,
-      costume: p.costume,
-      body: { ...DEFAULT_BODY, ...p.body },
-      face: { ...DEFAULT_FACE, ...p.face },
-      cosmetics: { ...p.cosmetics }
-    });
-  };
-
-  const selectRace = (race: RaceType) => {
-    sound.playPluck(330);
-    const r = RACES[race];
-    const next = {
-      ...characterState,
-      race,
-      gender: r.availableGenders.includes(characterState.gender) ? characterState.gender : r.availableGenders[0]
-    };
-    // a class the new race cannot take is replaced by its first class, dressed in that class's starting gear
-    onUpdateState(r.availableClasses.includes(characterState.characterClass) ? next : withClassLoadout(next, r.availableClasses[0]));
   };
 
   /** Palette + custom picker for a brow / lash / beard colour; no pick = follow the hair (lashes: near-black). */
@@ -298,306 +251,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
     </div>
   );
 
-  /* ───────── Race step ───────── */
-  if (step === 'race') {
-    const race = RACES[characterState.race];
-    const accent = RACE_ACCENT[race.id] ?? '#f0c64a';
-    const mods = Object.entries(RACE_MOD[race.id] ?? {}) as [StatKey, number][];
-    return (
-      <GamePanel title={<Bi ko="Chủng tộc" en="Race" />} className="flex flex-col max-h-full">
-        <div className="p-2 space-y-2 overflow-y-auto min-h-0">
-          <div className="grid grid-cols-2 gap-1.5">
-            {Object.values(RACES).map((r) => {
-              const sel = characterState.race === r.id;
-              const ac = RACE_ACCENT[r.id] ?? '#f0c64a';
-              return (
-                <button
-                  key={r.id}
-                  onClick={() => selectRace(r.id)}
-                  aria-pressed={sel}
-                  aria-label={`${r.name} — ${r.title}`}
-                  className="group relative aspect-3/4 overflow-hidden border transition-all duration-200"
-                  style={{
-                    borderColor: sel ? '#f0c64a' : 'rgba(255,255,255,0.12)',
-                    boxShadow: sel ? `0 0 0 1px #f0c64a, 0 0 14px ${ac}88` : undefined
-                  }}
-                >
-                  <img
-                    src={`/races/${r.id}.jpg`}
-                    alt=""
-                    draggable={false}
-                    className={`absolute inset-0 w-full h-full object-cover transition-transform duration-300 ${sel ? 'scale-105' : 'group-hover:scale-105 opacity-80 group-hover:opacity-100'}`}
-                  />
-                  <span className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent" />
-                  <span className="absolute top-1 left-1 text-sm drop-shadow-sm">{r.emblem}</span>
-                  <span className="absolute top-1 right-1 flex gap-0.5 text-[9px]">
-                    {(['female', 'male'] as GenderType[]).map((g) => (
-                      <span
-                        key={g}
-                        className="px-1 leading-4 bg-black/60 border border-white/15"
-                        style={{ opacity: r.availableGenders.includes(g) ? 1 : 0.3 }}
-                        title={g === 'female' ? 'Nữ' : 'Nam'}
-                      >
-                        {g === 'female' ? '♀' : '♂'}
-                      </span>
-                    ))}
-                  </span>
-                  <span className="absolute bottom-0 inset-x-0 p-1.5 text-left">
-                    <span className="block text-[14px] font-semibold tracking-wide text-white drop-shadow-sm" style={{ color: sel ? '#f8dc84' : undefined }}>
-                      {r.name}
-                    </span>
-                    <span className="block text-[9.5px] leading-tight text-white/70">{r.title}</span>
-                    <span className="mt-1 block h-0.5 w-8" style={{ background: ac }} />
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="p-2 bg-black/45 border border-gp-line space-y-2" style={{ borderLeft: `2px solid ${accent}` }}>
-            <div className="flex items-baseline justify-between">
-              <span className="text-[14px] font-semibold text-gp-hot">
-                {race.name}
-              </span>
-              <span className="text-[10px] text-gp-mute">{race.title}</span>
-            </div>
-            <p className="text-[11px] leading-relaxed text-gp-text">{race.lore}</p>
-            <div className="flex flex-wrap gap-1">
-              {race.traits.map((t) => (
-                <span key={t} className="px-1.5 py-0.5 border text-[10px]" style={{ borderColor: `${accent}88`, color: accent, background: `${accent}14` }}>
-                  {t}
-                </span>
-              ))}
-            </div>
-
-            <div>
-              <div className="text-[10px] uppercase tracking-widest text-gp-mute mb-1">Thiên phú chỉ số</div>
-              {mods.length ? (
-                <div className="grid grid-cols-2 gap-x-3 gap-y-0.5">
-                  {mods.map(([k, v]) => (
-                    <div key={k} className="flex items-center justify-between text-[11px]">
-                      <span className="text-gp-text">{STAT_LABELS[k]}</span>
-                      <span className={v > 0 ? 'text-emerald-400' : 'text-rose-400'}>{v > 0 ? `+${v}` : v}</span>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <p className="text-[11px] text-gp-text">Cân bằng — không cộng trừ chỉ số nào.</p>
-              )}
-            </div>
-
-            <div>
-              <div className="text-[10px] uppercase tracking-widest text-gp-mute mb-1">
-                Lớp nhân vật ({race.availableClasses.length}/{Object.keys(CLASSES).length})
-              </div>
-              <div className="flex flex-wrap gap-1">
-                {race.availableClasses.map((id) => {
-                  const c = CLASSES[id];
-                  if (!c) return null;
-                  return (
-                    <span
-                      key={id}
-                      className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] border"
-                      style={{ borderColor: `${c.color}77`, background: `${c.color}1a`, color: '#e8e2d4' }}
-                      title={c.role}
-                    >
-                      <span>{c.badge}</span>
-                      {c.name}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-1.5">
-            {(['female', 'male'] as GenderType[]).map((g) => {
-              const ok = race.availableGenders.includes(g);
-              const on = characterState.gender === g;
-              return (
-                <button
-                  key={g}
-                  disabled={!ok}
-                  onClick={() => {
-                    sound.playClick();
-                    // the class's starting gear differs per gender (many pieces exist for one gender only)
-                    if (g !== characterState.gender) onUpdateState(withClassLoadout({ ...characterState, gender: g }, characterState.characterClass));
-                  }}
-                  className={`gp-btn h-9 flex items-center justify-center gap-1.5 ${on ? 'is-on' : ''}`}
-                  title={ok ? undefined : `${race.name} không có giới tính này`}
-                >
-                  <span className="text-base leading-none">{g === 'female' ? '♀' : '♂'}</span>
-                  {g === 'female' ? 'Nữ' : 'Nam'}
-                </button>
-              );
-            })}
-          </div>
-          {race.availableGenders.length < 2 && <p className="text-[10px] text-gp-mute">{race.name} chỉ có nhân vật nữ.</p>}
-        </div>
-      </GamePanel>
-    );
-  }
-
-  /* ───────── Class step ───────── */
-  if (step === 'class') {
-    const race = RACES[characterState.race];
-    const available = race.availableClasses;
-    const cls = CLASSES[characterState.characterClass];
-    const { stats, power } = heroStats(cls.id, race.id);
-    const field = HERO_SKILLS[cls.id]?.field ?? [];
-    const moves = skillsFor(cls.id);
-    const stars = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
-    return (
-      <GamePanel title={<Bi ko="Lớp nhân vật" en="Class" />} className="flex flex-col max-h-full">
-        <div className="p-2 space-y-2 overflow-y-auto min-h-0">
-          <div className="grid grid-cols-3 gap-1.5">
-            {Object.values(CLASSES).map((c) => {
-              const ok = available.includes(c.id as ClassType);
-              const sel = characterState.characterClass === c.id;
-              return (
-                <button
-                  key={c.id}
-                  disabled={!ok}
-                  aria-pressed={sel}
-                  aria-label={c.name}
-                  title={ok ? `${c.name} — ${c.role}` : `${c.name}: không có cho ${race.name}`}
-                  onClick={() => {
-                    sound.playBladeWhoosh();
-                    onUpdateState(withClassLoadout(characterState, c.id));
-                  }}
-                  className="group relative aspect-4/5 overflow-hidden border text-left transition-all duration-200 disabled:cursor-not-allowed"
-                  style={{
-                    borderColor: sel ? '#f0c64a' : ok ? `${c.color}55` : 'rgba(255,255,255,0.08)',
-                    background: `radial-gradient(circle at 50% 35%, ${c.color}${ok ? '55' : '22'} 0%, #121318 72%)`,
-                    boxShadow: sel ? `0 0 0 1px #f0c64a, 0 0 12px ${c.color}99` : undefined,
-                    opacity: ok ? 1 : 0.38
-                  }}
-                >
-                  <span className={`absolute inset-x-0 top-[14%] text-center text-[26px] leading-none drop-shadow-sm transition-transform duration-200 ${sel ? 'scale-110' : 'group-hover:scale-110'}`}>
-                    {c.badge}
-                  </span>
-                  {!ok && <span className="absolute top-1 right-1 text-[11px]">🔒</span>}
-                  <span className="absolute inset-x-0 bottom-0 p-1 bg-linear-to-t from-black/90 to-transparent">
-                    <span className="block text-[10.5px] font-semibold leading-tight truncate" style={{ color: sel ? '#f8dc84' : '#fff' }}>
-                      {c.name}
-                    </span>
-                    <span className="block text-[8.5px] tracking-tight text-gp-hot/90">{stars(c.difficulty)}</span>
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="p-2 bg-black/45 border border-gp-line space-y-2" style={{ borderLeft: `2px solid ${cls.color}` }}>
-            <div className="flex items-start justify-between gap-2">
-              <div>
-                <div className="text-[14px] font-semibold text-gp-hot">
-                  {cls.badge} {cls.name}
-                </div>
-                <div className="text-[10px] text-gp-mute">
-                  {cls.title} · {cls.role}
-                </div>
-              </div>
-              <div className="text-right shrink-0">
-                <div className="text-[9px] uppercase tracking-widest text-gp-mute">Lực chiến</div>
-                <div className="text-[13px] font-semibold text-gp-hot">{power.toLocaleString('vi-VN')}</div>
-              </div>
-            </div>
-            <p className="text-[11px] leading-relaxed text-gp-text">{cls.description}</p>
-            <div className="grid grid-cols-2 gap-1 text-[10px]">
-              <span className="px-1.5 py-0.5 border border-gp-line text-gp-text">⚔ {cls.weaponName}</span>
-              <span className="px-1.5 py-0.5 border border-gp-line text-gp-text">✦ {cls.primaryElement}</span>
-            </div>
-
-            <div>
-              <div className="text-[10px] uppercase tracking-widest text-gp-mute mb-1">Vũ khí ({race.name})</div>
-              <div className="grid grid-cols-2 gap-1" role="radiogroup" aria-label="Vũ khí">
-                {weaponStyles(race.id, cls.id).map((w) => {
-                  const on = weaponStyleOf(race.id, cls.id, characterState.weaponStyle).id === w.id;
-                  return (
-                    <button
-                      key={w.id}
-                      role="radio"
-                      aria-checked={on}
-                      title={w.desc}
-                      onClick={() => {
-                        sound.playClick();
-                        onUpdateState({ ...characterState, weaponStyle: w.id });
-                      }}
-                      className={`text-left p-1.5 border text-[10px] leading-tight transition-colors ${on ? 'border-gp-hot bg-white/10 text-gp-hot' : 'border-gp-line text-gp-text hover:border-white/40'}`}
-                    >
-                      <span className="flex items-center gap-1.5">
-                        {w.model ? (
-                          <img src={weaponModelIcon(w.model)} alt="" loading="lazy" className="w-9 h-7 object-contain shrink-0 bg-black/40" />
-                        ) : (
-                          <span className="w-2.5 h-2.5 rounded-full shrink-0 border border-black/50" style={{ background: w.metal, boxShadow: `0 0 5px ${w.glow}` }} />
-                        )}
-                        <span className="font-semibold">{w.name}</span>
-                      </span>
-                      <span className="block mt-0.5 text-gp-mute">{w.desc}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div>
-              <div className="text-[10px] uppercase tracking-widest text-gp-mute mb-1">Chỉ số ({race.name})</div>
-              <div className="space-y-0.5">
-                {(Object.keys(stats) as StatKey[]).map((k) => (
-                  <div key={k} className="flex items-center gap-1.5 text-[10px]">
-                    <span className="w-14 text-gp-text">{STAT_LABELS[k]}</span>
-                    <span className="flex-1 h-1.5 bg-white/10 overflow-hidden">
-                      <span className="block h-full" style={{ width: `${stats[k]}%`, background: `linear-gradient(90deg, ${cls.color}, #f0c64a)` }} />
-                    </span>
-                    <span className="w-6 text-right text-gp-mute">{stats[k]}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {field.length > 0 && (
-              <div>
-                <div className="text-[10px] uppercase tracking-widest text-gp-mute mb-1">Kỹ năng tiêu biểu</div>
-                <div className="space-y-1">
-                  {field.map((sk) => (
-                    <div key={sk.id} className="flex gap-1.5 text-[10.5px] leading-snug">
-                      <span className="w-5 h-5 shrink-0 flex items-center justify-center border text-[11px]" style={{ borderColor: `${cls.color}88`, background: `${cls.color}22` }}>
-                        {sk.icon}
-                      </span>
-                      <span>
-                        <span className="text-white">{sk.name}</span>
-                        <span className="text-gp-mute"> — {sk.desc}</span>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {moves.length > 0 && (
-              <div className="flex flex-wrap items-center gap-1">
-                <span className="text-[10px] text-gp-mute">Chiêu biểu diễn:</span>
-                {moves.map((m) => (
-                  <button
-                    key={m.id}
-                    className="px-1.5 py-0.5 text-[10px] border border-gp-line text-gp-text hover:border-gp-hot hover:text-gp-hot"
-                    onClick={() => {
-                      sound.playBladeWhoosh();
-                      window.dispatchEvent(new CustomEvent(SKILL_EVENT, { detail: m.id }));
-                    }}
-                  >
-                    ▶ {m.ko}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </GamePanel>
-    );
-  }
-
   /* ───────── Appearance step ───────── */
   return (
     <section className="flex flex-col max-h-full">
@@ -624,6 +277,9 @@ export const RightPanel: React.FC<RightPanelProps> = ({
           {/* ===== Cơ bản Basic ===== */}
           {tab === 'basic' && (
             <>
+              <div className="p-2 border-b border-gp-line">
+                <GenderPicker gender={characterState.gender} onChange={(gender) => onUpdateState({ ...characterState, gender })} />
+              </div>
               <Collapsible title={<Bi ko="Mẫu thiết kế" en="Designer presets" />} open={open === 'designer'} onToggle={() => toggle('designer')}>
                 <div className="grid grid-cols-4 gap-1">
                   {DESIGNER_PRESETS.map((p, i) =>
@@ -674,13 +330,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
                     onChange={(v) => setCos('skinGloss', round2(v))}
                   />
                 </div>
-                {characterState.race === 'lyn' && <LynAppearanceEditor cosmetics={cos} onChange={(cosmetics) => {
-                  const gear = { ...characterState.gear };
-                  const wearColors = { ...cosmetics.wearColors };
-                  if (cosmetics.tailType !== cos.tailType) delete gear.tail;
-                  if (cosmetics.furColorPrimary !== cos.furColorPrimary) delete wearColors.tail;
-                  onUpdateState({ ...characterState, gear, cosmetics: { ...cosmetics, wearColors } });
-                }} />}
               </Collapsible>
 
               <Collapsible title={<Bi ko="Kiểu tóc" en="Hairstyle" />} open={open === 'hair'} onToggle={() => toggle('hair')}>
@@ -759,19 +408,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
                 <BodyTypeEditor body={characterState.body} onChange={setBody} />
               </Collapsible>
 
-              <Collapsible title={<Bi ko="Mẫu anh hùng" en="Hero templates" />} open={open === 'heroes'} onToggle={() => toggle('heroes')}>
-                <div className="space-y-1">
-                  {MASTER_PRESETS.map((m) => (
-                    <button key={m.id} onClick={() => applyHero(m.id)} className="gp-row" title={m.description}>
-                      <span className="flex-1">
-                        <span className="block text-[12px]">{m.name}</span>
-                        <span className="block text-[10px] text-gp-mute">{m.characterTitle}</span>
-                      </span>
-                      <span className="text-[9px] text-gp-hot uppercase">{m.race}</span>
-                    </button>
-                  ))}
-                </div>
-              </Collapsible>
             </>
           )}
 

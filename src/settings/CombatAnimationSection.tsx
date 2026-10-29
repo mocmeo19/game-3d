@@ -4,7 +4,6 @@ import { COMBAT_GROUPS, COMBAT_SLOTS, type CombatGroup } from '../game/combat/co
 import { defaultCombatSettings, loadCombatSettings, saveCombatSettings } from '../game/combat/combatSettings';
 import { CombatSlotRow } from '../game/combat/CombatSlotRow';
 import { CombatTuningPanel } from '../game/combat/CombatTuningPanel';
-import { getModelSettings } from './modelSettings';
 import { previewCharacter } from './previewCharacter';
 import { SettingsActions } from './SettingsActions';
 import { SettingsPreview } from './SettingsPreview';
@@ -18,8 +17,7 @@ export function CombatAnimationSection({ active = true }: { active?: boolean }) 
   const [group, setGroup] = useState<CombatGroup>('locomotion');
   const [previewFile, setPreviewFile] = useState<string | null>(null);
   const [request, setRequest] = useState(0);
-  const models = getModelSettings();
-  const state = useMemo(() => previewCharacter('jin_female', models, previewFile ? `mixamo:${previewFile}` : 'idle'), [models, previewFile]);
+  const state = useMemo(() => previewCharacter('female', previewFile ? `mixamo:${previewFile}` : 'idle'), [previewFile]);
   const groupInfo = COMBAT_GROUPS.find((item) => item.id === group);
   const preview = (file: string) => {
     setPreviewFile(file);

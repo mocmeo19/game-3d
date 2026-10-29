@@ -13,6 +13,7 @@ import { AnimationSettingsPanel } from './AnimationSettingsPanel';
 import { GameSettingsPanel } from './GameSettingsPanel';
 import { loadGameSettings, saveGameSettings } from './gameSettings';
 import { GameLoadingScreen } from '../../loading/GameLoadingScreen';
+import { WEAPON_KINDS } from '../../constants/weaponKinds';
 
 const initial: LabSnapshot = {
   loaded: false, weapon: 'none', mag: 0, magMax: 0, reloading: false, stance: 'Đứng', action: 'Đứng yên', speed: 0, hint: '', toast: '', aiming: false, pose: null, slow: 1,
@@ -68,7 +69,7 @@ export function TestLabScreen({ characterState, onExit }: { characterState: Char
   const fileInput = useRef<HTMLInputElement>(null);
   const mixInput = useRef<HTMLInputElement>(null);
   const poses = useMpfbPoses();
-  const skills = useMemo(() => skillsFor(characterState.characterClass), [characterState.characterClass]);
+  const skills = useMemo(() => skillsFor(characterState.weapon), [characterState.weapon]);
 
   useEffect(() => {
     if (!host.current) return;
@@ -248,7 +249,7 @@ export function TestLabScreen({ characterState, onExit }: { characterState: Char
                 ))}
               </div>
               <p className="text-xs text-white/60">Chuột trái: bắn / chém / ném · Chuột phải: ngắm · R: nạp đạn</p>
-              <p className="text-xs text-white/60 mt-1">Chiêu thức của lớp ({characterState.characterClass})</p>
+              <p className="text-xs text-white/60 mt-1">Chiêu thức của vũ khí ({WEAPON_KINDS[characterState.weapon].name})</p>
               <div className="flex flex-col gap-1.5">
                 {skills.length === 0 && <span className="text-xs text-white/45">Lớp này chưa có chiêu thức.</span>}
                 {skills.map((k) => (

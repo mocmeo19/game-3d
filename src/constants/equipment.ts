@@ -1,4 +1,3 @@
-import { lynTailModel } from './lynAppearance';
 import { CharacterState } from '../types/character';
 import { ASSETS, AssetGender, AssetInfo, SlotId } from './assets';
 import { SKINS, SkinInfo } from './skins';
@@ -181,7 +180,7 @@ export const equipped = (state: CharacterState, slot: SlotId): string | null => 
       return valid(state.hat, 'hat', g);
     case 'tail':
       return state.gear?.tail === 'none' ? null
-        : valid(state.gear?.tail, 'tail', g) ?? valid(lynTailModel(state) ?? undefined, 'tail', g);
+        : valid(state.gear?.tail, 'tail', g);
     default:
       return valid(state.gear?.[slot], slot, g);
   }
@@ -209,85 +208,6 @@ export const withEquipped = (state: CharacterState, slot: SlotId, id: string | n
   }
 };
 
-/* ───────── class loadouts: the gear a class starts with when it is picked ───────── */
-
-type Loadout = Partial<Record<SlotId, string>>;
-
-const CLASS_LOADOUT: Record<string, { female: Loadout; male: Loadout }> = {
-  blade_master: {
-    female: { outfit: 'mindfront_kimono', shoes: 'culturalibre_heroine_boots_1', gloves: 'toigo_gloves_short' },
-    male: { outfit: 'rehmanpolanski_viking_tunic', pants: 'rehmanpolanski_viking_pants', shoes: 'rehmanpolanski_viking_boots', gloves: 'toigo_gloves_short' }
-  },
-  kung_fu_master: {
-    female: { outfit: 'elvs_fashion_stylized_qipoa', shoes: 'toigo_mj_cloth_shoes', gloves: 'learning_mma_fighting_gloves' },
-    male: { outfit: 'donitz_monk_robe', shoes: 'toigo_mj_cloth_shoes', gloves: 'learning_mma_fighting_gloves' }
-  },
-  force_master: {
-    female: { outfit: 'maciekg_wizard_robe', hat: 'maciekg_wizard_hat', shoes: 'maciekg_leather_boots' },
-    male: { outfit: 'maciekg_wizard_robe', hat: 'maciekg_wizard_hat', shoes: 'maciekg_leather_boots' }
-  },
-  destroyer: {
-    female: { outfit: 'matcreator_mc-scifi-armor_guardian', shoes: 'madmanny_tight_leather_boots', gloves: 'toigo_gloves_medium' },
-    male: { outfit: 'matcreator_mc-scifi-armor_guardian', shoes: 'madmanny_tight_leather_boots', gloves: 'toigo_gloves_medium' }
-  },
-  assassin: {
-    female: { outfit: 'mindfront_f_ninja', hat: 'culturalibre_heroine_mask_1', shoes: 'mindfront_shoes_biker_boots_female', gloves: 'toigo_gloves_short' },
-    male: { outfit: 'matcreator_mc-bodysuit-2021', hat: 'culturalibre_hero_mask_2', shoes: 'mindfront_shoes_biker_boots_male', gloves: 'toigo_gloves_short' }
-  },
-  summoner: {
-    female: { outfit: 'elvs_goddess_dress2', shoes: 'elvs_flatshoe_gemmed1' },
-    male: { outfit: 'male_elegantsuit01', shoes: 'elvs_flatshoe_gemmed1' }
-  },
-  gunslinger: {
-    female: { outfit: 'mindfront_tactical_vest_female', pants: 'elvs_jeans_bootcut', hat: 'fedora_cocked', shoes: 'mindfront_shoes_biker_boots_female', gloves: 'toigo_gloves_short' },
-    male: { outfit: 'mindfront_tactical_vest_male', pants: 'mindfront_male_trousers_1', hat: 'fedora_cocked', shoes: 'mindfront_shoes_biker_boots_male', gloves: 'toigo_gloves_short' }
-  },
-  blade_dancer: {
-    female: { outfit: 'punkduck_middle_length_qipao', pants: 'toigo_harem_pants', shoes: 'toigo_mj_cloth_shoes', gloves: 'toigo_gloves_long' },
-    male: { outfit: 'punkduck_middle_length_qipao', pants: 'toigo_harem_pants', shoes: 'toigo_mj_cloth_shoes', gloves: 'toigo_gloves_short' }
-  },
-  warlock: {
-    female: { outfit: 'punkduck_medieval_dress', hat: 'culturalibre_hero-heroine_hood_1', shoes: 'punkduck_medieval_boots' },
-    male: { outfit: 'donitz_monk_robe', hat: 'donitz_monk_robe_hood', shoes: 'maciekg_leather_boots' }
-  },
-  soul_fighter: {
-    female: { top: 'drednicolson_asymmetric_tunic_and_sash', pants: 'toigo_harem_pants', shoes: 'toigo_mj_cloth_shoes', gloves: 'learning_mma_fighting_gloves' },
-    male: { top: 'elvs_male_boho_top1', pants: 'toigo_harem_pants', shoes: 'toigo_mj_cloth_shoes', gloves: 'learning_mma_fighting_gloves' }
-  },
-  warden: {
-    female: { outfit: 'rehmanpolanski_viking_tunic', pants: 'rehmanpolanski_viking_pants', hat: 'culturalibre_warrior_helmet_02', shoes: 'rehmanpolanski_viking_boots', gloves: 'toigo_gloves_medium' },
-    male: { outfit: 'rehmanpolanski_viking_tunic', pants: 'rehmanpolanski_viking_pants', hat: 'culturalibre_warrior_helmet_02', shoes: 'rehmanpolanski_viking_boots', gloves: 'toigo_gloves_medium' }
-  },
-  archer: {
-    female: { outfit: 'culturalibre_heroine_suit_6', hat: 'culturalibre_hero-heroine_hood_2', shoes: 'punkduck_riding_boots', gloves: 'culturalibre_hero-heroine_gloves_1' },
-    male: { outfit: 'rehmanpolanski_viking_tunic', pants: 'rehmanpolanski_viking_pants', shoes: 'culturalibre_male_boots', gloves: 'toigo_gloves_short' }
-  },
-  astromancer: {
-    female: { outfit: 'elvs_goddess_dress5', shoes: 'elvs_flatshoe_gemmed1' },
-    male: { outfit: 'maciekg_wizard_robe', shoes: 'elvs_basic_felt_elf_shoes' }
-  },
-  dual_blade: {
-    female: { outfit: 'culturalibre_heroine_suit_7', shoes: 'culturalibre_heroine_boots_2', gloves: 'culturalibre_hero-heroine_gloves_2' },
-    male: { outfit: 'matcreator_mc-bodysuit-2021', hat: 'culturalibre_hero_mask_1', shoes: 'culturalibre_hero_boots_2', gloves: 'toigo_gloves_short' }
-  },
-  musician: {
-    female: { outfit: 'elvs_goddess_dress1', shoes: 'toigo_ballet_flats_with_flowers' },
-    male: { outfit: 'wdg_mycenaean_tunic', shoes: 'dressupdoc_sandals1' }
-  }
-};
-
-/** Dress the character in the starting gear of `cls`; hair, jewelry and accessories stay as they are. */
-export const withClassLoadout = (state: CharacterState, cls: string): CharacterState => {
-  const set = CLASS_LOADOUT[cls]?.[state.gender];
-  if (!set) return state;
-  let next: CharacterState = { ...state, characterClass: cls as CharacterState['characterClass'] };
-  (['outfit', 'top', 'pants', 'skirt', 'shoes', 'hat', 'gloves', 'underwear_top', 'underwear_bottom'] as SlotId[]).forEach((slot) => {
-    const id = set[slot];
-    next = withEquipped(next, slot, id && valid(id, slot, state.gender) ? id : slot === 'shoes' ? DEFAULT_SHOES : slot === 'outfit' && !set.top ? defaultOutfit(state.gender) : null);
-  });
-  return next;
-};
-
 /** Face-hair slots that take their own colour (stored in cosmetics.wearColors). */
 export type FaceHairSlot = 'eyebrows' | 'eyelashes' | 'beard';
 export const FACE_HAIR_SLOTS: FaceHairSlot[] = ['eyebrows', 'eyelashes', 'beard'];
@@ -304,3 +224,7 @@ export const defaultFaceHairColor = (c: CharacterState['cosmetics'], slot: FaceH
 
 /** The user's colour for a face-hair slot, or undefined to keep the default. */
 export const faceHairOverride = (c: CharacterState['cosmetics'], slot: FaceHairSlot): string | undefined => c.wearColors?.[slot] || undefined;
+
+/** Colour of a worn tail: its own pick, else the outfit accent, else the model's colour. */
+export const tailColor = (state: CharacterState, modelColor?: string): string =>
+  state.cosmetics.wearColors?.tail || state.cosmetics.outfitAccent || modelColor || '#4a4a4f';

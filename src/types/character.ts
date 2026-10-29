@@ -1,22 +1,22 @@
-export type RaceType = 'jin' | 'gon' | 'lyn' | 'yun';
 export type GenderType = 'female' | 'male';
 
-export type ClassType = 
-  | 'blade_master'
-  | 'kung_fu_master'
-  | 'force_master'
-  | 'destroyer'
-  | 'assassin'
-  | 'summoner'
-  | 'gunslinger'
-  | 'blade_dancer'
-  | 'warlock'
-  | 'soul_fighter'
-  | 'warden'
-  | 'archer'
-  | 'astromancer'
-  | 'dual_blade'
-  | 'musician';
+/** The weapon a character carries; it decides the held model and the skills it performs. */
+export type WeaponKind =
+  | 'curved_saber'
+  | 'dragon_gauntlets'
+  | 'chi_bangles'
+  | 'great_axe'
+  | 'reverse_daggers'
+  | 'flower_staff'
+  | 'spirit_revolvers'
+  | 'slender_sword'
+  | 'talismans'
+  | 'soul_gauntlets'
+  | 'greatsword'
+  | 'longbow'
+  | 'star_orb'
+  | 'twin_shortswords'
+  | 'lute';
 
 export type BuiltinPose = 
   | 'idle' 
@@ -258,19 +258,12 @@ export interface CosmeticColors {
   hairColorPrimary: string;
   hairColorTips: string;
   hairGloss: number;
-
-  // Lyn Specific
-  earType: 'fox' | 'cat' | 'bunny' | 'bear';
-  tailType: 'fox_bushy' | 'cat_slender' | 'bunny_fluffy' | 'wolf_spiked';
-  furColorPrimary: string;
-  furColorSecondary: string;
 }
 
 export interface CharacterState {
   name: string;
-  race: RaceType;
   gender: GenderType;
-  characterClass: ClassType;
+  weapon: WeaponKind;
   costume: string;
   /** MPFB shoes asset id; undefined = default shoes, 'none' = barefoot. */
   shoes?: string;
@@ -284,50 +277,12 @@ export interface CharacterState {
   gear?: Partial<Record<string, string>>;
   /** Facial expression held on the stage (not part of the look: it is neutral again when the character is opened). */
   expression?: ExpressionId;
-  /** Weapon form chosen in the class step (constants/weaponStyles.ts); undefined = standard. */
+  /** Form of the weapon (constants/weaponStyles.ts); undefined = standard. */
   weaponStyle?: string;
   /** MPFB skin texture id (public/models/skins); undefined = the default for the gender. */
   skin?: string;
   lightAngle: number; // 0 - 360 degrees
   body: BodySliders;
   face: FaceSliders;
-  cosmetics: CosmeticColors;
-}
-
-export interface RaceInfo {
-  id: RaceType;
-  name: string;
-  title: string;
-  lore: string;
-  emblem: string;
-  availableGenders: GenderType[];
-  availableClasses: ClassType[];
-  traits: string[];
-}
-
-export interface ClassInfo {
-  id: ClassType;
-  name: string;
-  title: string;
-  role: string;
-  difficulty: number; // 1 - 5
-  weaponName: string;
-  description: string;
-  primaryElement: string;
-  color: string;
-  badge: string;
-}
-
-export interface MasterPreset {
-  id: string;
-  name: string;
-  characterTitle: string;
-  description: string;
-  race: RaceType;
-  gender: GenderType;
-  characterClass: ClassType;
-  costume: string;
-  body: Partial<BodySliders>;
-  face: Partial<FaceSliders>;
   cosmetics: CosmeticColors;
 }

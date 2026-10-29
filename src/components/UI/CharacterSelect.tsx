@@ -1,6 +1,6 @@
 import React from 'react';
 import { Plus, Play, Pencil } from 'lucide-react';
-import { RACES, CLASSES } from '../../constants/presets';
+import { WEAPON_KINDS } from '../../constants/weaponKinds';
 import { Slot } from '../../lib/persistence';
 import { sound } from '../../audio/soundManager';
 
@@ -36,8 +36,7 @@ export const CharacterSelect: React.FC<{
           <div className="p-2 space-y-1.5 overflow-y-auto min-h-0">
             {filled.map(([slot, i]) => {
               const sel = selected === i;
-              const race = RACES[slot.state.race];
-              const cls = CLASSES[slot.state.characterClass];
+              const weapon = WEAPON_KINDS[slot.state.weapon];
               return (
                 <div
                   key={i}
@@ -60,10 +59,10 @@ export const CharacterSelect: React.FC<{
                   <div className="flex-1 min-w-0 py-0.5">
                     <div className={`text-[14px] font-semibold truncate ${sel ? 'text-gp-hot' : 'text-white'}`}>{slot.state.name}</div>
                     <div className="text-[11px] text-gp-text truncate">
-                      {race?.emblem} {race?.name} · {slot.state.gender === 'female' ? 'Nữ' : 'Nam'}
+                      {slot.state.gender === 'female' ? 'Nữ' : 'Nam'}
                     </div>
-                    <div className="text-[11px] truncate" style={{ color: cls?.color }}>
-                      {cls?.badge} {cls?.name}
+                    <div className="text-[11px] truncate" style={{ color: weapon.color }}>
+                      {weapon.badge} {weapon.name}
                     </div>
                     <div className="text-[10px] text-gp-mute mt-0.5">Lưu {new Date(slot.savedAt).toLocaleString('vi-VN', { dateStyle: 'short', timeStyle: 'short' })}</div>
                   </div>
@@ -90,7 +89,7 @@ export const CharacterSelect: React.FC<{
       <div className="absolute bottom-6 inset-x-0 mx-auto w-fit z-10 flex flex-col items-center gap-2 animate-rise-in">
         {current && (
           <p className="text-[12px] text-white/85 drop-shadow-sm">
-            {current.state.name} · {RACES[current.state.race]?.name} · {CLASSES[current.state.characterClass]?.name}
+            {current.state.name} · {current.state.gender === 'female' ? 'Nữ' : 'Nam'} · {WEAPON_KINDS[current.state.weapon].name}
           </p>
         )}
         <div className="flex items-center gap-2">

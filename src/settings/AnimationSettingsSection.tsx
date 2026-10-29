@@ -2,7 +2,6 @@ import { useSettingsForm } from './useSettingsForm';
 import { SettingsActions } from './SettingsActions';
 import { SettingsPreview } from './SettingsPreview';
 import { previewCharacter } from './previewCharacter';
-import { getModelSettings } from './modelSettings';
 import type { AnimationSettings } from '../game/testlab/animationSettings';
 import { useEffect, useMemo, useState } from 'react';
 import { AnimationSettingsPanel } from '../game/testlab/AnimationSettingsPanel';
@@ -43,9 +42,8 @@ export function AnimationSettingsSection({ active = true }: { active?: boolean }
     return () => controller.abort();
   }, [revision]);
 
-  const models = getModelSettings();
   const clip = clips.find((clip) => clip.id === previewId);
-  const state = useMemo(() => previewCharacter('jin_female', models, clip?.file ? `mixamo:${clip.file}` : 'idle'), [models, clip]);
+  const state = useMemo(() => previewCharacter('female', clip?.file ? `mixamo:${clip.file}` : 'idle'), [clip]);
   const inspect = (id: number | null) => { setPreviewId(id); setRequest((value) => value + 1); };
   return (
     <form onSubmit={form.submit} className="space-y-5">

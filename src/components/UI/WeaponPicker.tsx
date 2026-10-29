@@ -1,6 +1,7 @@
 import { Check, Save, Swords } from 'lucide-react';
 import { CharacterState } from '../../types/character';
-import { CLASSES, RACES } from '../../constants/presets';
+import { WEAPON_KINDS } from '../../constants/weaponKinds';
+import { WeaponKindGrid } from './WeaponKindGrid';
 import { weaponModelIcon } from '../../constants/weaponModels';
 import { FIREARM_MODELS, weaponStyleOf, weaponStyles } from '../../constants/weaponStyles';
 import { sound } from '../../audio/soundManager';
@@ -14,10 +15,10 @@ interface WeaponPickerProps {
 }
 
 export function WeaponPicker({ state, onChange, onPreview, onSave, saving }: WeaponPickerProps) {
-  const choices = weaponStyles(state.race, state.characterClass);
-  const selected = weaponStyleOf(state.race, state.characterClass, state.weaponStyle);
+  const choices = weaponStyles(state.weapon);
+  const selected = weaponStyleOf(state.weapon, state.weaponStyle);
   const groups = [
-    { id: 'class', label: 'Kiểu vũ khí', items: choices.filter((item) => !item.model) },
+    { id: 'forms', label: 'Kiểu dáng', items: choices.filter((item) => !item.model) },
     { id: 'guns', label: 'Súng', items: choices.filter((item) => item.model && FIREARM_MODELS.has(item.model)) },
     {
       id: 'models', label: 'Mẫu 3D & vật dụng',
@@ -38,9 +39,11 @@ export function WeaponPicker({ state, onChange, onPreview, onSave, saving }: Wea
           <Save size={14} /> {saving ? 'Đang lưu…' : 'Lưu vũ khí'}
         </button>
       </div>
-      <p className="text-xs text-white/60 mb-3">
-        {CLASSES[state.characterClass].name} · {RACES[state.race].name}. Chọn để xem ngay trên nhân vật.
-      </p>
+      <section className="mb-4" aria-label="Loại vũ khí">
+        <h3 className="text-xs text-white/60 mb-2">Loại vũ khí</h3>
+        <WeaponKindGrid selected={state.weapon} onSelect={(weapon) => onChange({ ...state, weapon, weaponStyle: undefined })} />
+        <p className="mt-2 text-[11px] leading-relaxed text-white/55">{WEAPON_KINDS[state.weapon].description}</p>
+      </section>
       {groups.map((group) => group.items.length > 0 && (
         <section key={group.id} className="mb-4" aria-label={group.label}>
           <h3 className="text-xs text-white/60 mb-2">{group.label}</h3>

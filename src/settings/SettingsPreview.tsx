@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Box, LoaderCircle, Pause, Play, RotateCcw, X } from 'lucide-react';
 import type { CharacterState } from '../types/character';
-import { getModelSettings, type ModelSettings } from './modelSettings';
 import type { RenderSettings } from './renderSettings';
 import type { PreviewStatus, SettingsPreviewScene } from './SettingsPreviewScene';
 
@@ -9,20 +8,19 @@ interface Props {
   title: string;
   state: CharacterState;
   active: boolean;
-  models?: ModelSettings;
   render?: RenderSettings;
   camera?: { fov: number; distance: number };
   request?: number;
 }
 
-export function SettingsPreview({ title, state, active, models = getModelSettings(), render, camera, request = 0 }: Props) {
+export function SettingsPreview({ title, state, active, render, camera, request = 0 }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const scene = useRef<SettingsPreviewScene | null>(null);
   const [enabled, setEnabled] = useState(false);
   const [status, setStatus] = useState<PreviewStatus>('loading');
   const [paused, setPaused] = useState(false);
   const [retry, setRetry] = useState(0);
-  const options = useMemo(() => ({ state, models, render, camera }), [state, models, render, camera]);
+  const options = useMemo(() => ({ state, render, camera }), [state, render, camera]);
   const latest = useRef(options);
   latest.current = options;
   useEffect(() => { if (request > 0) setEnabled(true); }, [request]);

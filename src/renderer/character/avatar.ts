@@ -1,28 +1,25 @@
 import { morphInfluence } from './morphInfluence';
 export { morphInfluence } from './morphInfluence';
-import { baseModelKey, raceScale, getModelSettings, type ModelSettings } from '../../settings/modelSettings';
-export { baseModelKey } from '../../settings/modelSettings';
-import { tailColor } from '../../constants/lynAppearance';
 import { BODY_HUGGING_SLOTS, CLOTH_LAYER, COVERS_SKIN, maskInnerGarments } from './clothingLayers';
 import { eyeStyleUrl } from '../../constants/eyes';
 import * as THREE from 'three';
 import type { RetargetPose } from './mixamo';
 import { GLTFLoader, GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { CharacterState } from '../../types/character';
-import { ASSET_INFO, assetUrl, defaultFaceHairColor, defaultSkin, equipped, faceHairOverride, skinInfo, skinUrl, SlotId, SLOT_IDS } from '../../constants/equipment';
+import { ASSET_INFO, assetUrl, defaultFaceHairColor, defaultSkin, equipped, faceHairOverride, skinInfo, skinUrl, SlotId, SLOT_IDS, tailColor } from '../../constants/equipment';
 import { lerp, disposeObject } from './geometry';
 import { skinAlbedo } from './skin';
 import { FaceExtra, installOverlay, MakeupPainter } from './makeup';
 import { ORIG_BASE, Subdivision, subdivideBody } from './subdivide';
 
 /**
- * Character body made with MPFB (MakeHuman for Blender), see /mpfb. Every race and gender has its own base model
- * (<race>_<gender>.glb); it carries the skinned body, eyes, brows, lashes, teeth and tongue with one pair of morph targets
+ * Character body made with MPFB (MakeHuman for Blender), see /mpfb. Each gender has its own base model
+ * (jin_<gender>.glb); it carries the skinned body, eyes, brows, lashes, teeth and tongue with one pair of morph targets
  * per app slider (`<slider>_pos` / `<slider>_neg`).
- *  - all bases share the basemesh topology and rig; clothing is fitted to the jin body and moved onto other races with
- *    <race>_<gender>.delta.bin (how far each basemesh vertex is from the jin body)
+ *  - all bases share the basemesh topology and rig; clothing is fitted to the base body with
+ *    jin_<gender>.delta.bin (how far each basemesh vertex is from the body the clothes were made for)
  *  - sliders become morph influences (body, face parts, hair and clothes share the same morph names)
- *  - the joints follow the morphs (per-bone offsets from <race>_<gender>_extra.json, inverse bind matrices are rebuilt)
+ *  - the joints follow the morphs (per-bone offsets from jin_<gender>_extra.json, inverse bind matrices are rebuilt)
  *  - hair / outfit / shoes / hat are separate GLBs re-bound to the body's skeleton
  *  - make-up and face markings are painted into an overlay texture; the iris colour is repainted
  *  - poses aim the limb bones in world space
@@ -38,8 +35,8 @@ const JOINTS = ['hips', 'torso', 'neck', 'head', 'shL', 'shR', 'elL', 'elR', 'wr
 type J = (typeof JOINTS)[number];
 type Slot = SlotId;
 
-/** Metres per model unit: the rest body is scaled to TARGET_HEIGHT, then race and the height slider are applied. */
-export const bodyScale = (state: CharacterState, restHeight: number): number => (TARGET_HEIGHT / restHeight) * raceScale(state.race) * state.body.height;
+/** File name (without extension) of the MPFB base body for a gender. */
+export const bodyModelKey = (gender: string): string => (gender === 'male' ? 'jin_male' : 'jin_female');
 
 export interface AvatarAnchors {
   headY: number;
@@ -174,7 +171,7 @@ export class AvatarController {
   public ready = false;
   /** A pose taken from another skeleton's animation (see mixamo.ts): applied over the joint pose every frame while set. */
   public retarget: RetargetPose | null = null;
-  /** Counts the bodies installed so far: a new body (race / gender switched) starts a new dressing. */
+  /** Counts the bodies installed so far: a new body (gender switched) starts a new dressing. */
   public bodyVersion = 0;
   /** No body is being fetched (the one shown is the one asked for). */
   public get bodyIdle() { return this.loadingKey === null; }
@@ -260,7 +257,7 @@ export class AvatarController {
     this.gltfCache.clear();
   }
 
-  constructor(private onReady: () => void, private modelSettings: () => ModelSettings = getModelSettings) {
+  constructor(private onReady: () => void) {
     this.group.visible = false;
     this.group.add(this.handAnchor.L, this.handAnchor.R, this.headAnchor, this.hipsAnchor);
   }
@@ -274,9 +271,9 @@ export class AvatarController {
     return p;
   }
 
-  public ensureLoaded(gender: string, race = 'jin') {
+  public ensureLoaded(gender: string) {
     const g = gender === 'male' ? 'male' : 'female';
-    const key = baseModelKey(race, g, this.modelSettings());
+    const key = bodyModelKey(g);
     if ((this.ready && this.loadedKey === key) || this.loadingKey === key) return;
     this.loadingKey = key;
     Promise.all([
@@ -289,7 +286,7 @@ export class AvatarController {
         .catch(() => null)
     ])
       .then(([extra, gltf, delta]) => {
-        // a newer request (race / gender switched meanwhile) wins
+        // a newer request (gender switched meanwhile) wins
         if (this.loadingKey !== key) {
           disposeObject(gltf.scene);
           return;
@@ -487,7 +484,7 @@ export class AvatarController {
     this.updateClothAnchors();
 
     this.headScale = b.headSize;
-    const s = this.baseScale * raceScale(state.race, this.modelSettings()) * b.height;
+    const s = this.baseScale * b.height;
     this.group.scale.setScalar(s);
     this.baseY = FLOOR_Y - this.lowestY() * s;
     this.group.position.y = this.baseY + this.poseLift;
@@ -500,7 +497,7 @@ export class AvatarController {
       chestY: this.worldPos('spine_03').y,
       waistY: this.worldPos('spine_01').y,
       feetY: FLOOR_Y,
-      height: TARGET_HEIGHT * raceScale(state.race, this.modelSettings()) * b.height,
+      height: TARGET_HEIGHT * b.height,
       scale: s
     };
   }
@@ -931,8 +928,8 @@ export class AvatarController {
   }
 
   /**
-   * Index the jin body as it would sit inside this base: each body vertex at its jin position, with how far it moves to
-   * reach this race's shape. Clothing vertices then follow their nearest jin body vertices (see fitGeometry).
+   * Index the body the clothes were made for as it would sit inside this base: each body vertex at that position, with
+   * how far it moves to reach this base's shape. Clothing vertices then follow their nearest jin body vertices (see fitGeometry).
    */
   private buildFit(delta: Float32Array | null) {
     this.fit = null;

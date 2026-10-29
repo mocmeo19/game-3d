@@ -1,24 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, Info, BarChart3, MapPin, Shirt, Mic, Copy, Play, Flame, FlaskConical, Sparkles, Save, ChevronDown, Check, Swords } from 'lucide-react';
+import { ArrowLeft, Info, Shirt, Mic, Copy, Play, Flame, FlaskConical, Sparkles, Save, ChevronDown, Check, Swords } from 'lucide-react';
 import { CharacterState, PoseType } from '../../types/character';
 import { PosePicker } from './PosePicker';
-import { RACES, CLASSES } from '../../constants/presets';
+import { WEAPON_KINDS } from '../../constants/weaponKinds';
 import { VOICES, voicesFor, resolveVoice } from '../../constants/voices';
-import { CLASS_SKILLS, heroStats } from '../../constants/heroInfo';
 import { encodeShareCode } from '../../lib/persistence';
 import { CostumeEditor } from './CostumeEditor';
 import { sound } from '../../audio/soundManager';
 import { VoicePreview } from './VoicePreview';
 import { ProfileCard } from './ProfileCard';
-import { ProfileRadarChart } from './ProfileRadarChart';
 import { WeaponPicker } from './WeaponPicker';
 
-type Tab = 'info' | 'stats' | 'source' | 'outfit' | 'poses' | 'sound' | 'weapons';
+type Tab = 'info' | 'outfit' | 'poses' | 'sound' | 'weapons';
 
 const NAV: { key: Tab; label: string; icon: React.ReactNode }[] = [
   { key: 'info', label: 'Thông tin', icon: <Info size={22} /> },
-  { key: 'stats', label: 'Chỉ số', icon: <BarChart3 size={22} /> },
-  { key: 'source', label: 'Nguồn gốc', icon: <MapPin size={22} /> },
   { key: 'outfit', label: 'Trang phục', icon: <Shirt size={22} /> },
   { key: 'poses', label: 'Tạo dáng', icon: <Sparkles size={22} /> },
   { key: 'sound', label: 'Giọng nói', icon: <Mic size={22} /> },
@@ -101,19 +97,10 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
     onTryPlay(selectedGame);
   };
   const [tab, setTab] = useState<Tab>('info');
-  const skillTab = 'field' as const;
-  const [skillIdx, setSkillIdx] = useState(0);
 
-  const race = RACES[characterState.race];
-  const cls = CLASSES[characterState.characterClass];
+  const weapon = WEAPON_KINDS[characterState.weapon];
   const voice = resolveVoice(characterState.voice, characterState.gender);
-  const { stats, power } = heroStats(characterState.characterClass, characterState.race);
-  const skills = CLASS_SKILLS[characterState.characterClass] ?? CLASS_SKILLS.blade_master;
-  const list = skills[skillTab];
-  const skill = list[Math.min(skillIdx, list.length - 1)];
-  const range = cls.role.startsWith('Cận chiến') ? 'Cận chiến' : 'Tầm xa';
 
-  useEffect(() => setSkillIdx(0), [skillTab, characterState.characterClass]);
   useEffect(() => () => sound.stopVoice(), [voice.id]);
 
 
@@ -168,100 +155,38 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
         {tab === 'info' && (
           <>
             <div className="pointer-events-auto text-white pt-1">
-              <p className="text-[15px] text-white/85">{cls.title}</p>
+              <p className="text-[15px] text-white/85">{weapon.badge} {weapon.name}</p>
               <h2 className="text-[40px] leading-tight font-semibold text-sky-100 text-shadow">{characterState.name || 'Chưa đặt tên'}</h2>
-              <div className="mt-1 flex flex-wrap items-center gap-x-2 text-[13px] text-white/85">
-                <span className="w-3 h-3 rounded-full bg-sky-300 shadow-[0_0_8px_#7cc8ff]" />
-                <span>{cls.primaryElement}</span>
-                <span className="text-white/35">|</span>
-                <span>{cls.role.split(' / ')[0]}</span>
-                <span className="text-white/35">|</span>
-                <span>{range}</span>
-              </div>
               <div className="my-3 h-px bg-white/30" />
-              <p className="text-[14px] leading-relaxed text-white/90">
-                {cls.description} {race ? `Chủng tộc ${race.name} — ${race.title}.` : ''}
-              </p>
+              <p className="text-[14px] leading-relaxed text-white/90">{weapon.description}</p>
             </div>
 
-            <ProfileCard className="mt-2">
-              <div className="p-4">
-                <div className="flex items-end gap-4">
-                  {list.map((s, i) => (
-                    <button
-                      key={s.id}
-                      title={s.name}
-                      aria-label={s.name}
-                      aria-pressed={i === skillIdx}
-                      onClick={() => {
-                        sound.playClick();
-                        setSkillIdx(i);
-                      }}
-                      className={`flex items-center justify-center text-2xl border-2 transition-all ${
-                        i === 0 ? 'w-[68px] h-[68px] rounded-full' : 'w-[52px] h-[52px] [clip-path:polygon(25%_3%,75%_3%,100%_50%,75%_97%,25%_97%,0_50%)]'
-                      } ${
-                        i === skillIdx
-                          ? 'border-amber-300 bg-linear-to-br from-[#d85a3a] to-[#6a1b1b] shadow-[0_0_14px_rgba(255,190,90,0.7)]'
-                          : 'border-white/30 bg-linear-to-br from-[#7a2a2a] to-[#2a0e18] opacity-85 hover:opacity-100'
-                      }`}
-                    >
-                      {s.icon}
-                    </button>
-                  ))}
-                </div>
-                <div className="mt-3 text-white">
-                  <div className="text-[14px] font-medium text-amber-200">{skill.name}</div>
-                  <p className="text-[12.5px] leading-relaxed text-white/80">{skill.desc}</p>
-                </div>
-              </div>
+            <ProfileCard className="p-5 text-white">
+              <dl className="grid grid-cols-[110px_1fr] gap-y-2 text-[13.5px]">
+                <dt className="text-white/60">Giới tính</dt>
+                <dd>{characterState.gender === 'female' ? 'Nữ' : 'Nam'}</dd>
+                <dt className="text-white/60">Vũ khí</dt>
+                <dd>{weapon.name}</dd>
+                <dt className="text-white/60">Ngày tạo</dt>
+                <dd>{created}</dd>
+                <dt className="text-white/60">Giọng nói</dt>
+                <dd>{voice.ko}</dd>
+              </dl>
+              <button
+                className="mt-4 px-3 py-1.5 text-[13px] bg-white/10 border border-white/25 hover:bg-white/20 flex items-center gap-2"
+                onClick={async () => {
+                  try {
+                    await navigator.clipboard.writeText(encodeShareCode(characterState));
+                    onNotify('Đã sao chép mã nhân vật');
+                  } catch {
+                    onNotify('Không dùng được clipboard');
+                  }
+                }}
+              >
+                <Copy size={13} /> Sao chép mã nhân vật
+              </button>
             </ProfileCard>
-            <p className="pointer-events-none text-[10px] text-white/45 -mt-2">Kỹ năng và chỉ số chỉ mang tính minh họa.</p>
           </>
-        )}
-
-        {tab === 'stats' && (
-          <ProfileCard className="p-5 text-white">
-            <h2 className="text-[18px] font-medium">Chỉ số</h2>
-            <div className="mt-1 text-[13px] text-white/70">Sức mạnh chiến đấu</div>
-            <div className="text-[34px] font-semibold text-amber-200 leading-none mb-1">{power.toLocaleString('vi-VN')}</div>
-            <ProfileRadarChart stats={stats} />
-            <p className="mt-4 text-[10px] text-white/45">Chỉ số tính từ lớp nhân vật và chủng tộc, chỉ mang tính minh họa.</p>
-          </ProfileCard>
-        )}
-
-        {tab === 'source' && (
-          <ProfileCard className="p-5 text-white">
-            <h2 className="text-[18px] font-medium mb-3">Nguồn gốc</h2>
-            <dl className="grid grid-cols-[110px_1fr] gap-y-2 text-[13.5px]">
-              <dt className="text-white/60">Tên</dt>
-              <dd>{characterState.name}</dd>
-              <dt className="text-white/60">Chủng tộc</dt>
-              <dd>
-                {race?.name} · {characterState.gender === 'female' ? 'Nữ' : 'Nam'}
-              </dd>
-              <dt className="text-white/60">Lớp nhân vật</dt>
-              <dd>{cls.name}</dd>
-              <dt className="text-white/60">Nơi tạo</dt>
-              <dd>Quảng trường Hồng Môn</dd>
-              <dt className="text-white/60">Ngày tạo</dt>
-              <dd>{created}</dd>
-              <dt className="text-white/60">Giọng nói</dt>
-              <dd>{voice.ko}</dd>
-            </dl>
-            <button
-              className="mt-4 px-3 py-1.5 text-[13px] bg-white/10 border border-white/25 hover:bg-white/20 flex items-center gap-2"
-              onClick={async () => {
-                try {
-                  await navigator.clipboard.writeText(encodeShareCode(characterState));
-                  onNotify('Đã sao chép mã nhân vật');
-                } catch {
-                  onNotify('Không dùng được clipboard');
-                }
-              }}
-            >
-              <Copy size={13} /> Sao chép mã nhân vật
-            </button>
-          </ProfileCard>
         )}
 
         {tab === 'outfit' && (

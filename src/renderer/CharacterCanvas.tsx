@@ -7,8 +7,6 @@ import { EnvironmentScene } from './EnvironmentScene';
 import { SKY_CENTER_Z } from './environmentStage';
 import { STAGE_FOCUS_X_VAR, StageVignette } from './StageVignette';
 import { makeStudioEnvironment } from './character/skin';
-import { SKILL_EVENT } from './character/skills';
-import { EXPORT_GLB_EVENT, downloadBlob, exportGLB } from './exportGlb';
 
 /** Camera elevation limits (polar angle from straight above): from nearly overhead down to eye level, never below. */
 const MIN_PHI = Math.PI * 0.12;
@@ -376,30 +374,6 @@ export const CharacterCanvas = forwardRef<CharacterCanvasRef, Props>(({ characte
         container.removeChild(renderer.domElement);
       }
     };
-  }, []);
-
-  // Skill performances requested by the UI
-  useEffect(() => {
-    const onSkill = (e: Event) => characterModelRef.current?.playSkill((e as CustomEvent<string>).detail);
-    window.addEventListener(SKILL_EVENT, onSkill);
-    return () => window.removeEventListener(SKILL_EVENT, onSkill);
-  }, []);
-
-  // Export the character as .glb when the UI asks for it
-  useEffect(() => {
-    const onExport = async (e: Event) => {
-      const model = characterModelRef.current;
-      if (!model) return;
-      const name = ((e as CustomEvent<string>).detail || 'nhan-vat').replace(/[^\p{L}\p{N}_-]+/gu, '_');
-      try {
-        downloadBlob(await exportGLB(model.group), `${name}.glb`);
-      } catch (err) {
-        console.error('GLB export failed', err);
-        window.alert('Không xuất được GLB: ' + (err instanceof Error ? err.message : String(err)));
-      }
-    };
-    window.addEventListener(EXPORT_GLB_EVENT, onExport);
-    return () => window.removeEventListener(EXPORT_GLB_EVENT, onExport);
   }, []);
 
   useEffect(() => {

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import type { WeaponKind } from '../../types/character';
 
 /**
  * Class weapons built from extruded profiles, tapered shafts and wrapped grips instead of plain boxes.
@@ -472,37 +473,37 @@ const TILT = -0.45;
 /** Forearm-mounted pieces (gauntlets, bangles) were modelled along −y from the wrist: lay them along the fingers. */
 const ARM = Math.PI / 2;
 
-export const buildWeapons = (cls: string, m: WeaponMats): WeaponSet => {
-  switch (cls) {
-    case 'blade_master':
+export const buildWeapons = (weapon: WeaponKind, m: WeaponMats): WeaponSet => {
+  switch (weapon) {
+    case 'curved_saber':
       return { R: [seat(sword(m), -0.105, TILT)], L: [] };
-    case 'kung_fu_master':
+    case 'dragon_gauntlets':
       return { R: [seat(gauntlet(m), 0, ARM, -0.055)], L: [seat(gauntlet(m), 0, ARM, -0.055)] };
-    case 'force_master':
+    case 'chi_bangles':
       return { R: [seat(chiBangle(m, 1, 0x38bdf8), 0, ARM, -0.055)], L: [seat(chiBangle(m, -1, 0xf97316), 0, ARM, -0.055)] };
-    case 'destroyer':
+    case 'great_axe':
       return { R: [seat(greatAxe(m), 0.03, Math.PI / 2 - 0.3)], L: [] };
-    case 'assassin':
+    case 'reverse_daggers':
       return { R: [seat(dagger(m), -0.03, TILT)], L: [seat(dagger(m), -0.03, TILT)] };
-    case 'summoner':
+    case 'flower_staff':
       return { R: [seat(staff(m), 0.01, Math.PI / 2)], L: [] };
-    case 'blade_dancer':
+    case 'slender_sword':
       return { R: [seat(straightSword(m, 0.95, 0.028, 0.2, 0.08), -0.08, TILT)], L: [] };
-    case 'warlock':
+    case 'talismans':
       return { R: [talismans(m)], L: [grimoire(m)] };
-    case 'soul_fighter':
+    case 'soul_gauntlets':
       return { R: [seat(soulFist(m, 0x2dd4bf), 0, ARM, -0.055)], L: [seat(soulFist(m, 0x2dd4bf), 0, ARM, -0.055)] };
-    case 'warden':
+    case 'greatsword':
       return { R: [seat(straightSword(m, 1.15, 0.075, 0.3, 0.22), -0.13, TILT)], L: [] };
-    case 'archer':
+    case 'longbow':
       return { R: [seat(arrow(m), 0.2)], L: [seat(bow(m), 0)] };
-    case 'astromancer':
+    case 'star_orb':
       return { R: [], L: [starOrb(m)] };
-    case 'dual_blade':
+    case 'twin_shortswords':
       return { R: [seat(straightSword(m, 0.5, 0.03, 0.13, 0.07), -0.045, TILT)], L: [seat(straightSword(m, 0.5, 0.03, 0.13, 0.07), -0.045, TILT)] };
-    case 'musician':
+    case 'lute':
       return { R: [], L: [seat(lute(m), 0.12, 0.8)] };
-    default:
+    case 'spirit_revolvers':
       return { R: [seat(revolver(m), -0.05, 0, 0, new THREE.Euler(0, Math.PI / 2, 0))], L: [seat(revolver(m), -0.05, 0, 0, new THREE.Euler(0, Math.PI / 2, 0))] };
   }
 };

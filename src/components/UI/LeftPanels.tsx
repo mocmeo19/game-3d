@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { Camera, Dices, Download, RefreshCw, Trash2 } from 'lucide-react';
+import React, { useState } from 'react';
+import { Camera, Dices, RefreshCw, Trash2 } from 'lucide-react';
 import { CharacterState, CameraViewPreset, BuiltinPose, EnvironmentType, ExpressionId } from '../../types/character';
 import { MPFB_PREFIX, POSE_GROUPS, poseTitle, useMpfbPoses } from '../../constants/mpfbPoses';
 import { MIXAMO_GROUPS, MIXAMO_PREFIX, useMixamoClips } from '../../constants/mixamoPoses';
-import { RACES, CLASSES, ENVIRONMENTS, MASTER_PRESETS, DEFAULT_BODY, DEFAULT_FACE, getInitialCharacter } from '../../constants/presets';
-import { isValidName, randomName, loadSlots } from '../../lib/persistence';
-import { measureMesh, MeshResult, MeshMeasurements } from '../../renderer/character/meshMeasure';
+import { ENVIRONMENTS } from '../../constants/presets';
+import { isValidName, randomName } from '../../lib/persistence';
 import { Bi, Collapsible, GamePanel } from './Panels';
 import { LightingCompass } from './LightingCompass';
 import { voicesFor, resolveVoice } from '../../constants/voices';
 import { sound } from '../../audio/soundManager';
 import { VoicePreview } from './VoicePreview';
 import { Select } from './select/Select';
-import { SKILL_EVENT, skillsFor } from '../../renderer/character/skills';
-import { EXPORT_GLB_EVENT } from '../../renderer/exportGlb';
 
 const VIEWS: { id: CameraViewPreset; ko: string }[] = [
   { id: 'face', ko: 'Mặt' },
@@ -112,111 +109,6 @@ const PoseIcon: React.FC<{ pose: BuiltinPose }> = ({ pose }) => {
         <polyline key={i} points={line(l)} />
       ))}
     </svg>
-  );
-};
-
-const COMPARE_ROWS: { key: keyof MeshMeasurements; ko: string; en: string }[] = [
-  { key: 'height', ko: 'Chiều cao', en: 'Height' },
-  { key: 'shoulder', ko: 'Vai', en: 'Shoulders' },
-  { key: 'bust', ko: 'Vòng ngực', en: 'Bust' },
-  { key: 'underbust', ko: 'Vòng dưới ngực', en: 'Underbust' },
-  { key: 'waist', ko: 'Vòng eo', en: 'Waist' },
-  { key: 'hip', ko: 'Vòng mông', en: 'Hips' },
-  { key: 'thigh', ko: 'Vòng đùi', en: 'Thigh' },
-  { key: 'calf', ko: 'Vòng bắp chân', en: 'Calf' },
-  { key: 'upperArm', ko: 'Vòng bắp tay', en: 'Upper arm' },
-  { key: 'neck', ko: 'Vòng cổ', en: 'Neck' },
-  { key: 'legLength', ko: 'Chiều dài chân', en: 'Leg length' },
-  { key: 'armLength', ko: 'Chiều dài tay', en: 'Arm length' }
-];
-
-/** So sánh thể hình: overlay the current body outline on a reference body and list the measurement differences. */
-const BodyCompare: React.FC<{ characterState: CharacterState }> = ({ characterState }) => {
-  const [refId, setRefId] = useState<string>('default');
-  const slots = loadSlots();
-
-  const reference: CharacterState = (() => {
-    if (refId.startsWith('slot:')) {
-      const s = slots[Number(refId.slice(5))];
-      if (s) return s.state;
-    }
-    if (refId.startsWith('hero:')) {
-      const p = MASTER_PRESETS.find((m) => m.id === refId.slice(5));
-      if (p) return { ...characterState, race: p.race, gender: p.gender, body: { ...DEFAULT_BODY, ...p.body }, face: { ...DEFAULT_FACE, ...p.face } };
-    }
-    return { ...getInitialCharacter(), race: characterState.race, gender: characterState.gender };
-  })();
-
-  // measured on the real MPFB mesh with the same morphs the renderer applies (async: the body GLB is loaded once per gender)
-  const [res, setRes] = useState<{ cur: MeshResult; ref: MeshResult } | null>(null);
-  const curKey = JSON.stringify([characterState.gender, characterState.race, characterState.body, characterState.face]);
-  const refKey = JSON.stringify([reference.gender, reference.race, reference.body, reference.face]);
-  useEffect(() => {
-    let live = true;
-    const t = setTimeout(() => {
-      Promise.all([measureMesh(characterState), measureMesh(reference)]).then(([cur, ref]) => live && setRes({ cur, ref })).catch(() => {});
-    }, 120);
-    return () => {
-      live = false;
-      clearTimeout(t);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [curKey, refKey]);
-  const W = 232;
-  const H = 210;
-  const px = 118; // px per metre keeps a 1.9 m figure inside the box
-  const a = res?.ref.outline(px, W / 2, H - 6);
-  const b = res?.cur.outline(px, W / 2, H - 6);
-  const cur = res?.cur.m;
-  const ref = res?.ref.m;
-
-  return (
-    <div className="space-y-2">
-      <Select tone="game" value={refId} onChange={setRefId} aria-label="Đối tượng so sánh" className="gp-input w-full"
-        options={[
-          { value: 'default', label: 'Thể hình mặc định' },
-          ...MASTER_PRESETS.map((m) => ({ value: `hero:${m.id}`, label: m.name, group: 'Anh hùng' })),
-          ...slots.flatMap((s, i) => (s ? [{ value: `slot:${i}`, label: `Ô lưu ${i + 1} · ${s.state.name}`, group: 'Nhân vật đã lưu' }] : [])),
-        ]} />
-
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full bg-black/40 border border-gp-line" role="img" aria-label="So sánh đường nét cơ thể">
-        <line x1="0" y1={H - 6} x2={W} y2={H - 6} stroke="#555" strokeWidth="1" />
-        {a && (
-          <g opacity={0.55}>
-            <path d={a.path} fill="#8a8a8a" />
-          </g>
-        )}
-        {b && (
-          <g opacity={0.5}>
-            <path d={b.path} fill="#f0c64a" />
-          </g>
-        )}
-      </svg>
-      <div className="flex justify-between text-[10px] text-gp-mute">
-        <span className="flex items-center gap-1"><i className="inline-block w-2.5 h-2.5 bg-[#8a8a8a]" /> Đối tượng so sánh</span>
-        <span className="flex items-center gap-1"><i className="inline-block w-2.5 h-2.5 border border-gp-hot" /> Hiện tại</span>
-      </div>
-
-      <table className="w-full text-[11px]">
-        <tbody>
-          {cur && ref && COMPARE_ROWS.map((r) => {
-            const d = cur[r.key] - ref[r.key];
-            return (
-              <tr key={r.key} className="border-t border-gp-line/50">
-                <td className="py-0.5 text-gp-text">
-                  <Bi ko={r.ko} en={r.en} />
-                </td>
-                <td className="py-0.5 text-right font-mono text-white">{cur[r.key].toFixed(1)}</td>
-                <td className={`py-0.5 w-14 text-right font-mono ${Math.abs(d) < 0.05 ? 'text-gp-mute' : d > 0 ? 'text-gp-hot' : 'text-[#7fb7ff]'}`}>
-                  {Math.abs(d) < 0.05 ? '–' : `${d > 0 ? '+' : ''}${d.toFixed(1)}`}
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-      <p className="text-[10px] text-gp-mute">cm · {RACES[characterState.race]?.name}</p>
-    </div>
   );
 };
 
@@ -472,32 +364,10 @@ export const DetailsPanel: React.FC<DetailsPanelProps> = ({
         <p className="mt-1.5 text-[11px] text-gp-text">Khi giọng nói đang phát, miệng nhép theo âm thanh (a, e, o, u, f, m).</p>
       </Collapsible>
 
-      <Collapsible title={<Bi ko="Chiêu thức" en="Skills" />} open={open === 'skill'} onToggle={() => toggle('skill')}>
-        <div className="grid grid-cols-1 gap-1">
-          {skillsFor(characterState.characterClass).map((sk) => (
-            <button
-              key={sk.id}
-              className="gp-btn"
-              onClick={() => {
-                sound.playBladeWhoosh();
-                window.dispatchEvent(new CustomEvent(SKILL_EVENT, { detail: sk.id }));
-              }}
-            >
-              {sk.ko}
-            </button>
-          ))}
-        </div>
-        <p className="mt-1.5 text-[11px] text-gp-text">Nhân vật biểu diễn chiêu thức với vũ khí đang cầm.</p>
-      </Collapsible>
-
       <Collapsible title={<Bi ko="Ánh sáng" en="Lighting" />} open={open === 'light'} onToggle={() => toggle('light')}>
         <div className="flex justify-center">
           <LightingCompass lightAngle={characterState.lightAngle} onAngleChange={onUpdateLightAngle} />
         </div>
-      </Collapsible>
-
-      <Collapsible title={<Bi ko="So sánh thể hình" en="Body compare" />} open={open === 'compare'} onToggle={() => toggle('compare')}>
-        {open === 'compare' && <BodyCompare characterState={characterState} />}
       </Collapsible>
     </GamePanel>
   );
@@ -546,24 +416,6 @@ export const CharacterPanel: React.FC<CharacterPanelProps> = ({ characterState, 
           {!ok && <p className="mt-1 text-[10px] text-gp-bad">2–18 chữ cái hoặc số, không dấu cách.</p>}
         </div>
 
-        <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-[11px]">
-          <dt className="text-gp-mute">Chủng tộc</dt>
-          <dd>
-            {RACES[characterState.race]?.name} · {characterState.gender === 'female' ? 'Nữ' : 'Nam'}
-          </dd>
-          <dt className="text-gp-mute">Lớp nhân vật</dt>
-          <dd className="text-gp-hot">{CLASSES[characterState.characterClass]?.name}</dd>
-        </dl>
-        <button
-          className="gp-btn w-full flex items-center justify-center gap-1"
-          title="Tải nhân vật (lưới, xương, quần áo, vũ khí, tư thế hiện tại) dưới dạng .glb"
-          onClick={() => {
-            sound.playClick();
-            window.dispatchEvent(new CustomEvent(EXPORT_GLB_EVENT, { detail: characterState.name }));
-          }}
-        >
-          <Download size={11} /> Xuất GLB
-        </button>
         {onDelete && (
           <button
             className="gp-btn w-full flex items-center justify-center gap-1 border-rose-400/50! text-rose-200! hover:bg-rose-950/50!"

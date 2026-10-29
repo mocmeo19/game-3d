@@ -1,9 +1,8 @@
 import { StageAnimations } from './character/stageAnimations';
-import type { ModelSettings } from '../settings/modelSettings';
 import * as THREE from 'three';
 import type { RetargetPose } from './character/mixamo';
 import { mixamoClipFile } from '../constants/mixamoPoses';
-import { CharacterState, ExpressionId } from '../types/character';
+import { CharacterState, ExpressionId, WeaponKind } from '../types/character';
 import { ASSET_INFO, equipped } from '../constants/equipment';
 import { AvatarController } from './character/avatar';
 import { buildWeapons } from './character/weapons';
@@ -28,6 +27,9 @@ const neutralStance = (t: number): PoseTarget => {
     hpL: [0, 0, 0], hpR: [0, 0, 0], hipsDrop: 0
   };
 };
+
+/** Weapons strapped to the forearm or floating beside the hand: the hand stays open. */
+const WORN_WEAPONS: ReadonlySet<WeaponKind> = new Set<WeaponKind>(['dragon_gauntlets', 'chi_bangles', 'soul_gauntlets', 'star_orb']);
 
 const smooth01 = (x: number) => {
   const k = Math.max(0, Math.min(1, x));
@@ -526,13 +528,13 @@ export class CharacterModel {
   }
   private sig = { weapon: '' };
   private weaponsShown = true;
-  /** Which hands close around the class weapon when it is shown. */
+  /** Which hands close around the weapon when it is shown. */
   private holds = { L: false, R: false };
 
-  constructor(initialState: CharacterState, modelSettings?: () => ModelSettings) {
+  constructor(initialState: CharacterState) {
     this.currentState = initialState;
     this.group = new THREE.Group();
-    this.avatar = new AvatarController(() => this.updateState(this.currentState, true), modelSettings);
+    this.avatar = new AvatarController(() => this.updateState(this.currentState, true));
     this.weaponProps = new WeaponPropController(
       (hand) => this.avatar.propMatrix(hand),
       () => { this.sig.weapon = ''; this.rebuildWeapon(); }
@@ -562,8 +564,8 @@ export class CharacterModel {
     this.currentState = state;
     const c = state.cosmetics;
 
-    this.avatar.ensureLoaded(state.gender, state.race);
-    const key = `${state.gender}|${state.race}`;
+    this.avatar.ensureLoaded(state.gender);
+    const key = state.gender;
     if (key !== this.bodyKey) {
       this.bodyKey = key;
       this.revealed = false;
@@ -571,7 +573,7 @@ export class CharacterModel {
     this.avatar.apply(state);
     this.updateReveal();
 
-    const weaponSig = `${state.characterClass}|${state.race}|${state.weaponStyle ?? ''}`;
+    const weaponSig = `${state.weapon}|${state.weaponStyle ?? ''}`;
     if (force || weaponSig !== this.sig.weapon) {
       this.sig.weapon = weaponSig;
       this.rebuildWeapon();
@@ -603,7 +605,7 @@ export class CharacterModel {
   private rebuildWeapon() {
     clearGroupKeepMaterials(this.rightHandWeaponGroup);
     clearGroupKeepMaterials(this.leftHandWeaponGroup);
-    const style = weaponStyleOf(this.currentState.race, this.currentState.characterClass, this.currentState.weaponStyle);
+    const style = weaponStyleOf(this.currentState.weapon, this.currentState.weaponStyle);
     this.weaponMaterial.color.set(style.metal);
     this.weaponMaterial.metalness = style.metalness;
     this.weaponMaterial.roughness = style.roughness;
@@ -611,7 +613,7 @@ export class CharacterModel {
     const propSet = this.weaponProps.build(style.model);
     const set = style.model
       ? propSet
-      : buildWeapons(this.currentState.characterClass, {
+      : buildWeapons(this.currentState.weapon, {
           metal: this.weaponMaterial,
           glow: this.weaponGlowMaterial,
           main: this.outfitMainMaterial,
@@ -620,10 +622,10 @@ export class CharacterModel {
     [...set.R, ...set.L].forEach((o) => o.scale.multiplyScalar(style.scale));
     set.R.forEach((o) => this.rightHandWeaponGroup.add(o));
     set.L.forEach((o) => this.leftHandWeaponGroup.add(o));
-    const cls = this.currentState.characterClass;
-    const holds = !!style.model || !['kung_fu_master', 'force_master', 'soul_fighter', 'astromancer'].includes(cls);
+    const weapon = this.currentState.weapon;
+    const holds = !!style.model || !WORN_WEAPONS.has(weapon);
     this.holds.R = holds && set.R.length > 0;
-    this.holds.L = holds && set.L.length > 0 && (!!style.model || cls !== 'warlock');
+    this.holds.L = holds && set.L.length > 0 && (!!style.model || weapon !== 'talismans');
     this.applyWeaponVisibility();
     this.measureEdges();
   }
@@ -795,9 +797,9 @@ export class CharacterModel {
     });
   }
 
-  /** Perform one of the current class's skills (the character returns to its pose afterwards). */
+  /** Perform one of the current weapon's skills (the character returns to its pose afterwards). */
   public playSkill(id: string, speed = 1) {
-    const skill = skillsFor(this.currentState.characterClass).find((s) => s.id === id);
+    const skill = skillsFor(this.currentState.weapon).find((s) => s.id === id);
     if (!skill) return 0;
     this.skill = skill;
     this.skillT = 0;

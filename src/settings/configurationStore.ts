@@ -1,5 +1,5 @@
 export const CONFIGURATION_KEYS = [
-  'bns.model-settings.v1', 'bns.render-settings.v1', 'nams-testlab-game-settings-v1',
+  'bns.render-settings.v1', 'nams-testlab-game-settings-v1',
   'nams-battle-royal-animation-settings-v1', 'bns.audio.v1', 'nams-battle-royal-combat-animations-v1',
   'nams-battle-royal-gun-models-v1', 'bns.performance-overlay.v1',
 ] as const;

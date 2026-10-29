@@ -2,12 +2,10 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CharacterModel } from '../renderer/CharacterModel';
 import type { CharacterState } from '../types/character';
-import type { ModelSettings } from './modelSettings';
 import { getRenderSettings, type RenderSettings } from './renderSettings';
 
 export interface PreviewOptions {
   state: CharacterState;
-  models: ModelSettings;
   render?: RenderSettings;
   camera?: { fov: number; distance: number };
 }
@@ -53,7 +51,7 @@ export class SettingsPreviewScene {
     this.grid = new THREE.GridHelper(12, 24, 0x55788c, 0x324957);
     this.grid.position.y = -0.9;
     this.scene.add(this.floor, this.grid);
-    this.model = new CharacterModel(options.state, () => this.options.models);
+    this.model = new CharacterModel(options.state);
     this.model.setWeaponsVisible(false);
     this.scene.add(this.model.group);
     this.resize = new ResizeObserver(() => this.setSize());
@@ -95,9 +93,7 @@ export class SettingsPreviewScene {
     this.settings = render;
     this.renderer.setPixelRatio(Math.min(devicePixelRatio || 1, render.pixelRatio));
     this.renderer.shadowMap.enabled = render.shadows;
-    const changedBody = previous.state.race !== options.state.race || previous.state.gender !== options.state.gender
-      || previous.models.bodies[`${options.state.race}_${options.state.gender}` as keyof ModelSettings['bodies']]
-        !== options.models.bodies[`${options.state.race}_${options.state.gender}` as keyof ModelSettings['bodies']];
+    const changedBody = previous.state.gender !== options.state.gender;
     if (changedBody || previous.state.pose !== options.state.pose || previous.state.skin !== options.state.skin) {
       this.elapsed = 0;
       this.setStatus('loading');

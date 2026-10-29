@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { SettingsPreview } from './SettingsPreview';
 import { previewCharacter } from './previewCharacter';
-import { getModelSettings } from './modelSettings';
 import { SettingsActions } from './SettingsActions';
 import { DEFAULT_RENDER_SETTINGS, loadRenderSettings, saveRenderSettings } from './renderSettings';
 import { useSettingsForm } from './useSettingsForm';
@@ -16,8 +15,7 @@ const PIXEL_RATIO_OPTIONS = [
 export function RenderSettingsSection({ active = true }: { active?: boolean }) {
   const form = useSettingsForm(loadRenderSettings, saveRenderSettings, DEFAULT_RENDER_SETTINGS);
   const { draft, update } = form;
-  const models = getModelSettings();
-  const character = useMemo(() => previewCharacter('jin_female', models), [models]);
+  const character = useMemo(() => previewCharacter('female'), []);
   return (
     <form onSubmit={form.submit} className="space-y-5">
       <header>

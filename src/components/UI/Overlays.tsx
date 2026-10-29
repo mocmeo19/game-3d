@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { X, Save, FolderOpen, Trash2, Copy, ClipboardPaste, Download, Upload } from 'lucide-react';
 import { CharacterState } from '../../types/character';
-import { RACES, CLASSES } from '../../constants/presets';
+import { WEAPON_KINDS } from '../../constants/weaponKinds';
 import {
   Slot,
   SLOT_COUNT,
@@ -171,7 +171,7 @@ export const SlotsModal: React.FC<SlotsModalProps> = ({
                   <>
                     <div className="text-white truncate">{s.state.name || 'Chưa đặt tên'}</div>
                     <div className="text-gp-mute truncate">
-                      {RACES[s.state.race]?.name} · {CLASSES[s.state.characterClass]?.name}
+                      {s.state.gender === 'female' ? 'Nữ' : 'Nam'} · {WEAPON_KINDS[s.state.weapon].name}
                     </div>
                   </>
                 )}
@@ -274,7 +274,6 @@ const SHORTCUTS: [string, string][] = [
   ['S', 'Quản lý ngoại hình'],
   ['P', 'Chụp ảnh'],
   ['1 – 5', 'Camera: mặt / nửa trên / eo / toàn thân / chân'],
-  ['← / →', 'Bước trước / bước sau'],
   ['?', 'Hiện trợ giúp này'],
   ['Esc', 'Đóng hộp thoại']
 ];

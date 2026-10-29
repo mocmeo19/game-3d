@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, Box, Clapperboard, Crosshair, Gamepad2, Grid3x3, Monitor, Settings2, Swords, Volume2 } from 'lucide-react';
-import { ModelSettingsSection } from './ModelSettingsSection';
+import { ArrowLeft, Clapperboard, Crosshair, Gamepad2, Grid3x3, Monitor, Settings2, Swords, Volume2 } from 'lucide-react';
 import { AnimationSettingsSection } from './AnimationSettingsSection';
 import { CombatAnimationSection } from './CombatAnimationSection';
 import { GunModelSection } from './GunModelSection';
@@ -9,7 +8,6 @@ import { RenderSettingsSection } from './RenderSettingsSection';
 import { AudioSettingsSection } from './AudioSettingsSection';
 
 const SECTIONS = [
-  { id: 'models', label: 'Mô hình', detail: 'Nhân vật & đặc điểm tộc', Icon: Box },
   { id: 'animations', label: 'Animation', detail: 'Tay không & vũ khí', Icon: Clapperboard },
   { id: 'combat', label: 'Chiến đấu', detail: 'Animation game Battle Royal', Icon: Crosshair },
   { id: 'guns', label: 'Vũ khí', detail: 'Mô hình súng, dao, lựu đạn', Icon: Swords },
@@ -17,7 +15,7 @@ const SECTIONS = [
   { id: 'display', label: 'Hiển thị & hiệu năng', detail: 'Chất lượng hình ảnh 3D', Icon: Monitor },
   { id: 'audio', label: 'Âm thanh', detail: 'Nhạc, hiệu ứng & giọng nói', Icon: Volume2 },
 ] as const;
-const currentSection = () => SECTIONS.find((section) => section.id === window.location.hash.slice(1))?.id ?? 'models';
+const currentSection = () => SECTIONS.find((section) => section.id === window.location.hash.slice(1))?.id ?? 'animations';
 
 export function SettingsPage() {
   const scroll = useRef<HTMLDivElement>(null);
@@ -64,7 +62,6 @@ export function SettingsPage() {
             </a>)}
           </nav>
           <main aria-label={label} className="min-w-0 pb-10">
-            <section hidden={section !== 'models'}><ModelSettingsSection active={section === 'models'} /></section>
             <section hidden={section !== 'animations'}><AnimationSettingsSection active={section === 'animations'} /></section>
             <section hidden={section !== 'combat'}><CombatAnimationSection active={section === 'combat'} /></section>
             <section hidden={section !== 'guns'}><GunModelSection /></section>

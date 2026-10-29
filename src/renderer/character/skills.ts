@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import type { WeaponKind } from '../../types/character';
 
 /**
  * Class skills ("chiêu thức"): short keyframed performances. A key is a partial pose (joint rotations as in CharacterModel's
@@ -226,28 +227,25 @@ const PLAY: Skill = {
   keys: [END(0), strum(0.45, true), strum(0.65, false), strum(0.85, true), strum(1.05, false), strum(1.25, true), strum(1.45, false), strum(1.65, true), END(2.3)]
 };
 
-export const CLASS_SKILLS: Record<string, Skill[]> = {
-  blade_master: [SLASH, OVERHEAD],
-  kung_fu_master: [PUNCH, KICK],
-  force_master: [CAST],
-  destroyer: [SMASH, OVERHEAD],
-  assassin: [DUAL, SLASH],
-  summoner: [SUMMON],
-  gunslinger: [SHOOT],
-  blade_dancer: [SPIN, SLASH],
-  warlock: [INVOKE, CAST],
-  soul_fighter: [CAST, PUNCH],
-  warden: [OVERHEAD, SLASH],
-  archer: [DRAW],
-  astromancer: [STARFALL, CAST],
-  dual_blade: [SPIN, DUAL],
-  musician: [PLAY]
+export const WEAPON_SKILLS: Record<WeaponKind, Skill[]> = {
+  curved_saber: [SLASH, OVERHEAD],
+  dragon_gauntlets: [PUNCH, KICK],
+  chi_bangles: [CAST],
+  great_axe: [SMASH, OVERHEAD],
+  reverse_daggers: [DUAL, SLASH],
+  flower_staff: [SUMMON],
+  spirit_revolvers: [SHOOT],
+  slender_sword: [SPIN, SLASH],
+  talismans: [INVOKE, CAST],
+  soul_gauntlets: [CAST, PUNCH],
+  greatsword: [OVERHEAD, SLASH],
+  longbow: [DRAW],
+  star_orb: [STARFALL, CAST],
+  twin_shortswords: [SPIN, DUAL],
+  lute: [PLAY]
 };
 
-export const skillsFor = (cls: string): Skill[] => CLASS_SKILLS[cls] ?? [];
-
-/** Event name used by the UI to ask the canvas to perform a skill (detail: skill id). */
-export const SKILL_EVENT = 'bns-skill';
+export const skillsFor = (weapon: WeaponKind): Skill[] => WEAPON_SKILLS[weapon] ?? [];
 
 /* ───────────────────────── interpolation ───────────────────────── */
 
