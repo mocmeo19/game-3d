@@ -1,0 +1,149 @@
+[
+  {
+    "file": "brave_f-line.mp3",
+    "text": "Ta thề trên thanh kiếm này, ta sẽ đi đến cùng.",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "-8%",
+    "pitch": "-8Hz"
+  },
+  {
+    "file": "brave_f-normal.mp3",
+    "text": "Hây!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "-8%",
+    "pitch": "-8Hz"
+  },
+  {
+    "file": "brave_f-special.mp3",
+    "text": "Hây! Đỡ chiêu này!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "-8%",
+    "pitch": "-8Hz"
+  },
+  {
+    "file": "wind_f-line.mp3",
+    "text": "Chúng ta đi về nơi gió thổi nhé?",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "+5%",
+    "pitch": "+20Hz"
+  },
+  {
+    "file": "wind_f-normal.mp3",
+    "text": "Hây!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "+5%",
+    "pitch": "+20Hz"
+  },
+  {
+    "file": "wind_f-special.mp3",
+    "text": "Hây! Đỡ chiêu này!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "+5%",
+    "pitch": "+20Hz"
+  },
+  {
+    "file": "moon_f-line.mp3",
+    "text": "Đừng vội. Mặt trăng vẫn luôn ở đó.",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "-15%",
+    "pitch": "-20Hz"
+  },
+  {
+    "file": "moon_f-normal.mp3",
+    "text": "Hây!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "-15%",
+    "pitch": "-20Hz"
+  },
+  {
+    "file": "moon_f-special.mp3",
+    "text": "Hây! Đỡ chiêu này!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "-15%",
+    "pitch": "-20Hz"
+  },
+  {
+    "file": "flame_f-line.mp3",
+    "text": "Lại đây! Ngọn lửa của ta sẽ tiếp chiêu!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "+15%",
+    "pitch": "+10Hz"
+  },
+  {
+    "file": "flame_f-normal.mp3",
+    "text": "Hây!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "+15%",
+    "pitch": "+10Hz"
+  },
+  {
+    "file": "flame_f-special.mp3",
+    "text": "Hây! Đỡ chiêu này!",
+    "speaker": "vi-VN-HoaiMyNeural",
+    "rate": "+15%",
+    "pitch": "+10Hz"
+  },
+  {
+    "file": "rock_m-line.mp3",
+    "text": "Đứng sau lưng ta. Không ai qua được.",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "-15%",
+    "pitch": "-30Hz"
+  },
+  {
+    "file": "rock_m-normal.mp3",
+    "text": "Hây!",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "-15%",
+    "pitch": "-30Hz"
+  },
+  {
+    "file": "rock_m-special.mp3",
+    "text": "Hây! Đỡ chiêu này!",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "-15%",
+    "pitch": "-30Hz"
+  },
+  {
+    "file": "blade_m-line.mp3",
+    "text": "Kiếm không bao giờ nói dối.",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "+5%",
+    "pitch": "-15Hz"
+  },
+  {
+    "file": "blade_m-normal.mp3",
+    "text": "Hây!",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "+5%",
+    "pitch": "-15Hz"
+  },
+  {
+    "file": "blade_m-special.mp3",
+    "text": "Hây! Đỡ chiêu này!",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "+5%",
+    "pitch": "-15Hz"
+  },
+  {
+    "file": "spring_m-line.mp3",
+    "text": "May mà bạn bình an. Mời bạn một chén trà.",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "-5%",
+    "pitch": "+5Hz"
+  },
+  {
+    "file": "spring_m-normal.mp3",
+    "text": "Hây!",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "-5%",
+    "pitch": "+5Hz"
+  },
+  {
+    "file": "spring_m-special.mp3",
+    "text": "Hây! Đỡ chiêu này!",
+    "speaker": "vi-VN-NamMinhNeural",
+    "rate": "-5%",
+    "pitch": "+5Hz"
+  }
+]

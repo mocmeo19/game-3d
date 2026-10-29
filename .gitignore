@@ -1,0 +1,16 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local tooling and editor state
+.idea/
+.vscode/
+.playwright-mcp/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# 3D models (3.8 GB) are kept outside git
+public/models/

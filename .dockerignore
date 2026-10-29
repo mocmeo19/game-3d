@@ -1,0 +1,14 @@
+# Only send files required to build and serve the application.
+**
+!Dockerfile
+!nginx.conf
+!package.json
+!package-lock.json
+!index.html
+!vite.config.ts
+!tsconfig.json
+!src/
+!src/**
+!public/
+!public/**
+**/.DS_Store

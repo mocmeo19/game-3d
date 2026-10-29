@@ -1,0 +1,1785 @@
+[
+ {
+  "file": "backwards-rifle-run.fbx",
+  "label": "Backwards Rifle Run",
+  "role": "runback",
+  "ctx": "rifle"
+ },
+ {
+  "file": "climbing-down.fbx",
+  "label": "Climbing Down",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "climbing.fbx",
+  "label": "Climbing",
+  "role": "climb",
+  "ctx": null
+ },
+ {
+  "file": "crawling.fbx",
+  "label": "Crawling",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "crouch-death.fbx",
+  "label": "Crouch Death",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c85edd-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Crouch Death",
+   "description": "Dying From A Crouched Position",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "crouch-to-prone.fbx",
+  "label": "Crouch To Prone",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c87ad9-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Crouch To Prone",
+   "description": "Crouching To Laying Prone Transition",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "crouch-to-stand-rifle.fbx",
+  "label": "Crouch To Stand Rifle",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c87c58-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Crouch To Standing With Rifle",
+   "description": "Standing Up From A Crouched Position With An Aimed Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "crouch-walking.fbx",
+  "label": "Crouch Walking",
+  "role": "crouchwalk",
+  "ctx": null
+ },
+ {
+  "file": "dance-ballet.fbx",
+  "label": "Dance Ballet",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6eb62-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Dancing",
+   "description": "Ballet Dance Variation One",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-belly.fbx",
+  "label": "Dance Belly",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c73cda-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Belly Dance",
+   "description": "Belly Dancing Variation One",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-breakdance.fbx",
+  "label": "Dance Breakdance",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cc4024-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Breakdance Uprock",
+   "description": "Breakdance Uprock",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-charleston.fbx",
+  "label": "Dance Charleston",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6f6d0-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Swing Dancing",
+   "description": "Dance Swing Charleston",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-chicken.fbx",
+  "label": "Dance Chicken",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd46a9-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Chicken Dance",
+   "description": "Doing The Chicken Dance",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-gangnam-style.fbx",
+  "label": "Dance Gangnam Style",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cbeca5-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Gangnam Style",
+   "description": "The Popular K-Pop Dance",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-house.fbx",
+  "label": "Dance House",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6e5b1-b96c-11e4-a802-0aaa78deedf9",
+   "name": "House Dancing",
+   "description": "House Dance Variation Two",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-macarena.fbx",
+  "label": "Dance Macarena",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c73e50-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Macarena Dance",
+   "description": "Dancing The Macarena",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-moonwalk.fbx",
+  "label": "Dance Moonwalk",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c7438e-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Hip Hop Dancing",
+   "description": "Hip Hop Dance Moonwalk",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-robot.fbx",
+  "label": "Dance Robot",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c739e8-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Robot Hip Hop Dance",
+   "description": "Robot Hip Hop Dance Variation One",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-running-man.fbx",
+  "label": "Dance Running Man",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6f217-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Hip Hop Dancing",
+   "description": "Hip Hop Runningman Dance",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-salsa.fbx",
+  "label": "Dance Salsa",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c662bf-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Salsa Dancing",
+   "description": "Female Salsa Dancing",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-samba.fbx",
+  "label": "Dance Samba",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6e81b-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Samba Dancing",
+   "description": "Samba Dance Olodum Variation Two",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-shuffle.fbx",
+  "label": "Dance Shuffle",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd49a6-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Shuffling",
+   "description": "Doing The Shuffling Dance",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-thriller.fbx",
+  "label": "Dance Thriller",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c9706d-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Thriller Part 1",
+   "description": "Thriller Dance Part 1",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-twist.fbx",
+  "label": "Dance Twist",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd48df-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Twist Dance",
+   "description": "Doing The Twist Dance",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-wave.fbx",
+  "label": "Dance Wave",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c7420d-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Wave Hip Hop Dance",
+   "description": "Wave Hip Hop Dance Variation One",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "dance-ymca.fbx",
+  "label": "Dance Ymca",
+  "role": null,
+  "ctx": "dance",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd47f8-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Ymca Dance",
+   "description": "Doing The Ymca Dance",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "draw-a-great-sword-2.fbx",
+  "label": "Draw A Great Sword 2",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "falling-idle.fbx",
+  "label": "Falling Idle",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "fast-run.fbx",
+  "label": "Fast Run",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "firing-rifle.fbx",
+  "label": "Firing Rifle",
+  "role": "fire",
+  "ctx": "rifle"
+ },
+ {
+  "file": "goalie-throw.fbx",
+  "label": "Goalie Throw",
+  "role": "throw",
+  "ctx": null
+ },
+ {
+  "file": "great-sword-idle.fbx",
+  "label": "Great Sword Idle",
+  "role": "idle",
+  "ctx": "sword"
+ },
+ {
+  "file": "idle-crouching.fbx",
+  "label": "Idle Crouching",
+  "role": "crouch",
+  "ctx": null
+ },
+ {
+  "file": "knife-idle.fbx",
+  "label": "Knife Idle",
+  "role": "idle",
+  "ctx": "knife"
+ },
+ {
+  "file": "laying-sleeping.fbx",
+  "label": "Laying Sleeping",
+  "role": "lie",
+  "ctx": null
+ },
+ {
+  "file": "lying-down.fbx",
+  "label": "Lying Down",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "neutral-idle.fbx",
+  "label": "Neutral Idle",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "pistol-aim-idle.fbx",
+  "label": "Pistol Aim Idle",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdb599-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Idle",
+   "description": "Idle With Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-draw.fbx",
+  "label": "Pistol Draw",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c83441-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Drawing Gun",
+   "description": "Drawing Gun From Lower Back",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-fire.fbx",
+  "label": "Pistol Fire",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c76d0a-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Shooting Gun",
+   "description": "Shooting Handgun",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-hit-reaction-left.fbx",
+  "label": "Pistol Hit Reaction Left",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6baf0-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Hit Reaction",
+   "description": "Reaction To Getting Hit To The Left While Holding A Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-hit-reaction.fbx",
+  "label": "Pistol Hit Reaction",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6bc60-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Hit Reaction",
+   "description": "Hit Reaction While Holding A Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-holster.fbx",
+  "label": "Pistol Holster",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c8b958-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Aim",
+   "description": "Pistol Aim To Holster Idle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-idle.fbx",
+  "label": "Pistol Idle",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6b74c-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Idle",
+   "description": "Ready Alert Two Hand Pistol Grip",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-jump.fbx",
+  "label": "Pistol Jump",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdb661-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Jump",
+   "description": "Standing Jump With Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-kneel-idle.fbx",
+  "label": "Pistol Kneel Idle",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdc22d-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Kneeling Idle",
+   "description": "Kneeling Idle With Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-kneel-to-stand.fbx",
+  "label": "Pistol Kneel To Stand",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdc2f1-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Kneel To Stand",
+   "description": "Pistol Kneeling To Standing",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-reload.fbx",
+  "label": "Pistol Reload",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c646a9-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Reloading",
+   "description": "Gun Reload While Walking",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "pistol-run-backward.fbx",
+  "label": "Pistol Run Backward",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdb9ae-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Run Backward",
+   "description": "Running Backward With An Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "pistol-run-forward.fbx",
+  "label": "Pistol Run Forward",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdb75a-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Run",
+   "description": "Running With A Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "pistol-shooting.fbx",
+  "label": "Pistol Shooting",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c840de-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Shooting",
+   "description": "Firing A Gun",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-stand-to-kneel.fbx",
+  "label": "Pistol Stand To Kneel",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdc166-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Stand To Kneel",
+   "description": "Pistol Standing To Kneeling",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "pistol-strafe-left.fbx",
+  "label": "Pistol Strafe Left",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdbb48-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Strafe",
+   "description": "Strafe Left With An Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "pistol-strafe-right.fbx",
+  "label": "Pistol Strafe Right",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdbc0b-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Strafe",
+   "description": "Strafe Right With An Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "pistol-walk-backward.fbx",
+  "label": "Pistol Walk Backward",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdba81-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Walk Backward",
+   "description": "Walking Backward With An Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "pistol-walk-forward.fbx",
+  "label": "Pistol Walk Forward",
+  "role": null,
+  "ctx": "pistol",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cdb8f0-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Pistol Walk",
+   "description": "Walking With An Aimed Pistol",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "prone-crawl-backward.fbx",
+  "label": "Prone Crawl Backward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c962ca-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Crawl Backwards In Prone",
+   "description": "Crawling Backwards While In A Prone Position",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "prone-death.fbx",
+  "label": "Prone Death",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c8a3f3-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Prone Death",
+   "description": "Dying From A Prone Position",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "prone-firing-rifle.fbx",
+  "label": "Prone Firing Rifle",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c85afc-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Prone Firing Rifle",
+   "description": "Firing A Rifle While Prone",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "prone-forward.fbx",
+  "label": "Prone Forward",
+  "role": "crawl",
+  "ctx": null
+ },
+ {
+  "file": "prone-idle.fbx",
+  "label": "Prone Idle",
+  "role": "proneidle",
+  "ctx": null
+ },
+ {
+  "file": "prone-left-turn.fbx",
+  "label": "Prone Left Turn",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "prone-reloading.fbx",
+  "label": "Prone Reloading",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "prone-right-turn.fbx",
+  "label": "Prone Right Turn",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "prone-to-crouch.fbx",
+  "label": "Prone To Crouch",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c8772f-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Prone To Crouch Transition",
+   "description": "Transition From Prone To Crouch",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "prone-to-stand.fbx",
+  "label": "Prone To Stand",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd89ad-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Getting Up",
+   "description": "Standing From A Lying Prone",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "reloading.fbx",
+  "label": "Reloading",
+  "role": "reload",
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c8939f-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Reloading",
+   "description": "Reloading Rifle While Standing",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-aim-idle.fbx",
+  "label": "Rifle Aim Idle",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cea19a-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Idle Aiming",
+   "description": "Rifle Standing Idle Aiming",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-aim-strafe-left.fbx",
+  "label": "Rifle Aim Strafe Left",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c8518f-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Strafe",
+   "description": "Strafe Left While Aiming Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-aim-to-down.fbx",
+  "label": "Rifle Aim To Down",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd54bf-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Rifle Aim To Down",
+   "description": "Rifle Aiming To Down",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-aim-walk-backward.fbx",
+  "label": "Rifle Aim Walk Backward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c87375-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walking Backwards",
+   "description": "Walking Backwards While Aiming Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-aim-walk-forward.fbx",
+  "label": "Rifle Aim Walk Forward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c84e7b-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walking",
+   "description": "Walking While Aiming Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-aiming-idle.fbx",
+  "label": "Rifle Aiming Idle",
+  "role": "idle",
+  "ctx": "rifle"
+ },
+ {
+  "file": "rifle-crouch-aim-idle.fbx",
+  "label": "Rifle Crouch Aim Idle",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ceac02-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Idle Crouching Aiming",
+   "description": "Rifle Crouched Idle Aiming",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-crouch-aim-strafe-left.fbx",
+  "label": "Rifle Crouch Aim Strafe Left",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c929b9-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Crouch Strafe Run Left",
+   "description": "Crouched Strafe Run Left While Aiming Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-crouch-aim-walk-backward.fbx",
+  "label": "Rifle Crouch Aim Walk Backward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c92aaa-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Crouch Walking Backwards",
+   "description": "Crouched Walking Backwards While Aiming Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-crouch-aim-walk-forward.fbx",
+  "label": "Rifle Crouch Aim Walk Forward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c92c49-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Crouch Walking",
+   "description": "Crouched Walking While Aiming Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-crouch-idle.fbx",
+  "label": "Rifle Crouch Idle",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce8aaf-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Idle Crouching",
+   "description": "Rifle Crouched Idle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-crouch-walk-backward.fbx",
+  "label": "Rifle Crouch Walk Backward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce9f47-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Crouching Backward",
+   "description": "Rifle Crouched Walk Backward",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-crouch-walk-forward.fbx",
+  "label": "Rifle Crouch Walk Forward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce9c39-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Crouching Forward",
+   "description": "Rifle Crouched Walk Forward",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-crouch-walk-left.fbx",
+  "label": "Rifle Crouch Walk Left",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce9dc5-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Crouching Left",
+   "description": "Rifle Crouched Walk Left",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-crouch-walk-right.fbx",
+  "label": "Rifle Crouch Walk Right",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce9d03-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Crouching Right",
+   "description": "Rifle Crouched Walk Right",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-death-back.fbx",
+  "label": "Rifle Death Back",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ceaa7b-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Death From The Back",
+   "description": "Rifle Death From The Back",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-death-front.fbx",
+  "label": "Rifle Death Front",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ceab40-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Death From The Front",
+   "description": "Rifle Death From The Front",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-death-right.fbx",
+  "label": "Rifle Death Right",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cea835-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Death From Right",
+   "description": "Rifle Death From Right Side",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-down-to-aim.fbx",
+  "label": "Rifle Down To Aim",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd5407-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Rifle Down To Aim",
+   "description": "Rifle Down To Aiming",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-fire-standing.fbx",
+  "label": "Rifle Fire Standing",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c863fe-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Firing Rifle",
+   "description": "Firing A Rifle While Standing",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-hit-reaction-crouch.fbx",
+  "label": "Rifle Hit Reaction Crouch",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c86340-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Hit Reaction",
+   "description": "Hit Reaction From Rifle Crouched",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-hit-reaction-prone.fbx",
+  "label": "Rifle Hit Reaction Prone",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c89e21-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Rifle Prone Hit Reaction",
+   "description": "Rifle Prone Hit Reaction",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-hit-reaction.fbx",
+  "label": "Rifle Hit Reaction",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c6bd18-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Hit Reaction",
+   "description": "Hit Reaction While Holding A Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-idle.fbx",
+  "label": "Rifle Idle",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce8927-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Idle",
+   "description": "Rifle Standing Idle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-jump-down.fbx",
+  "label": "Rifle Jump Down",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cea6ae-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Jump Down",
+   "description": "Rifle Jump Down",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-jump-loop.fbx",
+  "label": "Rifle Jump Loop",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cea5e9-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Jump Loop",
+   "description": "Rifle Jump Idle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-jump-up.fbx",
+  "label": "Rifle Jump Up",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cea51f-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Jump Up",
+   "description": "Rifle Jump Up",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-jump.fbx",
+  "label": "Rifle Jump",
+  "role": "jump",
+  "ctx": null
+ },
+ {
+  "file": "rifle-pull-out.fbx",
+  "label": "Rifle Pull Out",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd57c4-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Rifle Pull Out",
+   "description": "Pulling Out Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-put-away.fbx",
+  "label": "Rifle Put Away",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cd5708-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Rifle Put Away",
+   "description": "Putting Rifle Away",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-reload-crouch.fbx",
+  "label": "Rifle Reload Crouch",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c86923-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Reload",
+   "description": "Reload Rifle While In Crouch Position",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-reload-run.fbx",
+  "label": "Rifle Reload Run",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c8a1be-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Reload",
+   "description": "Run While Reloading Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-reload-walk.fbx",
+  "label": "Rifle Reload Walk",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c8a337-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Reload",
+   "description": "Walk While Reloading Rifle",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-run-1.fbx",
+  "label": "Rifle Run (1)",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "rifle-run-backward.fbx",
+  "label": "Rifle Run Backward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce8b7b-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Run Backward",
+   "description": "Rifle Run Backward",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-run-forward.fbx",
+  "label": "Rifle Run Forward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce8798-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Run Forward",
+   "description": "Rifle Run Forward",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-run-left.fbx",
+  "label": "Rifle Run Left",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce8c37-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Run Left",
+   "description": "Rifle Run Left",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-run-right.fbx",
+  "label": "Rifle Run Right",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce8cf6-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Run Right",
+   "description": "Rifle Run Right",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-run.fbx",
+  "label": "Rifle Run",
+  "role": "run",
+  "ctx": "rifle"
+ },
+ {
+  "file": "rifle-sprint-forward.fbx",
+  "label": "Rifle Sprint Forward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce86d8-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Sprint Forward",
+   "description": "Rifle Sprint Forward",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-turn-left.fbx",
+  "label": "Rifle Turn Left",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce89ec-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Turn 90 Left",
+   "description": "Rifle Turn 90 Left",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-turn-right.fbx",
+  "label": "Rifle Turn Right",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9cea265-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Turn 90 Right",
+   "description": "Rifle Turn 90 Right",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "rifle-walk-backward.fbx",
+  "label": "Rifle Walk Backward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce99ef-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Backward",
+   "description": "Rifle Walk Backward",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-walk-forward.fbx",
+  "label": "Rifle Walk Forward",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce9616-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Forward",
+   "description": "Rifle Walk Forward",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-walk-left.fbx",
+  "label": "Rifle Walk Left",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce9930-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Left",
+   "description": "Rifle Walk Left",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "rifle-walk-right.fbx",
+  "label": "Rifle Walk Right",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9ce986c-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Walk Right",
+   "description": "Rifle Walk Right",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": true
+  }
+ },
+ {
+  "file": "run-and-throw-grenade.fbx",
+  "label": "Run And Throw Grenade",
+  "role": "throwrun",
+  "ctx": null
+ },
+ {
+  "file": "run-left.fbx",
+  "label": "Run Left",
+  "role": "runleft",
+  "ctx": null
+ },
+ {
+  "file": "running.fbx",
+  "label": "Running",
+  "role": "run",
+  "ctx": null
+ },
+ {
+  "file": "sitting-idle-1.fbx",
+  "label": "Sitting Idle (1)",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "sitting-idle.fbx",
+  "label": "Sitting Idle",
+  "role": "sit",
+  "ctx": null
+ },
+ {
+  "file": "situp-to-idle.fbx",
+  "label": "Situp To Idle",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "slow-run.fbx",
+  "label": "Slow Run",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "sprint-to-wall-climb.fbx",
+  "label": "Sprint To Wall Climb",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "sprinting-forward-roll.fbx",
+  "label": "Sprinting Forward Roll",
+  "role": "roll",
+  "ctx": null
+ },
+ {
+  "file": "stabbing.fbx",
+  "label": "Stabbing",
+  "role": "stab",
+  "ctx": "knife"
+ },
+ {
+  "file": "stand-to-crouch.fbx",
+  "label": "Stand To Crouch",
+  "role": null,
+  "ctx": "rifle",
+  "source": {
+   "site": "mixamo",
+   "productId": "c9c877e6-b96c-11e4-a802-0aaa78deedf9",
+   "name": "Stand To Crouch",
+   "description": "Standing To Crouching Transition",
+   "character": "X Bot",
+   "format": "fbx7_2019",
+   "skin": false,
+   "fps": 30,
+   "inPlace": false
+  }
+ },
+ {
+  "file": "standing-melee-attack-downward.fbx",
+  "label": "Standing Melee Attack Downward",
+  "role": "slash",
+  "ctx": "knife"
+ },
+ {
+  "file": "standing-torch-light-torch.fbx",
+  "label": "Standing Torch Light Torch",
+  "role": "idle",
+  "ctx": null
+ },
+ {
+  "file": "strafe.fbx",
+  "label": "Strafe",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "throw-grenade-1.fbx",
+  "label": "Throw Grenade (1)",
+  "role": "throwcrouch",
+  "ctx": null
+ },
+ {
+  "file": "throw-grenade.fbx",
+  "label": "Throw Grenade",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "turn-left.fbx",
+  "label": "Turn Left",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "turn-right.fbx",
+  "label": "Turn Right",
+  "role": null,
+  "ctx": null
+ },
+ {
+  "file": "vault-over-box.fbx",
+  "label": "Vault Over Box",
+  "role": "vault",
+  "ctx": null
+ },
+ {
+  "file": "walk-with-rifle.fbx",
+  "label": "Walk With Rifle",
+  "role": "walk",
+  "ctx": "rifle"
+ },
+ {
+  "file": "walking.fbx",
+  "label": "Walking",
+  "role": "walk",
+  "ctx": null
+ }
+]
