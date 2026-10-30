@@ -3,6 +3,7 @@ import { assetLoadRatio } from '../loading/assetLoadProgress';
 import { LoadingProgressBar } from '../loading/LoadingProgressBar';
 import { useAssetLoadProgress } from '../loading/useAssetLoadProgress';
 import { useSplashReady } from './useSplashReady';
+import { BattleLoadingBackdrop } from '../loading/BattleLoadingBackdrop';
 
 interface SplashScreenProps {
   /** The code-split page the app is opening; the splash stays until it has arrived. */
@@ -26,9 +27,10 @@ export function SplashScreen({ pageModule }: SplashScreenProps) {
     <div
       aria-hidden={isReady}
       onTransitionEnd={(event) => { if (isReady && event.target === event.currentTarget) setIsGone(true); }}
-      className={`fixed inset-0 z-200 flex flex-col items-center justify-center overflow-hidden bg-[#05080d] text-white transition-opacity duration-500 ${isReady ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
+      className={`fixed inset-0 z-200 isolate flex flex-col items-center justify-center overflow-hidden bg-[#05080d] text-white transition-opacity duration-500 ${isReady ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
       style={{ backgroundImage: 'radial-gradient(ellipse at 50% 42%, rgba(197, 155, 39, 0.22), transparent 58%)' }}
     >
+      <BattleLoadingBackdrop />
       <svg viewBox="0 0 32 32" className="h-24 w-24 drop-shadow-[0_0_28px_rgba(229,193,88,0.55)] motion-safe:animate-splash-logo" aria-hidden>
         <path fill="#c59b27" d="M16 2L4 14l12 16 12-16z" />
         <path fill="#e5c158" d="M16 5l-9 9 9 12 9-12z" />

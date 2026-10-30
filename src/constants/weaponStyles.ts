@@ -46,6 +46,8 @@ const FOR_WEAPON: Partial<Record<WeaponKind, string[]>> = {
 };
 const EVERYDAY = ['racket', 'handbag', 'shopping_bag', 'sling_purse', 'suitcase', 'ivy_whip'];
 export const FIREARM_MODELS: ReadonlySet<string> = new Set(['twin_pistols', 'm1911', 'akm', 'l1a1']);
+/** Rifle the character holds on the profile stage while the shooting game is selected (every weapon offers the firearm props). */
+export const SHOOTER_LOBBY_WEAPON_STYLE = 'm:akm';
 
 export const weaponStyles = (weapon: WeaponKind): WeaponStyle[] => {
   const p = PALETTE;

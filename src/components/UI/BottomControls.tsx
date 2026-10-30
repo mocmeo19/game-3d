@@ -23,7 +23,7 @@ export const BottomControls: React.FC<BottomControlsProps> = ({
 }) => (
   <div className="absolute inset-x-0 bottom-0 z-10 px-4 pb-3 flex items-end justify-between pointer-events-none select-none">
     <div className="flex gap-2 pointer-events-auto">
-      <AudioControls above />
+      <AudioControls placement="above-left" />
       <SettingsLink compact />
       {[
         { label: 'Phím tắt (?)', icon: <HelpCircle size={16} />, onClick: onShowHelp }

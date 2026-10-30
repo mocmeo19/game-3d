@@ -47,6 +47,7 @@ export type EnvironmentType =
   | 'neon'
   | 'lotus'
   | 'crystal'
+  | 'misty_dusk'
   | 'demon_slayer'
   | 'japan'
   | 'cultivation'
@@ -57,6 +58,7 @@ export type EnvironmentType =
   | 'warzone'
   | 'pubg_aircraft'
   | 'pubg_airbase'
+  | 'survival_lobby'
   | 'pubg_containers';
 
 export type CameraViewPreset = 

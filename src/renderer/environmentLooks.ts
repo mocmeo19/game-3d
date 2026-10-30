@@ -103,6 +103,12 @@ export const LOOKS: Record<EnvironmentType, EnvLook> = {
     shadow: 0.55,
     particles: { count: 60, color: 0xd8c8ff, size: 0.025, motion: 'up' }
   },
+  misty_dusk: {
+    floor: '#4a4650',
+    sky: 0x8e7f90, horizon: 0.5,
+    ambient: [0x8a7fa0, 1.0], key: [0xffc8a0, 1.9], fill: [0x7f8fc0, 0.7], rim: [0xff9a6a, 2.2],
+    shadow: 0.45
+  },
   pubg_aircraft: {
     floor: '#55564c',
     sky: 0x827e70, horizon: 0.5,
@@ -113,6 +119,12 @@ export const LOOKS: Record<EnvironmentType, EnvLook> = {
     floor: '#77766c',
     sky: 0xa79a83, horizon: 0.5,
     ambient: [0xd6cdbb, 1.1], key: [0xffd6a0, 2.3], fill: [0x9aafc5, 0.8], rim: [0xffb76b, 2.0],
+    shadow: 0.45
+  },
+  survival_lobby: {
+    floor: '#6b6c61',
+    sky: 0x8c969b, horizon: 0.5,
+    ambient: [0xc5cbd0, 1.1], key: [0xffe0b5, 2.1], fill: [0x9eb7ce, 0.8], rim: [0xffce94, 1.8],
     shadow: 0.45
   },
   pubg_containers: {

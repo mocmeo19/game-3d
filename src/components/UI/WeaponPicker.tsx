@@ -28,8 +28,7 @@ export function WeaponPicker({ state, onChange, onPreview, onSave, saving }: Wea
 
   return (
     <>
-      <div className="flex items-center justify-between gap-2 mb-3">
-        <h2 className="text-[18px] font-medium">Vũ khí</h2>
+      <div className="flex items-center justify-end gap-2 mb-3">
         <button
           type="button"
           disabled={saving}

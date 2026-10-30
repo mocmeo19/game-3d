@@ -12,6 +12,9 @@ import { PauseMenu } from './PauseMenu';
 import { BigMap, HealProgress, InventoryScreen, LootHint, RoyaleResult, RoyaleTop, RoyaleVitals } from './RoyaleHud';
 import { controlHelp, layoutForMode, type ControlAction } from './controlLayouts';
 import { GameLoadingScreen } from '../loading/GameLoadingScreen';
+import { royaleMatchGold, teamMatchGold } from '../wallet/goldRewards';
+import { useMatchGoldReward } from '../wallet/useMatchGoldReward';
+import { formatAmount } from '../wallet/walletStore';
 import './game.css';
 
 const MODES: { id: Mode; label: string; hint: string }[] = [
@@ -90,6 +93,10 @@ export function GameScreen({ characterState, onExit }: { characterState: Charact
   const playing = inGame && !state.paused;
   const won = state.matchWinner === state.team;
   const br = state.br;
+  const matchGold = br
+    ? royaleMatchGold({ kills: br.kills, placement: br.placement, playerCount: br.total })
+    : teamMatchGold({ kills: myKills, isWin: won });
+  const earnedGold = useMatchGoldReward(state.phase === 'matchEnd', matchGold);
   const controls = controlHelp(layoutForMode(mode));
 
   return (
@@ -267,6 +274,9 @@ export function GameScreen({ characterState, onExit }: { characterState: Charact
                   ))}
                 </dl>
               </>
+            )}
+            {state.phase === 'matchEnd' && earnedGold !== null && (
+              <p className="font-bold text-[#ffd34d]" role="status">+{formatAmount(earnedGold)} Vàng</p>
             )}
             {error ? (
               <div role="alert">

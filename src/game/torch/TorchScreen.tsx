@@ -12,6 +12,8 @@ import {
   activeRune, canLearn, canLearnPassive, MAX_RANK, PASSIVE_LIST, PASSIVES, passiveRank, rankOf, RUNE_RANK, RUNE_TEXT, SkillId, skillRuntime, SKILL_LIST, SKILLS, SLOT_KEYS
 } from './torchSkills';
 import { GameLoadingScreen } from '../../loading/GameLoadingScreen';
+import { TORCH_GOLD_PER_KILL } from '../../wallet/goldRewards';
+import { useKillGoldReward } from '../../wallet/useKillGoldReward';
 import './torch.css';
 
 const initial: TorchSnapshot = {
@@ -87,6 +89,7 @@ export function TorchScreen({ characterState, onExit }: { characterState: Charac
 
   const s = state;
   const playing = s.phase === 'playing';
+  useKillGoldReward(playing, s.kills, TORCH_GOLD_PER_KILL);
   const hpK = s.maxHp ? Math.max(0, Math.min(1, s.hp / s.maxHp)) : 0;
   const mpK = s.maxMp ? Math.max(0, Math.min(1, s.mp / s.maxMp)) : 0;
   const eng = engine.current;

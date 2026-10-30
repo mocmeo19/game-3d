@@ -31,3 +31,5 @@ Characters saved with an earlier backdrop id are mapped to the nearest theme by 
 (applied in `sanitizeState`, `src/lib/persistence.ts`).
 
 `lanterns` (Đêm lồng đèn) is not a painting: it is built in 3D by `buildLanterns` in `src/renderer/EnvironmentScene.ts` (black glossy floor, swaying paper lanterns, warm point lights). Its thumbnail is a screenshot of that scene.
+
+`misty_dusk` (Sương mờ chiều tối) is also built in 3D, by `buildMistyDusk` in `src/renderer/rooms3d.ts` (dusk sky dome, hazy ridges, pines, drifting ground mist, scene fog). Its thumbnail is a screenshot of that scene.

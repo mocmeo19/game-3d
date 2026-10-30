@@ -13,11 +13,9 @@ import {
   DEFAULT_COSMETICS
 } from '../../constants/presets';
 import { BODY_SLIDERS, FACE_SLIDERS, BODY_GROUPS, FACE_GROUPS, FACE_BASE_KEYS, BODY_BASE_KEYS, SliderDef, SliderGroup } from '../../constants/sliders';
-import { DESIGNER_PRESETS, DesignerPreset } from '../../constants/designerPresets';
-import { Bi, Collapsible, ColorPicker, FaceAvatar, SliderRow, round2 } from './Panels';
+import { Bi, Collapsible, ColorPicker, SliderRow, round2 } from './Panels';
 import { EYE_STYLES, eyeStyleIcon } from '../../constants/eyes';
-import { equipped, skinInfo, defaultSkin, SLOTS, FACE_HAIR_SLOTS, FaceHairSlot, defaultFaceHairColor } from '../../constants/equipment';
-import { bodyModelKey } from '../../renderer/character/avatar';
+import { equipped, SLOTS, FACE_HAIR_SLOTS, FaceHairSlot, defaultFaceHairColor } from '../../constants/equipment';
 import { EquipmentGrid, MarkingIcon } from './EquipmentGrid';
 import { CostumeEditor } from './CostumeEditor';
 import { sound } from '../../audio/soundManager';
@@ -64,7 +62,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
 }) => {
   const [tab, setTab] = useState<Tab>('basic');
   const [open, setOpen] = useState<string>('');
-  const [designerId, setDesignerId] = useState<string | null>(null);
   const [hairTarget, setHairTarget] = useState<'root' | 'tip'>('root');
   const [makeupTarget, setMakeupTarget] = useState<MakeupKey>('lipColor');
 
@@ -95,13 +92,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
     sound.playClick();
     onUpdateState({ ...characterState, [group]: group === 'body' ? { ...DEFAULT_BODY } : { ...DEFAULT_FACE } });
   };
-
-  // pre-rendered photographs of every designer preset on the base body of the gender (public/designer/<body>/<id>.webp)
-  const [missingShots, setMissingShots] = useState<Record<string, boolean>>({});
-  // one set per skin (public/designer/<body>/<skin>/<id>.webp); the default-skin set in the folder above is the fallback
-  const shotSkin = skinInfo(characterState.skin, characterState.gender)?.id ?? defaultSkin(characterState.gender);
-  const shotKey = (id: string, level: 0 | 1) => `${bodyModelKey(characterState.gender)}/${level ? '' : shotSkin + '/'}${id}`;
-  const shotUrl = (id: string) => `/designer/${shotKey(id, missingShots[shotKey(id, 0)] ? 1 : 0)}.webp`;
 
   /** Palette + custom picker for one of the make-up / marking colours. */
   const renderMakeupColor = (key: MakeupKey) => {
@@ -157,23 +147,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
         </label>
       </>
     );
-  };
-
-  const applyDesigner = (p: DesignerPreset) => {
-    sound.playPluck(440);
-    setDesignerId(p.id);
-    onUpdateState({
-      ...characterState,
-      face: { ...p.face },
-      cosmetics: {
-        ...cos,
-        skinTone: p.skinTone,
-        hairStyle: p.hairStyle,
-        hairColorPrimary: p.hairColorPrimary,
-        hairColorTips: p.hairColorTips,
-        lipColor: p.lipColor
-      }
-    });
   };
 
   /** Palette + custom picker for a brow / lash / beard colour; no pick = follow the hair (lashes: near-black). */
@@ -280,37 +253,6 @@ export const RightPanel: React.FC<RightPanelProps> = ({
               <div className="p-2 border-b border-gp-line">
                 <GenderPicker gender={characterState.gender} onChange={(gender) => onUpdateState({ ...characterState, gender })} />
               </div>
-              <Collapsible title={<Bi ko="Mẫu thiết kế" en="Designer presets" />} open={open === 'designer'} onToggle={() => toggle('designer')}>
-                <div className="grid grid-cols-4 gap-1">
-                  {DESIGNER_PRESETS.map((p, i) =>
-                    !missingShots[shotKey(p.id, 1)] ? (
-                      <button
-                        key={p.id}
-                        title={`Mẫu ${i + 1}`}
-                        aria-label={`Mẫu ${i + 1}`}
-                        aria-pressed={designerId === p.id}
-                        onClick={() => applyDesigner(p)}
-                        className={`gp-thumb ${designerId === p.id ? 'is-sel' : ''} relative aspect-square p-0 overflow-hidden bg-linear-to-b from-[#3b3f4a] to-[#15171c]`}
-                      >
-                        <img src={shotUrl(p.id)} alt="" draggable={false} loading="lazy" className="w-full h-full object-cover" onError={() => setMissingShots((m) => ({ ...m, [shotKey(p.id, missingShots[shotKey(p.id, 0)] ? 1 : 0)]: true }))} />
-                        <span className="absolute bottom-0 right-0 px-1 text-[9px] leading-4 bg-black/55 text-white/80">{i + 1}</span>
-                      </button>
-                    ) : (
-                      <FaceAvatar
-                        key={p.id}
-                        skin={p.skinTone}
-                        hair={p.hairColorPrimary}
-                        tip={p.hairColorTips}
-                        lip={p.lipColor}
-                        selected={designerId === p.id}
-                        title={`Mẫu ${i + 1}`}
-                        onClick={() => applyDesigner(p)}
-                      />
-                    )
-                  )}
-                </div>
-              </Collapsible>
-
               <Collapsible title={<Bi ko="Khuôn mặt cơ bản" en="Face base" />} open={open === 'faceBase'} onToggle={() => toggle('faceBase')}>
                 {faceDefs(FACE_BASE_KEYS).map(faceRow)}
               </Collapsible>

@@ -493,8 +493,135 @@ export const buildCrystal = (y0: number): Room => {
   });
 };
 
+/* ───────────────────────── Misty valley at dusk ───────────────────────── */
+/** Haze colour where the sky meets the ground; the scene fog uses it too, so far hills melt into the sky. */
+const DUSK_HAZE = 0x8e7f90;
+/** The camera's far plane is 50 m and it sits a few metres in front of the stage; the sky must stay inside that. */
+const DUSK_SKY_RADIUS = 38;
+
+/** Sky dome shaded from deep indigo overhead through a warm sunset band down to the haze at the horizon. */
+const duskSky = (k: Kit, y0: number) => {
+  const geo = k.keep(new THREE.SphereGeometry(DUSK_SKY_RADIUS, 48, 24));
+  const stops: [number, THREE.Color][] = [
+    [-1, new THREE.Color(DUSK_HAZE)],
+    [0.02, new THREE.Color(DUSK_HAZE)],
+    [0.1, new THREE.Color(0xe39a78)],
+    [0.24, new THREE.Color(0xb0708a)],
+    [0.5, new THREE.Color(0x4b3f66)],
+    [1, new THREE.Color(0x1b1d3a)]
+  ];
+  const position = geo.attributes.position;
+  const colors = new Float32Array(position.count * 3);
+  const color = new THREE.Color();
+  for (let i = 0; i < position.count; i++) {
+    const h = position.getY(i) / DUSK_SKY_RADIUS;
+    const upper = stops.findIndex(([at]) => at >= h);
+    const [a, ca] = stops[Math.max(0, upper - 1)];
+    const [b, cb] = stops[Math.max(0, upper)];
+    color.copy(ca).lerp(cb, b > a ? (h - a) / (b - a) : 0);
+    colors.set([color.r, color.g, color.b], i * 3);
+  }
+  geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+  const dome = new THREE.Mesh(geo, k.keep(new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.BackSide, fog: false, depthWrite: false })));
+  dome.position.y = y0;
+  dome.renderOrder = -5;
+  k.group.add(dome);
+};
+
+/** Soft cloud of mist as a texture: a few overlapping blurred blobs fading out to the edges. */
+const mistTexture = (k: Kit) => {
+  const c = document.createElement('canvas');
+  c.width = c.height = 256;
+  const g = c.getContext('2d')!;
+  for (let i = 0; i < 14; i++) {
+    const x = 80 + k.rnd() * 96;
+    const y = 80 + k.rnd() * 96;
+    // stay inside the canvas so no blob is cut off by its edge
+    const r = Math.min(30 + k.rnd() * 60, x, y, 256 - x, 256 - y);
+    const blob = g.createRadialGradient(x, y, 0, x, y, r);
+    blob.addColorStop(0, 'rgba(235,225,240,0.32)');
+    blob.addColorStop(1, 'rgba(235,225,240,0)');
+    g.fillStyle = blob;
+    g.fillRect(0, 0, 256, 256);
+  }
+  const tex = k.keep(new THREE.CanvasTexture(c));
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return tex;
+};
+
+export const buildMistyDusk = (y0: number): Room => {
+  const k = kit(6013);
+  k.floor(0x4a4650, 0.88, 0.04, y0);
+  duskSky(k, y0);
+  moon(k, 3, y0 + 5.5, -32, 1.8, 0xffd7a8, 'rgba(255,170,120,0.85)');
+
+  // far ridges: wide flat-shaded cones, deeper ones larger, all fading into the haze
+  const ridgeGeo = k.keep(new THREE.ConeGeometry(1, 1, 10));
+  const ridgeMat = k.keep(new THREE.MeshStandardMaterial({ color: 0x2c2a40, roughness: 1, flatShading: true }));
+  const ridges = 30;
+  const ridgeMesh = new THREE.InstancedMesh(ridgeGeo, ridgeMat, ridges);
+  for (let i = 0; i < ridges; i++) {
+    const distance = 19 + k.rnd() * 15;
+    const p = around((k.rnd() - 0.5) * Math.PI * 1.9, distance);
+    const height = 2.5 + (distance / 34) * 6 * (0.6 + k.rnd() * 0.4);
+    const width = height * (2 + k.rnd() * 1.2);
+    place(ridgeMesh, i, new THREE.Vector3(p.x, y0 + height / 2 - 0.2, p.z), new THREE.Euler(0, k.rnd() * Math.PI, 0), new THREE.Vector3(width, height, width));
+  }
+  ridgeMesh.frustumCulled = false;
+  k.group.add(ridgeMesh);
+
+  // pines in the middle distance, kept to the sides so the sunset stays visible straight behind the stage
+  const pines = 48;
+  const crownGeo = k.keep(new THREE.ConeGeometry(0.9, 2.4, 7));
+  const crownMat = k.keep(new THREE.MeshStandardMaterial({ color: 0x1f2e2a, roughness: 0.9, flatShading: true }));
+  const crownMesh = new THREE.InstancedMesh(crownGeo, crownMat, pines * 2);
+  const trunkGeo = k.keep(new THREE.CylinderGeometry(0.08, 0.12, 1, 6));
+  const trunkMat = k.keep(new THREE.MeshStandardMaterial({ color: 0x2a211c, roughness: 1 }));
+  const trunkMesh = new THREE.InstancedMesh(trunkGeo, trunkMat, pines);
+  for (let i = 0; i < pines; i++) {
+    const side = k.rnd() < 0.5 ? -1 : 1;
+    const p = behind(around(side * (0.45 + k.rnd() * 1.3), 8 + k.rnd() * 12), 1);
+    const s = 0.8 + k.rnd() * 0.8;
+    const turn = new THREE.Euler(0, k.rnd() * Math.PI, 0);
+    place(trunkMesh, i, new THREE.Vector3(p.x, y0 + 0.5 * s, p.z), turn, new THREE.Vector3(s, s, s));
+    place(crownMesh, i * 2, new THREE.Vector3(p.x, y0 + 1.9 * s, p.z), turn, new THREE.Vector3(s, s, s));
+    place(crownMesh, i * 2 + 1, new THREE.Vector3(p.x, y0 + 3 * s, p.z), turn, new THREE.Vector3(s * 0.7, s * 0.8, s * 0.7));
+  }
+  [crownMesh, trunkMesh].forEach((m) => {
+    m.frustumCulled = false;
+    k.group.add(m);
+  });
+
+  // low mist: soft sheets lying just above the ground behind the stage, drifting slowly sideways
+  const mistMat = k.keep(new THREE.MeshBasicMaterial({ map: mistTexture(k), transparent: true, depthWrite: false, color: 0xf2e6ee }));
+  const mistGeo = k.keep(new THREE.PlaneGeometry(1, 1));
+  const sheets = Array.from({ length: 14 }, () => {
+    const sheet = new THREE.Mesh(mistGeo, mistMat);
+    const p = behind(around((k.rnd() - 0.5) * Math.PI * 1.8, 4 + k.rnd() * 13), -1);
+    const size = 8 + k.rnd() * 10;
+    sheet.rotation.x = -Math.PI / 2;
+    sheet.position.set(p.x, y0 + 0.04 + k.rnd() * 0.25, p.z);
+    sheet.scale.set(size, size * 0.6, 1);
+    sheet.userData = { x: p.x, speed: 0.08 + k.rnd() * 0.12, phase: k.rnd() * 6 };
+    k.group.add(sheet);
+    return sheet;
+  });
+
+  const dust = motes(k, 50, 0xffe2c8, 0.05, 10, y0, 3);
+  const glow = new THREE.PointLight(0xffa070, 6, 14, 1.6);
+  glow.position.set(3, y0 + 1.6, -4);
+  const cool = new THREE.PointLight(0x9aa8ff, 3, 12, 1.6);
+  cool.position.set(-3, y0 + 2.2, -3);
+  k.group.add(glow, cool);
+  return k.finish((t) => {
+    dust(t);
+    sheets.forEach((s) => (s.position.x = s.userData.x + Math.sin(t * s.userData.speed + s.userData.phase) * 1.5));
+  });
+};
+
 /** Scene look of each 3D room: clear colour and fog density. */
 export const ROOMS: Record<string, { build: (y0: number) => Room; bg: number; fog: number }> = {
+  misty_dusk: { build: buildMistyDusk, bg: DUSK_HAZE, fog: 0.034 },
   bamboo: { build: buildBamboo, bg: 0x04100e, fog: 0.045 },
   snow: { build: buildSnow, bg: 0x0a1630, fog: 0.018 },
   neon: { build: buildNeon, bg: 0x08060f, fog: 0.035 },

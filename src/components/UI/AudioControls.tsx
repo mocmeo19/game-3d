@@ -3,7 +3,18 @@ import { Music2, Volume2, VolumeX, X } from 'lucide-react';
 import { sound } from '../../audio/soundManager';
 import { useAudioSettings, useAudioSaveState } from '../../audio/useAudioSettings';
 
-export function AudioControls({ above = false, alignLeft = false }: { above?: boolean; alignLeft?: boolean }) {
+type AudioPanelPlacement = 'below-left' | 'below-right' | 'above-left' | 'above-right';
+
+const PANEL_PLACEMENT_CLASS: Record<AudioPanelPlacement, string> = {
+  'below-left': 'top-full mt-3 left-0',
+  'below-right': 'top-full mt-3 right-0',
+  'above-left': 'bottom-full mb-3 left-0',
+  'above-right': 'bottom-full mb-3 right-0'
+};
+
+/** Sound toggle with a volume popover; when the popover opens upwards the toggle shows only its icon. */
+export function AudioControls({ placement = 'below-right', isBare = false }: { placement?: AudioPanelPlacement; isBare?: boolean }) {
+  const isIconOnly = placement.startsWith('above');
   const settings = useAudioSettings();
   const saveState = useAudioSaveState();
   const [open, setOpen] = useState(false);
@@ -21,12 +32,12 @@ export function AudioControls({ above = false, alignLeft = false }: { above?: bo
     <div ref={root} className="relative pointer-events-auto" data-ui-sound="off" onKeyDown={(event) => {
       if (event.key === 'Escape') { event.stopPropagation(); setOpen(false); toggle.current?.focus(); }
     }}>
-      <button ref={toggle} type="button" aria-label="Cài đặt âm thanh" aria-expanded={open} onClick={() => { sound.unlock(); setOpen(!open); sound.playClick(); }} className="flex items-center justify-center gap-2 h-9 px-3 rounded-full border border-white/20 bg-black/55 text-white/80 hover:text-white hover:border-sky-200/60">
-        {settings.muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
-        {!above && <span className="text-xs">Âm thanh</span>}
+      <button ref={toggle} type="button" aria-label="Cài đặt âm thanh" aria-expanded={open} onClick={() => { sound.unlock(); setOpen(!open); sound.playClick(); }} className={`flex items-center justify-center gap-2 h-9 ${isIconOnly ? 'w-9' : 'px-3'} rounded-full text-white/80 hover:text-white ${isBare ? 'drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]' : 'border border-white/20 bg-black/55 hover:border-sky-200/60'}`}>
+        {settings.muted ? <VolumeX size={isBare ? 20 : 16} /> : <Volume2 size={isBare ? 20 : 16} />}
+        {!isIconOnly && <span className="text-xs">Âm thanh</span>}
       </button>
       {open && (
-        <section aria-label="Cài đặt âm thanh" className={`absolute z-80 w-64 rounded-xl border border-white/20 bg-[#0d192b] p-4 text-white shadow-2xl ${above ? 'bottom-full left-0 mb-3' : `top-full mt-3 ${alignLeft ? 'left-0' : 'right-0'}`}`}>
+        <section aria-label="Cài đặt âm thanh" className={`absolute z-80 w-64 rounded-xl border border-white/20 bg-[#0d192b] p-4 text-white shadow-2xl ${PANEL_PLACEMENT_CLASS[placement]}`}>
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-sm font-semibold">Âm thanh</h2>
             <button type="button" aria-label="Đóng cài đặt âm thanh" onClick={() => { setOpen(false); toggle.current?.focus(); }} className="text-white/60 hover:text-white"><X size={15} /></button>

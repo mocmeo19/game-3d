@@ -19,15 +19,17 @@ import { loadAutosave, saveAutosave, sanitizeState, makeThumb, isValidName, load
 import { CharacterSelect } from './components/UI/CharacterSelect';
 import { BODY_SLIDERS, FACE_SLIDERS, SliderDef } from './constants/sliders';
 import { sound } from './audio/soundManager';
-import { SettingsLink } from './settings/SettingsLink';
-import { AudioControls } from './components/UI/AudioControls';
 import { GameLoadingScreen } from './loading/GameLoadingScreen';
+import { loadLastPlayedGame } from './loading/lastPlayedGame';
+import { SHOOTER_LOBBY_WEAPON_STYLE } from './constants/weaponStyles';
 
 const GameScreen = lazy(() => import('./game/GameScreen').then(module => ({ default: module.GameScreen })));
 const TorchScreen = lazy(() => import('./game/torch/TorchScreen').then(module => ({ default: module.TorchScreen })));
 const TestLabScreen = lazy(() => import('./game/testlab/TestLabScreen').then(module => ({ default: module.TestLabScreen })));
 
 const HISTORY_LIMIT = 50;
+/** The profile keeps the character centred like a game lobby; its panels open over the right side only when asked for. */
+const HOME_VIEW_SHIFT = 0;
 /** Slider drags fire many updates; merge changes made within this window into one undo step. */
 const COALESCE_MS = 500;
 const CAMERA_KEYS: CameraViewPreset[] = ['face', 'portrait', 'waist', 'full', 'shoes'];
@@ -47,7 +49,7 @@ const randomSet = <T extends object>(defs: SliderDef[], base: T): T => {
 
 type Screen = 'creator' | 'select' | 'home' | 'game';
 
-/** The home screen shows the character in the scene saved with it, standing at rest. */
+/** Enter the profile at rest without changing the character's saved environment. */
 const homeStage = (s: CharacterState): CharacterState => ({ ...s, pose: 'idle' });
 
 export const App: React.FC = () => {
@@ -80,14 +82,21 @@ export const App: React.FC = () => {
   const [toast, setToast] = useState<string | null>(null);
   // After the character is created the app switches to the hero "home" screen
   const [screen, setScreen] = useState<Screen>(boot.screen);
-  const [gameKind, setGameKind] = useState<GameKind>('arena');
+  const [gameKind, setGameKind] = useState<GameKind>(loadLastPlayedGame);
   const [savingOutfit, setSavingOutfit] = useState(false);
   const [savingWeapon, setSavingWeapon] = useState(false);
   // stance poses on the home / select screens: shown on the stage only, never saved into the character
   const stances = useStances(screen === 'home' || screen === 'select');
   const stageState = useMemo(
-    () => (stances.pose && (screen === 'home' || screen === 'select') ? { ...characterState, pose: stances.pose } : characterState),
-    [characterState, stances.pose, screen]
+    () => {
+      const posedState = stances.pose && (screen === 'home' || screen === 'select')
+        ? { ...characterState, pose: stances.pose }
+        : characterState;
+      return screen === 'home' && gameKind === 'arena'
+        ? { ...posedState, environment: 'survival_lobby' as const, weaponStyle: SHOOTER_LOBBY_WEAPON_STYLE }
+        : posedState;
+    },
+    [characterState, stances.pose, screen, gameKind]
   );
   const [createdAt, setCreatedAt] = useState<string | null>(null);
 
@@ -264,21 +273,21 @@ export const App: React.FC = () => {
     bump();
   }, []);
 
-  /** Show `state` on the home screen, in its own saved scene. */
+  /** Open the profile while keeping saved character settings intact. */
   const enterHome = useCallback((state: CharacterState) => {
     setTurntableOn(false);
     setCharacterState(homeStage(state));
     resetHistory(state);
     setScreen('home');
     setCameraView('full');
-    canvasRef.current?.setViewShift(0.2);
+    canvasRef.current?.setViewShift(HOME_VIEW_SHIFT);
     canvasRef.current?.setCameraView('full');
   }, [resetHistory]);
 
   // the stage framing of the screen the app started on
   useEffect(() => {
     if (boot.screen === 'home') {
-      canvasRef.current?.setViewShift(0.2);
+      canvasRef.current?.setViewShift(HOME_VIEW_SHIFT);
       canvasRef.current?.setCameraView('full');
     } else if (boot.screen === 'select') {
       canvasRef.current?.setViewShift(0.08);
@@ -478,7 +487,7 @@ export const App: React.FC = () => {
     <div className="relative w-screen h-screen overflow-hidden bg-black select-none">
       {/* Full-bleed 3D stage */}
       <div className={`absolute inset-0 ${screen === 'game' ? 'invisible pointer-events-none' : ''}`}>
-        <CharacterCanvas ref={canvasRef} characterState={stageState} identity={activeSlot.current ?? 'new'} active={screen !== 'game'} autoRotate={turntableOn} lockView={screen === 'home'} showWeapons={screen !== 'creator'} />
+        <CharacterCanvas ref={canvasRef} characterState={stageState} identity={activeSlot.current ?? 'new'} active={screen !== 'game'} autoRotate={turntableOn} lockView={screen === 'home'} showWeapons={screen === 'home'} />
       </div>
 
       {screen === 'creator' && (
@@ -536,16 +545,11 @@ export const App: React.FC = () => {
         <CharacterSelect slots={slots} selected={activeSlot.current} onPick={pickSlot} onEnter={enterSelected} onEdit={editCharacter} onCreate={startNewCharacter} />
       )}
 
-      {(screen === 'home' || screen === 'select') && <div className={`absolute z-60 flex items-center gap-2 ${screen === 'select' ? 'left-6 top-16' : 'right-5 top-4'}`}><SettingsLink /><AudioControls alignLeft={screen === 'select'} /></div>}
-
-      {screen === 'home' && slots.filter(Boolean).length > 1 && (
-        <button className="gp-btn absolute top-4 left-1/2 -translate-x-1/2 z-30 px-4!" onClick={showSelect} title="Chọn nhân vật khác">
-          Đổi nhân vật
-        </button>
-      )}
 
       {screen === 'home' && (
         <HomeScreen
+          selectedGame={gameKind}
+          onSelectGame={setGameKind}
           characterState={characterState}
           onUpdateState={updateCharacterState}
           onSaveOutfit={handleSaveOutfit}
