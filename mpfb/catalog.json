@@ -1,0 +1,8373 @@
+[
+ {
+  "id": "afro01",
+  "dir": "hair",
+  "rel": "hair/afro01/afro01.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Afro01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "bob01",
+  "dir": "hair",
+  "rel": "hair/bob01/bob01.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Bob01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "bob02",
+  "dir": "hair",
+  "rel": "hair/bob02/bob02.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Bob02",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "braid01",
+  "dir": "hair",
+  "rel": "hair/braid01/braid01.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Braid01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "cortu_shaggy_green_hair",
+  "dir": "hair",
+  "rel": "hair/cortu_shaggy_green_hair/cortu_shaggy_green_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Shaggy green hair",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "cortu_short_messy_hair",
+  "dir": "hair",
+  "rel": "hair/cortu_short_messy_hair/cortu_short_messy_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Short messy hair",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "cortu_straight_bangs",
+  "dir": "hair",
+  "rel": "hair/cortu_straight_bangs/cortu_straight_bangs.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Straight bangs",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "cortu_strawberry_cloud_hair",
+  "dir": "hair",
+  "rel": "hair/cortu_strawberry_cloud_hair/cortu_strawberry_cloud_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Strawberry cloud hair",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_01",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_01/culturalibre_hair_01.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 01",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_02",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_02/culturalibre_hair_02.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 02",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_05",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_05/culturalibre_hair_05.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 05",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_06",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_06/culturalibre_hair_06.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 06",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_11",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_11/culturalibre_hair_11.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 11",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_12",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_12/culturalibre_hair_12.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 12",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_13",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_13/culturalibre_hair_13.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 13",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_14",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_14/culturalibre_hair_14.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 14",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_17",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_17/culturalibre_hair_17.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 17",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hair_18",
+  "dir": "hair",
+  "rel": "hair/culturalibre_hair_18/culturalibre_hair_18.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hair 18",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_50s_updo",
+  "dir": "hair",
+  "rel": "hair/elvs_50s_updo/elvs_50s_updo.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "50s updo",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_adrienne_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_adrienne_hair/elvs_adrienne_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Adrienne hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_ashley_may_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_ashley_may_hair/elvs_ashley_may_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Ashley may hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_braid_bun",
+  "dir": "hair",
+  "rel": "hair/elvs_braid_bun/elvs_braid_bun.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Braid bun",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_braided_rows",
+  "dir": "hair",
+  "rel": "hair/elvs_braided_rows/elvs_braided_rows.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Braided rows",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_daisy_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_daisy_hair/elvs_daisy_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Daisy hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_double_mh_braid",
+  "dir": "hair",
+  "rel": "hair/elvs_double_mh_braid/elvs_double_mh_braid.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Double mh braid",
+  "author": "Elvaerwyn",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_french_braid_variation",
+  "dir": "hair",
+  "rel": "hair/elvs_french_braid_variation/elvs_french_braid_variation.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "French braid variation",
+  "author": "Elvaerwyn",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_grump_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_grump_hair/elvs_grump_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Grump hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_hazel_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_hazel_hair/elvs_hazel_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Hazel hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_inverted_curly_bob",
+  "dir": "hair",
+  "rel": "hair/elvs_inverted_curly_bob/elvs_inverted_curly_bob.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Inverted curly bob",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_island_princess_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_island_princess_hair/elvs_island_princess_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Island princess hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_katherine_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_katherine_hair/elvs_katherine_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Katherine hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_keylth_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_keylth_hair/elvs_keylth_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Keylth hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_lady_hippy_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_lady_hippy_hair/elvs_lady_hippy_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Lady hippy hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_lara_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_lara_hair/elvs_lara_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Lara hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_maxwell_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_maxwell_hair/elvs_maxwell_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Maxwell hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_micky_afro",
+  "dir": "hair",
+  "rel": "hair/elvs_micky_afro/elvs_micky_afro.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Micky afro",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_reverse_french_braid_bun",
+  "dir": "hair",
+  "rel": "hair/elvs_reverse_french_braid_bun/elvs_reverse_french_braid_bun.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Reverse french braid bun",
+  "author": "Elvaerwyn",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_short_daisy_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_short_daisy_hair/elvs_short_daisy_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Short daisy hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_short_side_do",
+  "dir": "hair",
+  "rel": "hair/elvs_short_side_do/elvs_short_side_do.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Short side do",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_that_80s_babe_hair",
+  "dir": "hair",
+  "rel": "hair/elvs_that_80s_babe_hair/elvs_that_80s_babe_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "That 80s babe hair",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_unkempt_french_braid",
+  "dir": "hair",
+  "rel": "hair/elvs_unkempt_french_braid/elvs_unkempt_french_braid.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Unkempt french braid",
+  "author": "Elvaerwyn",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_wavy_bob",
+  "dir": "hair",
+  "rel": "hair/elvs_wavy_bob/elvs_wavy_bob.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Wavy bob",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_witchy_lil_bob",
+  "dir": "hair",
+  "rel": "hair/elvs_witchy_lil_bob/elvs_witchy_lil_bob.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Witchy lil bob",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "faydaen_hair_1",
+  "dir": "hair",
+  "rel": "hair/faydaen_hair_1/faydaen_hair_1.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Faydaen hair 1",
+  "author": "Faydaen",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "grinsegold_wig_bow_tie",
+  "dir": "hair",
+  "rel": "hair/grinsegold_wig_bow_tie/grinsegold_wig_bow_tie.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Grinsegold wig bow tie",
+  "author": "grinsegold",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "grinsegold_wig_bun_blonde_braids",
+  "dir": "hair",
+  "rel": "hair/grinsegold_wig_bun_blonde_braids/grinsegold_wig_bun_blonde_braids.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Grinsegold wig bun blonde braids",
+  "author": "grinsegold",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "learning_anime_hair",
+  "dir": "hair",
+  "rel": "hair/learning_anime_hair/learning_anime_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Learning anime hair",
+  "author": "learning",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "littleright_bobcut_hair",
+  "dir": "hair",
+  "rel": "hair/littleright_bobcut_hair/littleright_bobcut_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Littleright bobcut hair",
+  "author": "littleright",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "long01",
+  "dir": "hair",
+  "rel": "hair/long01/long01.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Long01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "o4saken_chinesebob01",
+  "dir": "hair",
+  "rel": "hair/o4saken_chinesebob01/o4saken_chinesebob01.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "O4saken chinesebob01",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "o4saken_curly01",
+  "dir": "hair",
+  "rel": "hair/o4saken_curly01/o4saken_curly01.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "O4saken curly01",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "o4saken_long01",
+  "dir": "hair",
+  "rel": "hair/o4saken_long01/o4saken_long01.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "O4saken long01",
+  "author": "punkduck",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "ponytail01",
+  "dir": "hair",
+  "rel": "hair/ponytail01/ponytail01.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Ponytail01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_alpha7_curly",
+  "dir": "hair",
+  "rel": "hair/punkduck_alpha7_curly/punkduck_alpha7_curly.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Alpha7 curly",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_alpha7_curly2",
+  "dir": "hair",
+  "rel": "hair/punkduck_alpha7_curly2/punkduck_alpha7_curly2.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Alpha7 curly2",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_alpha7_long",
+  "dir": "hair",
+  "rel": "hair/punkduck_alpha7_long/punkduck_alpha7_long.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Alpha7 long",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_alpha7_long2",
+  "dir": "hair",
+  "rel": "hair/punkduck_alpha7_long2/punkduck_alpha7_long2.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Alpha7 long2",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "rehmanpolanski_hair_bun_brown",
+  "dir": "hair",
+  "rel": "hair/rehmanpolanski_hair_bun_brown/rehmanpolanski_hair_bun_brown.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Rehmanpolanski hair bun brown",
+  "author": "RehmanPolanski",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "short01",
+  "dir": "hair",
+  "rel": "hair/short01/short01.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Short01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "short02",
+  "dir": "hair",
+  "rel": "hair/short02/short02.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Short02",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "short03",
+  "dir": "hair",
+  "rel": "hair/short03/short03.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Short03",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "short04",
+  "dir": "hair",
+  "rel": "hair/short04/short04.mhclo",
+  "slot": "hair",
+  "category": "",
+  "name": "Short04",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "sonntag78_blond_with_headband",
+  "dir": "hair",
+  "rel": "hair/sonntag78_blond_with_headband/sonntag78_blond_with_headband.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Sonntag78 blond with headband",
+  "author": "sonntag78",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "sonntag78_junglebook_hair",
+  "dir": "hair",
+  "rel": "hair/sonntag78_junglebook_hair/sonntag78_junglebook_hair.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Sonntag78 junglebook hair",
+  "author": "sonntag78",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_blunt_bob",
+  "dir": "hair",
+  "rel": "hair/toigo_blunt_bob/toigo_blunt_bob.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Blunt bob",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_blunt_bob_with_bangs",
+  "dir": "hair",
+  "rel": "hair/toigo_blunt_bob_with_bangs/toigo_blunt_bob_with_bangs.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Blunt bob with bangs",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_curled_under_bob",
+  "dir": "hair",
+  "rel": "hair/toigo_curled_under_bob/toigo_curled_under_bob.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Curled under bob",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_curled_under_bob_with_bangs",
+  "dir": "hair",
+  "rel": "hair/toigo_curled_under_bob_with_bangs/toigo_curled_under_bob_with_bangs.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Curled under bob with bangs",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_inverted_bob",
+  "dir": "hair",
+  "rel": "hair/toigo_inverted_bob/toigo_inverted_bob.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Inverted bob",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_inverted_bob_with_bangs",
+  "dir": "hair",
+  "rel": "hair/toigo_inverted_bob_with_bangs/toigo_inverted_bob_with_bangs.mhclo",
+  "slot": "hair",
+  "category": "Hair",
+  "name": "Inverted bob with bangs",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow001",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow001/eyebrow001.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow001",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow002",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow002/eyebrow002.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow002",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow003",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow003/eyebrow003.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow003",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow004",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow004/eyebrow004.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow004",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow005",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow005/eyebrow005.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow005",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow006",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow006/eyebrow006.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow006",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow007",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow007/eyebrow007.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow007",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow008",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow008/eyebrow008.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow008",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow009",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow009/eyebrow009.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow009",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow010",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow010/eyebrow010.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow010",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow011",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow011/eyebrow011.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow011",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyebrow012",
+  "dir": "eyebrows",
+  "rel": "eyebrows/eyebrow012/eyebrow012.mhclo",
+  "slot": "eyebrows",
+  "category": "",
+  "name": "Eyebrow012",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_01",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_01/mindfront_eyebrows_01.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 01",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_02",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_02/mindfront_eyebrows_02.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 02",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_03",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_03/mindfront_eyebrows_03.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 03",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_04",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_04/mindfront_eyebrows_04.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 04",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_05",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_05/mindfront_eyebrows_05.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 05",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_06",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_06/mindfront_eyebrows_06.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 06",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_07",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_07/mindfront_eyebrows_07.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 07",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_08",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_08/mindfront_eyebrows_08.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 08",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_09",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_09/mindfront_eyebrows_09.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 09",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_10",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_10/mindfront_eyebrows_10.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 10",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_11",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_11/mindfront_eyebrows_11.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 11",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_12",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_12/mindfront_eyebrows_12.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 12",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_13",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_13/mindfront_eyebrows_13.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 13",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyebrows_14",
+  "dir": "eyebrows",
+  "rel": "eyebrows/mindfront_eyebrows_14/mindfront_eyebrows_14.mhclo",
+  "slot": "eyebrows",
+  "category": "Eyebrows",
+  "name": "Eyebrows 14",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyelashes01",
+  "dir": "eyelashes",
+  "rel": "eyelashes/eyelashes01/eyelashes01.mhclo",
+  "slot": "eyelashes",
+  "category": "",
+  "name": "Eyelashes01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyelashes02",
+  "dir": "eyelashes",
+  "rel": "eyelashes/eyelashes02/eyelashes02.mhclo",
+  "slot": "eyelashes",
+  "category": "",
+  "name": "Eyelashes02",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyelashes03",
+  "dir": "eyelashes",
+  "rel": "eyelashes/eyelashes03/eyelashes03.mhclo",
+  "slot": "eyelashes",
+  "category": "",
+  "name": "Eyelashes03",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "eyelashes04",
+  "dir": "eyelashes",
+  "rel": "eyelashes/eyelashes04/eyelashes04.mhclo",
+  "slot": "eyelashes",
+  "category": "",
+  "name": "Eyelashes04",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyelashes_01",
+  "dir": "eyelashes",
+  "rel": "eyelashes/mindfront_eyelashes_01/mindfront_eyelashes_01.mhclo",
+  "slot": "eyelashes",
+  "category": "Eyelashes",
+  "name": "Eyelashes 01",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyelashes_02",
+  "dir": "eyelashes",
+  "rel": "eyelashes/mindfront_eyelashes_02/mindfront_eyelashes_02.mhclo",
+  "slot": "eyelashes",
+  "category": "Eyelashes",
+  "name": "Eyelashes 02",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyelashes_03",
+  "dir": "eyelashes",
+  "rel": "eyelashes/mindfront_eyelashes_03/mindfront_eyelashes_03.mhclo",
+  "slot": "eyelashes",
+  "category": "Eyelashes",
+  "name": "Eyelashes 03",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyelashes_04",
+  "dir": "eyelashes",
+  "rel": "eyelashes/mindfront_eyelashes_04/mindfront_eyelashes_04.mhclo",
+  "slot": "eyelashes",
+  "category": "Eyelashes",
+  "name": "Eyelashes 04",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_eyelashes_05",
+  "dir": "eyelashes",
+  "rel": "eyelashes/mindfront_eyelashes_05/mindfront_eyelashes_05.mhclo",
+  "slot": "eyelashes",
+  "category": "Eyelashes",
+  "name": "Eyelashes 05",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "teeth_shape01",
+  "dir": "teeth",
+  "rel": "teeth/teeth_shape01/teeth_shape01.mhclo",
+  "slot": "teeth",
+  "category": "",
+  "name": "Răng kiểu 1",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "teeth_shape02",
+  "dir": "teeth",
+  "rel": "teeth/teeth_shape02/teeth_shape02.mhclo",
+  "slot": "teeth",
+  "category": "",
+  "name": "Răng kiểu 2",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "teeth_shape03",
+  "dir": "teeth",
+  "rel": "teeth/teeth_shape03/teeth_shape03.mhclo",
+  "slot": "teeth",
+  "category": "",
+  "name": "Răng kiểu 3",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "teeth_shape04",
+  "dir": "teeth",
+  "rel": "teeth/teeth_shape04/teeth_shape04.mhclo",
+  "slot": "teeth",
+  "category": "",
+  "name": "Răng kiểu 4",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "teeth_shape05",
+  "dir": "teeth",
+  "rel": "teeth/teeth_shape05/teeth_shape05.mhclo",
+  "slot": "teeth",
+  "category": "",
+  "name": "Răng kiểu 5",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "aethelraed_flapper_dress",
+  "dir": "clothes",
+  "rel": "clothes/aethelraed_flapper_dress/aethelraed_flapper_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Flapper dress",
+  "author": "Aethelraed_Unraed",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "aethelraed_unraed_cloche_hat",
+  "dir": "clothes",
+  "rel": "clothes/aethelraed_unraed_cloche_hat/aethelraed_unraed_cloche_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Unraed cloche hat",
+  "author": "Aethelraed_Unraed",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "callharvey3d_harvey_pskirt01",
+  "dir": "clothes",
+  "rel": "clothes/callharvey3d_harvey_pskirt01/callharvey3d_harvey_pskirt01.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Harvey pskirt01",
+  "author": "callharvey3d",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "callharvey3d_harvey_saddleshoes1",
+  "dir": "clothes",
+  "rel": "clothes/callharvey3d_harvey_saddleshoes1/callharvey3d_harvey_saddleshoes1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Harvey saddleshoes1",
+  "author": "callharvey3d",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "cortu_cargo_pants",
+  "dir": "clothes",
+  "rel": "clothes/cortu_cargo_pants/cortu_cargo_pants.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Cargo pants",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "cortu_floppy_overknee_shoes",
+  "dir": "clothes",
+  "rel": "clothes/cortu_floppy_overknee_shoes/cortu_floppy_overknee_shoes.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Floppy overknee shoes",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "cortu_jeans_shorts",
+  "dir": "clothes",
+  "rel": "clothes/cortu_jeans_shorts/cortu_jeans_shorts.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Jeans shorts",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "cortu_t-bar",
+  "dir": "clothes",
+  "rel": "clothes/cortu_t-bar/cortu_t-bar.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "T bar",
+  "author": "Cortu",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_bandana_mask",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_bandana_mask/culturalibre_bandana_mask.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Bandana mask",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_cl_bowler_hat",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_cl_bowler_hat/culturalibre_cl_bowler_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Cl bowler hat",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_cl_devil_tail",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_cl_devil_tail/culturalibre_cl_devil_tail.mhclo",
+  "slot": "tail",
+  "category": "Bodyparts",
+  "name": "Cl devil tail",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_cl_don_quixote_hat",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_cl_don_quixote_hat/culturalibre_cl_don_quixote_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Cl don quixote hat",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_cl_spiral_bracelets",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_cl_spiral_bracelets/culturalibre_cl_spiral_bracelets.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Cl spiral bracelets",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_dal_moustache",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_dal_moustache/culturalibre_dal_moustache.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Dal moustache",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_doc_ock_glasses",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_doc_ock_glasses/culturalibre_doc_ock_glasses.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Doc ock glasses",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_el_chapulin_colorado",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_el_chapulin_colorado/culturalibre_el_chapulin_colorado.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "El chapulin colorado",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_faun_beard",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_faun_beard/culturalibre_faun_beard.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Faun beard",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_faun_horns",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_faun_horns/culturalibre_faun_horns.mhclo",
+  "slot": "horns",
+  "category": "Bodyparts",
+  "name": "Faun horns",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero-heroine_gloves_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero-heroine_gloves_1/culturalibre_hero-heroine_gloves_1.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Hero heroine gloves 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_hero-heroine_gloves_2",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero-heroine_gloves_2/culturalibre_hero-heroine_gloves_2.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Hero heroine gloves 2",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_hero-heroine_gloves_3",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero-heroine_gloves_3/culturalibre_hero-heroine_gloves_3.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Hero heroine gloves 3",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_hero-heroine_gloves_4",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero-heroine_gloves_4/culturalibre_hero-heroine_gloves_4.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Hero heroine gloves 4",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_hero-heroine_gloves_5",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero-heroine_gloves_5/culturalibre_hero-heroine_gloves_5.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Hero heroine gloves 5",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_hero-heroine_hood_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero-heroine_hood_1/culturalibre_hero-heroine_hood_1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Hero heroine hood 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_hero-heroine_hood_2",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero-heroine_hood_2/culturalibre_hero-heroine_hood_2.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Hero heroine hood 2",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_boots_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_boots_1/culturalibre_hero_boots_1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Hero boots 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_boots_2",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_boots_2/culturalibre_hero_boots_2.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Hero boots 2",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_boots_3",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_boots_3/culturalibre_hero_boots_3.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Hero boots 3",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_boots_4",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_boots_4/culturalibre_hero_boots_4.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Hero boots 4",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_boots_5",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_boots_5/culturalibre_hero_boots_5.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Hero boots 5",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_gem",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_gem/culturalibre_hero_gem.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Hero gem",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_mask_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_mask_1/culturalibre_hero_mask_1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Hero mask 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_mask_2",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_mask_2/culturalibre_hero_mask_2.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Hero mask 2",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_mask_3",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_mask_3/culturalibre_hero_mask_3.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Hero mask 3",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_mask_4",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_mask_4/culturalibre_hero_mask_4.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Hero mask 4",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_mask_5",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_mask_5/culturalibre_hero_mask_5.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Hero mask 5",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_suit_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_suit_1/culturalibre_hero_suit_1.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Hero suit 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_suit_2",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_suit_2/culturalibre_hero_suit_2.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Hero suit 2",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_suit_3",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_suit_3/culturalibre_hero_suit_3.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Hero suit 3",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_hero_suit_4",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_hero_suit_4/culturalibre_hero_suit_4.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Hero suit 4",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_boots_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_boots_1/culturalibre_heroine_boots_1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Heroine boots 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_boots_2",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_boots_2/culturalibre_heroine_boots_2.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Heroine boots 2",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_boots_3",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_boots_3/culturalibre_heroine_boots_3.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Heroine boots 3",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_boots_4",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_boots_4/culturalibre_heroine_boots_4.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Heroine boots 4",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_lightning_earrings",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_lightning_earrings/culturalibre_heroine_lightning_earrings.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Heroine lightning earrings",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_mask_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_mask_1/culturalibre_heroine_mask_1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Heroine mask 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_suit_1",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_suit_1/culturalibre_heroine_suit_1.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Heroine suit 1",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_suit_2",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_suit_2/culturalibre_heroine_suit_2.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Heroine suit 2",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_suit_3",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_suit_3/culturalibre_heroine_suit_3.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Heroine suit 3",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_suit_4",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_suit_4/culturalibre_heroine_suit_4.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Heroine suit 4",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_suit_5",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_suit_5/culturalibre_heroine_suit_5.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Heroine suit 5",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_suit_6",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_suit_6/culturalibre_heroine_suit_6.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Heroine suit 6",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_heroine_suit_7",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_heroine_suit_7/culturalibre_heroine_suit_7.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Heroine suit 7",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "culturalibre_leather_bracelet",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_leather_bracelet/culturalibre_leather_bracelet.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Leather bracelet",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_male_boots",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_male_boots/culturalibre_male_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Male boots",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_male_sport_suit",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_male_sport_suit/culturalibre_male_sport_suit.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Male sport suit",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_minotaur_horns",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_minotaur_horns/culturalibre_minotaur_horns.mhclo",
+  "slot": "horns",
+  "category": "Bodyparts",
+  "name": "Minotaur horns",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_motorcycle_helmet",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_motorcycle_helmet/culturalibre_motorcycle_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Motorcycle helmet",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_skull_helmet",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_skull_helmet/culturalibre_skull_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Skull helmet",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_sneakers",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_sneakers/culturalibre_sneakers.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Sneakers",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_tigra_tail",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_tigra_tail/culturalibre_tigra_tail.mhclo",
+  "slot": "tail",
+  "category": "Bodyparts",
+  "name": "Tigra tail",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_warrior_helmet",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_warrior_helmet/culturalibre_warrior_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Warrior helmet",
+  "author": "culturalibre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "culturalibre_warrior_helmet_02",
+  "dir": "clothes",
+  "rel": "clothes/culturalibre_warrior_helmet_02/culturalibre_warrior_helmet_02.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Warrior helmet 02",
+  "author": "culturalibre",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "donitz_monk_robe",
+  "dir": "clothes",
+  "rel": "clothes/donitz_monk_robe/donitz_monk_robe.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Monk robe",
+  "author": "Donitz",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "donitz_monk_robe_hood",
+  "dir": "clothes",
+  "rel": "clothes/donitz_monk_robe_hood/donitz_monk_robe_hood.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Monk robe hood",
+  "author": "Donitz",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "donitz_monk_robe_hood_down",
+  "dir": "clothes",
+  "rel": "clothes/donitz_monk_robe_hood_down/donitz_monk_robe_hood_down.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Monk robe hood down",
+  "author": "Donitz",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "donitz_monk_robe_hood_off",
+  "dir": "clothes",
+  "rel": "clothes/donitz_monk_robe_hood_off/donitz_monk_robe_hood_off.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Monk robe hood off",
+  "author": "Donitz",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "drednicolson_asymmetric_tunic_and_sash",
+  "dir": "clothes",
+  "rel": "clothes/drednicolson_asymmetric_tunic_and_sash/drednicolson_asymmetric_tunic_and_sash.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Drednicolson asymmetric tunic and sash",
+  "author": "DredNicolson",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "drednicolson_pith_helmet",
+  "dir": "clothes",
+  "rel": "clothes/drednicolson_pith_helmet/drednicolson_pith_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Drednicolson pith helmet",
+  "author": "DredNicolson",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "drednicolson_short-tail_camo_tee",
+  "dir": "clothes",
+  "rel": "clothes/drednicolson_short-tail_camo_tee/drednicolson_short-tail_camo_tee.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Drednicolson short tail camo tee",
+  "author": "DredNicolson",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "dressupdoc_balletflat1",
+  "dir": "clothes",
+  "rel": "clothes/dressupdoc_balletflat1/dressupdoc_balletflat1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Dressupdoc balletflat1",
+  "author": "DressUpDoc",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "dressupdoc_domsjeans1",
+  "dir": "clothes",
+  "rel": "clothes/dressupdoc_domsjeans1/dressupdoc_domsjeans1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Dressupdoc domsjeans1",
+  "author": "DressUpDoc",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "dressupdoc_maryjane1",
+  "dir": "clothes",
+  "rel": "clothes/dressupdoc_maryjane1/dressupdoc_maryjane1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Dressupdoc maryjane1",
+  "author": "DressUpDoc",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "dressupdoc_sandals1",
+  "dir": "clothes",
+  "rel": "clothes/dressupdoc_sandals1/dressupdoc_sandals1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Dressupdoc sandals1",
+  "author": "DressUpDoc",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_all_tied_up_bikini",
+  "dir": "clothes",
+  "rel": "clothes/elvs_all_tied_up_bikini/elvs_all_tied_up_bikini.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "All tied up bikini",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_asymmetrical_skirt",
+  "dir": "clothes",
+  "rel": "clothes/elvs_asymmetrical_skirt/elvs_asymmetrical_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Asymmetrical skirt",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_bandeau_swimwear_top_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_bandeau_swimwear_top_1/elvs_bandeau_swimwear_top_1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Bandeau swimwear top 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_bangle_bracelet1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_bangle_bracelet1/elvs_bangle_bracelet1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Bangle bracelet1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_basic_brave_feathers1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_basic_brave_feathers1/elvs_basic_brave_feathers1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Basic brave feathers1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_basic_felt_elf_shoes",
+  "dir": "clothes",
+  "rel": "clothes/elvs_basic_felt_elf_shoes/elvs_basic_felt_elf_shoes.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Basic felt elf shoes",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_bow_bottom_panty",
+  "dir": "clothes",
+  "rel": "clothes/elvs_bow_bottom_panty/elvs_bow_bottom_panty.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "Bow bottom panty",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_bow_front_bra",
+  "dir": "clothes",
+  "rel": "clothes/elvs_bow_front_bra/elvs_bow_front_bra.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Bow front bra",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_bracelet_pearls-l1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_bracelet_pearls-l1/elvs_bracelet_pearls-l1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Bracelet pearls l1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_braided_anklet1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_braided_anklet1/elvs_braided_anklet1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Braided anklet1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_caesar_sandals1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_caesar_sandals1/elvs_caesar_sandals1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Caesar sandals1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_camisole1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_camisole1/elvs_camisole1.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Camisole1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_candy_cane_necklace",
+  "dir": "clothes",
+  "rel": "clothes/elvs_candy_cane_necklace/elvs_candy_cane_necklace.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Candy cane necklace",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_cat_tail_as_clothes_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_cat_tail_as_clothes_1/elvs_cat_tail_as_clothes_1.mhclo",
+  "slot": "tail",
+  "category": "Unsorted/other",
+  "name": "Cat tail as clothes 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_charity_veil1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_charity_veil1/elvs_charity_veil1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Charity veil1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_childrens_costume_wings1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_childrens_costume_wings1/elvs_childrens_costume_wings1.mhclo",
+  "slot": "wings",
+  "category": "Unsorted/other",
+  "name": "Childrens costume wings1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_chunky_chain_anklet",
+  "dir": "clothes",
+  "rel": "clothes/elvs_chunky_chain_anklet/elvs_chunky_chain_anklet.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Chunky chain anklet",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_chunky_chain~heart_necklace",
+  "dir": "clothes",
+  "rel": "clothes/elvs_chunky_chain~heart_necklace/elvs_chunky_chain~heart_necklace.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Chunky chain~heart necklace",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_circle_chain_anklet1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_circle_chain_anklet1/elvs_circle_chain_anklet1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Circle chain anklet1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_covid_goggles1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_covid_goggles1/elvs_covid_goggles1.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Covid goggles1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_covid_mask",
+  "dir": "clothes",
+  "rel": "clothes/elvs_covid_mask/elvs_covid_mask.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Covid mask",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_crochet_baby_doll",
+  "dir": "clothes",
+  "rel": "clothes/elvs_crochet_baby_doll/elvs_crochet_baby_doll.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Crochet baby doll",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_crude_bootyshorts",
+  "dir": "clothes",
+  "rel": "clothes/elvs_crude_bootyshorts/elvs_crude_bootyshorts.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "Crude bootyshorts",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_crude_t-shirt_male",
+  "dir": "clothes",
+  "rel": "clothes/elvs_crude_t-shirt_male/elvs_crude_t-shirt_male.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Crude t shirt male",
+  "author": "Elvaerwyn",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_deer_antlers_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_deer_antlers_1/elvs_deer_antlers_1.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Deer antlers 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_dirty_lil_maid_bonnet",
+  "dir": "clothes",
+  "rel": "clothes/elvs_dirty_lil_maid_bonnet/elvs_dirty_lil_maid_bonnet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Dirty lil maid bonnet",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_disco_mini_skirt",
+  "dir": "clothes",
+  "rel": "clothes/elvs_disco_mini_skirt/elvs_disco_mini_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Disco mini skirt",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_disco_pants_double_ruffles",
+  "dir": "clothes",
+  "rel": "clothes/elvs_disco_pants_double_ruffles/elvs_disco_pants_double_ruffles.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Disco pants double ruffles",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_disco_pants_single_ruffles",
+  "dir": "clothes",
+  "rel": "clothes/elvs_disco_pants_single_ruffles/elvs_disco_pants_single_ruffles.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Disco pants single ruffles",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_disco_pants_skinny",
+  "dir": "clothes",
+  "rel": "clothes/elvs_disco_pants_skinny/elvs_disco_pants_skinny.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Disco pants skinny",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_disco_top2",
+  "dir": "clothes",
+  "rel": "clothes/elvs_disco_top2/elvs_disco_top2.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Disco top2",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_disco_top_1_butterfly",
+  "dir": "clothes",
+  "rel": "clothes/elvs_disco_top_1_butterfly/elvs_disco_top_1_butterfly.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Disco top 1 butterfly",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_double_handkerchief_halter_dress",
+  "dir": "clothes",
+  "rel": "clothes/elvs_double_handkerchief_halter_dress/elvs_double_handkerchief_halter_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Double handkerchief halter dress",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_double_hoops",
+  "dir": "clothes",
+  "rel": "clothes/elvs_double_hoops/elvs_double_hoops.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Double hoops",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_dual_fanned_wings_collaberation",
+  "dir": "clothes",
+  "rel": "clothes/elvs_dual_fanned_wings_collaberation/elvs_dual_fanned_wings_collaberation.mhclo",
+  "slot": "wings",
+  "category": "Unsorted/other",
+  "name": "Dual fanned wings collaberation",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_emt_uniform_jacket_female",
+  "dir": "clothes",
+  "rel": "clothes/elvs_emt_uniform_jacket_female/elvs_emt_uniform_jacket_female.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Emt uniform jacket female",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_emt_uniform_jacket_male",
+  "dir": "clothes",
+  "rel": "clothes/elvs_emt_uniform_jacket_male/elvs_emt_uniform_jacket_male.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Emt uniform jacket male",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_emt_uniform_pants_female",
+  "dir": "clothes",
+  "rel": "clothes/elvs_emt_uniform_pants_female/elvs_emt_uniform_pants_female.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Emt uniform pants female",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_emt_uniform_pants_male",
+  "dir": "clothes",
+  "rel": "clothes/elvs_emt_uniform_pants_male/elvs_emt_uniform_pants_male.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Emt uniform pants male",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_f_earring_array1_l",
+  "dir": "clothes",
+  "rel": "clothes/elvs_f_earring_array1_l/elvs_f_earring_array1_l.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "F earring array1 l",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_fashion_stylized_qipoa",
+  "dir": "clothes",
+  "rel": "clothes/elvs_fashion_stylized_qipoa/elvs_fashion_stylized_qipoa.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Fashion stylized qipoa",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_flatshoe_bow1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_flatshoe_bow1/elvs_flatshoe_bow1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Flatshoe bow1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_flatshoe_buckle_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_flatshoe_buckle_1/elvs_flatshoe_buckle_1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Flatshoe buckle 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_flatshoe_gemmed1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_flatshoe_gemmed1/elvs_flatshoe_gemmed1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Flatshoe gemmed1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_flatshoe_plain1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_flatshoe_plain1/elvs_flatshoe_plain1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Flatshoe plain1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_flatshoe_pointy1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_flatshoe_pointy1/elvs_flatshoe_pointy1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Flatshoe pointy1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_fluffy_tail_as_clothes_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_fluffy_tail_as_clothes_1/elvs_fluffy_tail_as_clothes_1.mhclo",
+  "slot": "tail",
+  "category": "Unsorted/other",
+  "name": "Fluffy tail as clothes 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_frilled_party_dress",
+  "dir": "clothes",
+  "rel": "clothes/elvs_frilled_party_dress/elvs_frilled_party_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Frilled party dress",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_fringe_hippy_dress",
+  "dir": "clothes",
+  "rel": "clothes/elvs_fringe_hippy_dress/elvs_fringe_hippy_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Fringe hippy dress",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_fringe_leather_dress",
+  "dir": "clothes",
+  "rel": "clothes/elvs_fringe_leather_dress/elvs_fringe_leather_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Fringe leather dress",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_fringe_off_shoulder_dress",
+  "dir": "clothes",
+  "rel": "clothes/elvs_fringe_off_shoulder_dress/elvs_fringe_off_shoulder_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Fringe off shoulder dress",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_gazelle_horns_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_gazelle_horns_1/elvs_gazelle_horns_1.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Gazelle horns 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_gazelle_horns_2",
+  "dir": "clothes",
+  "rel": "clothes/elvs_gazelle_horns_2/elvs_gazelle_horns_2.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Gazelle horns 2",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress1/elvs_goddess_dress1.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress2",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress2/elvs_goddess_dress2.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress2",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress3",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress3/elvs_goddess_dress3.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress3",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress4",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress4/elvs_goddess_dress4.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress4",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress5",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress5/elvs_goddess_dress5.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress5",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress6",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress6/elvs_goddess_dress6.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress6",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress7",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress7/elvs_goddess_dress7.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress7",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goddess_dress8",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goddess_dress8/elvs_goddess_dress8.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Goddess dress8",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_gored_elephant_pants",
+  "dir": "clothes",
+  "rel": "clothes/elvs_gored_elephant_pants/elvs_gored_elephant_pants.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Gored elephant pants",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_gored_midi_skirt",
+  "dir": "clothes",
+  "rel": "clothes/elvs_gored_midi_skirt/elvs_gored_midi_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Gored midi skirt",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_goth_statement_necklace1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_goth_statement_necklace1/elvs_goth_statement_necklace1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Goth statement necklace1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_halter_dress_knee_length",
+  "dir": "clothes",
+  "rel": "clothes/elvs_halter_dress_knee_length/elvs_halter_dress_knee_length.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halter dress knee length",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_halter_dress_long",
+  "dir": "clothes",
+  "rel": "clothes/elvs_halter_dress_long/elvs_halter_dress_long.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halter dress long",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_halter_dress_mini",
+  "dir": "clothes",
+  "rel": "clothes/elvs_halter_dress_mini/elvs_halter_dress_mini.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halter dress mini",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_halter_dress_tiered",
+  "dir": "clothes",
+  "rel": "clothes/elvs_halter_dress_tiered/elvs_halter_dress_tiered.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halter dress tiered",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_halter_style_pantsuit1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_halter_style_pantsuit1/elvs_halter_style_pantsuit1.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Halter style pantsuit1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_heart_belly_jewel",
+  "dir": "clothes",
+  "rel": "clothes/elvs_heart_belly_jewel/elvs_heart_belly_jewel.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Heart belly jewel",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_hooded_sweat_jacket1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_hooded_sweat_jacket1/elvs_hooded_sweat_jacket1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Hooded sweat jacket1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_interlocking_rings_anklet1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_interlocking_rings_anklet1/elvs_interlocking_rings_anklet1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Interlocking rings anklet1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_jeans_bootcut",
+  "dir": "clothes",
+  "rel": "clothes/elvs_jeans_bootcut/elvs_jeans_bootcut.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Jeans bootcut",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_jeans_straight_leg",
+  "dir": "clothes",
+  "rel": "clothes/elvs_jeans_straight_leg/elvs_jeans_straight_leg.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Jeans straight leg",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_knee_high_heel_boots1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_knee_high_heel_boots1/elvs_knee_high_heel_boots1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Knee high heel boots1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_lace_panty",
+  "dir": "clothes",
+  "rel": "clothes/elvs_lace_panty/elvs_lace_panty.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "Lace panty",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_ladies_apron",
+  "dir": "clothes",
+  "rel": "clothes/elvs_ladies_apron/elvs_ladies_apron.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Ladies apron",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_ladies_sunglass1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_ladies_sunglass1/elvs_ladies_sunglass1.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Ladies sunglass1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_ladies_tank1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_ladies_tank1/elvs_ladies_tank1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Ladies tank1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_lara_tank1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_lara_tank1/elvs_lara_tank1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Lara tank1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_longhorn_steer_horns_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_longhorn_steer_horns_1/elvs_longhorn_steer_horns_1.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Longhorn steer horns 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_m_facial_jewel_array1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_m_facial_jewel_array1/elvs_m_facial_jewel_array1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "M facial jewel array1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_athletic_tank1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_athletic_tank1/elvs_male_athletic_tank1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Male athletic tank1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_boho_top1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_boho_top1/elvs_male_boho_top1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Male boho top1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_coveralls_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_coveralls_1/elvs_male_coveralls_1.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Male coveralls 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_flat_cap1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_flat_cap1/elvs_male_flat_cap1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Male flat cap1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_flip_flop_sandals1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_flip_flop_sandals1/elvs_male_flip_flop_sandals1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Male flip flop sandals1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_logo_tshirt1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_logo_tshirt1/elvs_male_logo_tshirt1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Male logo tshirt1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_muscle_shirt1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_muscle_shirt1/elvs_male_muscle_shirt1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Male muscle shirt1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_shirt_tie_tucked1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_shirt_tie_tucked1/elvs_male_shirt_tie_tucked1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Male shirt tie tucked1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_shirt_untucked_bd1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_shirt_untucked_bd1/elvs_male_shirt_untucked_bd1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Male shirt untucked bd1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_swim_shorts1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_swim_shorts1/elvs_male_swim_shorts1.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male swim shorts1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_tankshirt1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_tankshirt1/elvs_male_tankshirt1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Male tankshirt1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_trilby_hat",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_trilby_hat/elvs_male_trilby_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Male trilby hat",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_trouser",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_trouser/elvs_male_trouser.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male trouser",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_trouser_short_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_trouser_short_1/elvs_male_trouser_short_1.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male trouser short 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_trouser_short_2",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_trouser_short_2/elvs_male_trouser_short_2.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male trouser short 2",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_male_trouser_with_chain",
+  "dir": "clothes",
+  "rel": "clothes/elvs_male_trouser_with_chain/elvs_male_trouser_with_chain.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male trouser with chain",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_moose_antlers_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_moose_antlers_1/elvs_moose_antlers_1.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Moose antlers 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_multi_bangle_bracelet1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_multi_bangle_bracelet1/elvs_multi_bangle_bracelet1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Multi bangle bracelet1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_navel_ring_heartfob",
+  "dir": "clothes",
+  "rel": "clothes/elvs_navel_ring_heartfob/elvs_navel_ring_heartfob.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Navel ring heartfob",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_pearl_anklet_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_pearl_anklet_1/elvs_pearl_anklet_1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Pearl anklet 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_pencil_skirt",
+  "dir": "clothes",
+  "rel": "clothes/elvs_pencil_skirt/elvs_pencil_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Pencil skirt",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_plague_doctor_mask",
+  "dir": "clothes",
+  "rel": "clothes/elvs_plague_doctor_mask/elvs_plague_doctor_mask.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Plague doctor mask",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_pleated_plaid_mini_skirt",
+  "dir": "clothes",
+  "rel": "clothes/elvs_pleated_plaid_mini_skirt/elvs_pleated_plaid_mini_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Pleated plaid mini skirt",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_pumpkin_hallows_earrings1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_pumpkin_hallows_earrings1/elvs_pumpkin_hallows_earrings1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Pumpkin hallows earrings1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_racing_fire_suit_female1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_racing_fire_suit_female1/elvs_racing_fire_suit_female1.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Racing fire suit female1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_racing_fire_suit_male1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_racing_fire_suit_male1/elvs_racing_fire_suit_male1.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Racing fire suit male1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_retro_girly_shorts1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_retro_girly_shorts1/elvs_retro_girly_shorts1.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Retro girly shorts1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_ruffle_sleeve_peasant_blouse_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_ruffle_sleeve_peasant_blouse_1/elvs_ruffle_sleeve_peasant_blouse_1.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Ruffle sleeve peasant blouse 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_santa_hat",
+  "dir": "clothes",
+  "rel": "clothes/elvs_santa_hat/elvs_santa_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Santa hat",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_sarong_cover_up",
+  "dir": "clothes",
+  "rel": "clothes/elvs_sarong_cover_up/elvs_sarong_cover_up.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Sarong cover up",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_scruffy_beard1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_scruffy_beard1/elvs_scruffy_beard1.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Scruffy beard1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_simple_60s_dress",
+  "dir": "clothes",
+  "rel": "clothes/elvs_simple_60s_dress/elvs_simple_60s_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Simple 60s dress",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_simple_fashion_dress_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_simple_fashion_dress_1/elvs_simple_fashion_dress_1.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Simple fashion dress 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_simple_fashion_dress_2",
+  "dir": "clothes",
+  "rel": "clothes/elvs_simple_fashion_dress_2/elvs_simple_fashion_dress_2.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Simple fashion dress 2",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_slouchy_beanie1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_slouchy_beanie1/elvs_slouchy_beanie1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Slouchy beanie1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_sporty_tracksuit_hoodie_dress1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_sporty_tracksuit_hoodie_dress1/elvs_sporty_tracksuit_hoodie_dress1.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Sporty tracksuit hoodie dress1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_stars_belly_circlet",
+  "dir": "clothes",
+  "rel": "clothes/elvs_stars_belly_circlet/elvs_stars_belly_circlet.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Stars belly circlet",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_static_wings1_dragonfly",
+  "dir": "clothes",
+  "rel": "clothes/elvs_static_wings1_dragonfly/elvs_static_wings1_dragonfly.mhclo",
+  "slot": "wings",
+  "category": "Unsorted/other",
+  "name": "Static wings1 dragonfly",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_static_wings2_dragon1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_static_wings2_dragon1/elvs_static_wings2_dragon1.mhclo",
+  "slot": "wings",
+  "category": "Unsorted/other",
+  "name": "Static wings2 dragon1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_static_wings3_butterfly1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_static_wings3_butterfly1/elvs_static_wings3_butterfly1.mhclo",
+  "slot": "wings",
+  "category": "Unsorted/other",
+  "name": "Static wings3 butterfly1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_static_wings4_bone_wings1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_static_wings4_bone_wings1/elvs_static_wings4_bone_wings1.mhclo",
+  "slot": "wings",
+  "category": "Unsorted/other",
+  "name": "Static wings4 bone wings1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_static_wings5_fairy_moth1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_static_wings5_fairy_moth1/elvs_static_wings5_fairy_moth1.mhclo",
+  "slot": "wings",
+  "category": "Unsorted/other",
+  "name": "Static wings5 fairy moth1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_swimwear_micro_shorts",
+  "dir": "clothes",
+  "rel": "clothes/elvs_swimwear_micro_shorts/elvs_swimwear_micro_shorts.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Swimwear micro shorts",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "elvs_tophat1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_tophat1/elvs_tophat1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Tophat1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_twisty_hoops1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_twisty_hoops1/elvs_twisty_hoops1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Twisty hoops1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_unicorn_horn_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_unicorn_horn_1/elvs_unicorn_horn_1.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Unicorn horn 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_unisex_chef_hat_1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_unisex_chef_hat_1/elvs_unisex_chef_hat_1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Unisex chef hat 1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_vintage_swimwear1_50s_strapless",
+  "dir": "clothes",
+  "rel": "clothes/elvs_vintage_swimwear1_50s_strapless/elvs_vintage_swimwear1_50s_strapless.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Vintage swimwear1 50s strapless",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_wedge_tall_boots1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_wedge_tall_boots1/elvs_wedge_tall_boots1.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Wedge tall boots1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_witchy_hallows_hat1",
+  "dir": "clothes",
+  "rel": "clothes/elvs_witchy_hallows_hat1/elvs_witchy_hallows_hat1.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Witchy hallows hat1",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "elvs_zombie_killer_sneakers",
+  "dir": "clothes",
+  "rel": "clothes/elvs_zombie_killer_sneakers/elvs_zombie_killer_sneakers.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Zombie killer sneakers",
+  "author": "Elvaerwyn",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "ews_3d_glasses",
+  "dir": "clothes",
+  "rel": "clothes/ews_3d_glasses/ews_3d_glasses.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Ews 3d glasses",
+  "author": "EWS",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "ews_hoop_earrings",
+  "dir": "clothes",
+  "rel": "clothes/ews_hoop_earrings/ews_hoop_earrings.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Ews hoop earrings",
+  "author": "EWS",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "ews_industrial_piercing_left_ear_",
+  "dir": "clothes",
+  "rel": "clothes/ews_industrial_piercing_left_ear_/ews_industrial_piercing_left_ear_.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Ews industrial piercing left ear",
+  "author": "EWS",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "ews_industrial_piercing_right_ear_",
+  "dir": "clothes",
+  "rel": "clothes/ews_industrial_piercing_right_ear_/ews_industrial_piercing_right_ear_.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Ews industrial piercing right ear",
+  "author": "EWS",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "ews_septum_ring",
+  "dir": "clothes",
+  "rel": "clothes/ews_septum_ring/ews_septum_ring.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Ews septum ring",
+  "author": "EWS",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "ews_striped_shirt",
+  "dir": "clothes",
+  "rel": "clothes/ews_striped_shirt/ews_striped_shirt.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Ews striped shirt",
+  "author": "EWS",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "fedora01",
+  "dir": "clothes",
+  "rel": "clothes/fedora01/fedora01.mhclo",
+  "slot": "hat",
+  "category": "",
+  "name": "Fedora01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "fedora_cocked",
+  "dir": "clothes",
+  "rel": "clothes/fedora_cocked/fedora_cocked.mhclo",
+  "slot": "hat",
+  "category": "",
+  "name": "Fedora cocked",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "female_casualsuit01",
+  "dir": "clothes",
+  "rel": "clothes/female_casualsuit01/female_casualsuit01.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Female casualsuit01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "female_casualsuit02",
+  "dir": "clothes",
+  "rel": "clothes/female_casualsuit02/female_casualsuit02.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Female casualsuit02",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "female_elegantsuit01",
+  "dir": "clothes",
+  "rel": "clothes/female_elegantsuit01/female_elegantsuit01.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Female elegantsuit01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "female_sportsuit01",
+  "dir": "clothes",
+  "rel": "clothes/female_sportsuit01/female_sportsuit01.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Female sportsuit01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "frankyaye_glasses_library_male",
+  "dir": "clothes",
+  "rel": "clothes/frankyaye_glasses_library_male/frankyaye_glasses_library_male.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Frankyaye glasses library male",
+  "author": "frankyaye",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "frankyaye_mini_skirt_01",
+  "dir": "clothes",
+  "rel": "clothes/frankyaye_mini_skirt_01/frankyaye_mini_skirt_01.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Frankyaye mini skirt 01",
+  "author": "frankyaye",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "frankyaye_mini_skirt_02",
+  "dir": "clothes",
+  "rel": "clothes/frankyaye_mini_skirt_02/frankyaye_mini_skirt_02.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Frankyaye mini skirt 02",
+  "author": "frankyaye",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "freezychan_lucoa_quetzalcoatl_horns",
+  "dir": "clothes",
+  "rel": "clothes/freezychan_lucoa_quetzalcoatl_horns/freezychan_lucoa_quetzalcoatl_horns.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Freezychan lucoa quetzalcoatl horns",
+  "author": "FreezyChan",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "gredal_gas_mask",
+  "dir": "clothes",
+  "rel": "clothes/gredal_gas_mask/gredal_gas_mask.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Gredal gas mask",
+  "author": "Mathias_Gredal",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "green_tomato_rei_ayanami",
+  "dir": "clothes",
+  "rel": "clothes/green_tomato_rei_ayanami/green_tomato_rei_ayanami.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Green tomato rei ayanami",
+  "author": "green_tomato",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "green_tomato_yoko_tsuno",
+  "dir": "clothes",
+  "rel": "clothes/green_tomato_yoko_tsuno/green_tomato_yoko_tsuno.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Green tomato yoko tsuno",
+  "author": "green_tomato",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "grinsegold_beard_sigmund_wip",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_beard_sigmund_wip/grinsegold_beard_sigmund_wip.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Grinsegold beard sigmund wip",
+  "author": "grinsegold",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "grinsegold_corinthian_helmet",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_corinthian_helmet/grinsegold_corinthian_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Grinsegold corinthian helmet",
+  "author": "grinsegold",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "grinsegold_female_pirate_boots",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_female_pirate_boots/grinsegold_female_pirate_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Grinsegold female pirate boots",
+  "author": "grinsegold",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "grinsegold_fingernails_female_natural",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_fingernails_female_natural/grinsegold_fingernails_female_natural.mhclo",
+  "slot": "nails",
+  "category": "Nails",
+  "name": "Grinsegold fingernails female natural",
+  "author": "grinsegold",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "grinsegold_full_beard",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_full_beard/grinsegold_full_beard.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Grinsegold full beard",
+  "author": "grinsegold",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "grinsegold_mars_suit",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_mars_suit/grinsegold_mars_suit.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Grinsegold mars suit",
+  "author": "grinsegold",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "grinsegold_moustache",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_moustache/grinsegold_moustache.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Grinsegold moustache",
+  "author": "grinsegold",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "grinsegold_uncle_joshis_hat",
+  "dir": "clothes",
+  "rel": "clothes/grinsegold_uncle_joshis_hat/grinsegold_uncle_joshis_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Grinsegold uncle joshis hat",
+  "author": "grinsegold",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jaldmic_ankh_collar",
+  "dir": "clothes",
+  "rel": "clothes/jaldmic_ankh_collar/jaldmic_ankh_collar.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Jaldmic ankh collar",
+  "author": "JALdMIC",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jaldmic_demon_horns",
+  "dir": "clothes",
+  "rel": "clothes/jaldmic_demon_horns/jaldmic_demon_horns.mhclo",
+  "slot": "horns",
+  "category": "Bodyparts",
+  "name": "Jaldmic demon horns",
+  "author": "JALdMIC",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jaldmic_houndoom_horns",
+  "dir": "clothes",
+  "rel": "clothes/jaldmic_houndoom_horns/jaldmic_houndoom_horns.mhclo",
+  "slot": "horns",
+  "category": "Bodyparts",
+  "name": "Jaldmic houndoom horns",
+  "author": "JALdMIC",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jaldmic_m1951_72",
+  "dir": "clothes",
+  "rel": "clothes/jaldmic_m1951_72/jaldmic_m1951_72.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Jaldmic m1951 72",
+  "author": "JALdMIC",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jaldmic_no_heart_enchanted_gemstone",
+  "dir": "clothes",
+  "rel": "clothes/jaldmic_no_heart_enchanted_gemstone/jaldmic_no_heart_enchanted_gemstone.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Jaldmic no heart enchanted gemstone",
+  "author": "JALdMIC",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jaldmic_stockings",
+  "dir": "clothes",
+  "rel": "clothes/jaldmic_stockings/jaldmic_stockings.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "Jaldmic stockings",
+  "author": "JALdMIC",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jaldmic_toriel_horns",
+  "dir": "clothes",
+  "rel": "clothes/jaldmic_toriel_horns/jaldmic_toriel_horns.mhclo",
+  "slot": "horns",
+  "category": "Hat/Helmet",
+  "name": "Jaldmic toriel horns",
+  "author": "JALdMIC",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "janexx_old_female_sweater",
+  "dir": "clothes",
+  "rel": "clothes/janexx_old_female_sweater/janexx_old_female_sweater.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Janexx old female sweater",
+  "author": "janexx",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "javherre_casco_caballero_templario_templar_knight_helmet",
+  "dir": "clothes",
+  "rel": "clothes/javherre_casco_caballero_templario_templar_knight_helmet/javherre_casco_caballero_templario_templar_knight_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Javherre casco caballero templario templar knight helmet",
+  "author": "javherre",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "joachip_cyborg_suit",
+  "dir": "clothes",
+  "rel": "clothes/joachip_cyborg_suit/joachip_cyborg_suit.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Joachip cyborg suit",
+  "author": "joachip",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "joachip_ring_1",
+  "dir": "clothes",
+  "rel": "clothes/joachip_ring_1/joachip_ring_1.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Joachip ring 1",
+  "author": "joachip",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "joepal_crude_high_socks",
+  "dir": "clothes",
+  "rel": "clothes/joepal_crude_high_socks/joepal_crude_high_socks.mhclo",
+  "slot": "socks",
+  "category": "Shoes/Boots/Socks",
+  "name": "Crude high socks",
+  "author": "Joel Palmius",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "joepal_crude_low_socks",
+  "dir": "clothes",
+  "rel": "clothes/joepal_crude_low_socks/joepal_crude_low_socks.mhclo",
+  "slot": "socks",
+  "category": "Shoes/Boots/Socks",
+  "name": "Crude low socks",
+  "author": "Joel Palmius",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "joepal_crude_t-shirt_female",
+  "dir": "clothes",
+  "rel": "clothes/joepal_crude_t-shirt_female/joepal_crude_t-shirt_female.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Crude t shirt female",
+  "author": "Joel Palmius",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "joepal_medical_mouth_protection",
+  "dir": "clothes",
+  "rel": "clothes/joepal_medical_mouth_protection/joepal_medical_mouth_protection.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Medical mouth protection",
+  "author": "Joel Palmius",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "joepal_plain_bra",
+  "dir": "clothes",
+  "rel": "clothes/joepal_plain_bra/joepal_plain_bra.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Plain bra",
+  "author": "Joel Palmius",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "joepal_xmas_cap",
+  "dir": "clothes",
+  "rel": "clothes/joepal_xmas_cap/joepal_xmas_cap.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Xmas cap",
+  "author": "Joel Palmius",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jujube_bag_on_head",
+  "dir": "clothes",
+  "rel": "clothes/jujube_bag_on_head/jujube_bag_on_head.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Bag on head",
+  "author": "jujube",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "jujube_newsboy_cap",
+  "dir": "clothes",
+  "rel": "clothes/jujube_newsboy_cap/jujube_newsboy_cap.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Newsboy cap",
+  "author": "jujube",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "kwnet_at_optical_glasses",
+  "dir": "clothes",
+  "rel": "clothes/kwnet_at_optical_glasses/kwnet_at_optical_glasses.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Kwnet at optical glasses",
+  "author": "kwnet_at",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "kwnet_at_pantyhose01",
+  "dir": "clothes",
+  "rel": "clothes/kwnet_at_pantyhose01/kwnet_at_pantyhose01.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "Kwnet at pantyhose01",
+  "author": "kwnet_at",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "learning_mma_fighting_gloves",
+  "dir": "clothes",
+  "rel": "clothes/learning_mma_fighting_gloves/learning_mma_fighting_gloves.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Learning mma fighting gloves",
+  "author": "learning",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "learning_slave_collar_chain",
+  "dir": "clothes",
+  "rel": "clothes/learning_slave_collar_chain/learning_slave_collar_chain.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Learning slave collar chain",
+  "author": "learning",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "maciekg_horned_helmet",
+  "dir": "clothes",
+  "rel": "clothes/maciekg_horned_helmet/maciekg_horned_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Maciekg horned helmet",
+  "author": "MaciekG",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "maciekg_leather_boots",
+  "dir": "clothes",
+  "rel": "clothes/maciekg_leather_boots/maciekg_leather_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Maciekg leather boots",
+  "author": "MaciekG",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "maciekg_leather_helmet",
+  "dir": "clothes",
+  "rel": "clothes/maciekg_leather_helmet/maciekg_leather_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Maciekg leather helmet",
+  "author": "MaciekG",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "maciekg_wizard_hat",
+  "dir": "clothes",
+  "rel": "clothes/maciekg_wizard_hat/maciekg_wizard_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Maciekg wizard hat",
+  "author": "MaciekG",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "maciekg_wizard_robe",
+  "dir": "clothes",
+  "rel": "clothes/maciekg_wizard_robe/maciekg_wizard_robe.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Maciekg wizard robe",
+  "author": "MaciekG",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "madmanny_tight_leather_boots",
+  "dir": "clothes",
+  "rel": "clothes/madmanny_tight_leather_boots/madmanny_tight_leather_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Madmanny tight leather boots",
+  "author": "madmanny",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "male_casualsuit01",
+  "dir": "clothes",
+  "rel": "clothes/male_casualsuit01/male_casualsuit01.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male casualsuit01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "male_casualsuit02",
+  "dir": "clothes",
+  "rel": "clothes/male_casualsuit02/male_casualsuit02.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male casualsuit02",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "male_casualsuit03",
+  "dir": "clothes",
+  "rel": "clothes/male_casualsuit03/male_casualsuit03.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male casualsuit03",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "male_casualsuit04",
+  "dir": "clothes",
+  "rel": "clothes/male_casualsuit04/male_casualsuit04.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male casualsuit04",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "male_casualsuit05",
+  "dir": "clothes",
+  "rel": "clothes/male_casualsuit05/male_casualsuit05.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male casualsuit05",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "male_casualsuit06",
+  "dir": "clothes",
+  "rel": "clothes/male_casualsuit06/male_casualsuit06.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male casualsuit06",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "male_elegantsuit01",
+  "dir": "clothes",
+  "rel": "clothes/male_elegantsuit01/male_elegantsuit01.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male elegantsuit01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "male_worksuit01",
+  "dir": "clothes",
+  "rel": "clothes/male_worksuit01/male_worksuit01.mhclo",
+  "slot": "outfit",
+  "category": "",
+  "name": "Male worksuit01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "marco_105_armsleeve02",
+  "dir": "clothes",
+  "rel": "clothes/marco_105_armsleeve02/marco_105_armsleeve02.mhclo",
+  "slot": "gloves",
+  "category": "Underwear",
+  "name": "Marco 105 armsleeve02",
+  "author": "Marco_105",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "marco_105_stocking01",
+  "dir": "clothes",
+  "rel": "clothes/marco_105_stocking01/marco_105_stocking01.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "Marco 105 stocking01",
+  "author": "Marco_105",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "marco_105_stocking02",
+  "dir": "clothes",
+  "rel": "clothes/marco_105_stocking02/marco_105_stocking02.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "Marco 105 stocking02",
+  "author": "Marco_105",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "matcreator_mc-bodysuit-2021",
+  "dir": "clothes",
+  "rel": "clothes/matcreator_mc-bodysuit-2021/matcreator_mc-bodysuit-2021.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Matcreator mc bodysuit 2021",
+  "author": "MatCreator",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "matcreator_mc-scifi-armor_guardian",
+  "dir": "clothes",
+  "rel": "clothes/matcreator_mc-scifi-armor_guardian/matcreator_mc-scifi-armor_guardian.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Matcreator mc scifi armor guardian",
+  "author": "MatCreator",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "matcreator_mc-scifi-armor_helios",
+  "dir": "clothes",
+  "rel": "clothes/matcreator_mc-scifi-armor_helios/matcreator_mc-scifi-armor_helios.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Matcreator mc scifi armor helios",
+  "author": "MatCreator",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "matcreator_mc-scifi-armor_jupiter7",
+  "dir": "clothes",
+  "rel": "clothes/matcreator_mc-scifi-armor_jupiter7/matcreator_mc-scifi-armor_jupiter7.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Matcreator mc scifi armor jupiter7",
+  "author": "MatCreator",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "matcreator_mc-skinsuit_2022",
+  "dir": "clothes",
+  "rel": "clothes/matcreator_mc-skinsuit_2022/matcreator_mc-skinsuit_2022.mhclo",
+  "slot": "outfit",
+  "category": "Pants",
+  "name": "Matcreator mc skinsuit 2022",
+  "author": "MatCreator",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_ballet_dress_the_swan",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_ballet_dress_the_swan/mindfront_ballet_dress_the_swan.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Ballet dress the swan",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_bikini_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_bikini_01/mindfront_bikini_01.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Bikini 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_cardigan_long_open_front",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_cardigan_long_open_front/mindfront_cardigan_long_open_front.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Cardigan long open front",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_01/mindfront_f_dress_01.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_02",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_02/mindfront_f_dress_02.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 02",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_03",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_03/mindfront_f_dress_03.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 03",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_04",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_04/mindfront_f_dress_04.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 04",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_05",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_05/mindfront_f_dress_05.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 05",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_06",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_06/mindfront_f_dress_06.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 06",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_07",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_07/mindfront_f_dress_07.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 07",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_08",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_08/mindfront_f_dress_08.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 08",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_09",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_09/mindfront_f_dress_09.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 09",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_10",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_10/mindfront_f_dress_10.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 10",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_dress_11",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_dress_11/mindfront_f_dress_11.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "F dress 11",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_ninja",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_ninja/mindfront_f_ninja.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "F ninja",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_f_one-piece_swimsuit_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_f_one-piece_swimsuit_01/mindfront_f_one-piece_swimsuit_01.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "F one piece swimsuit 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_female_trousers_1",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_female_trousers_1/mindfront_female_trousers_1.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Female trousers 1",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_fishing_hat_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_fishing_hat_01/mindfront_fishing_hat_01.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Fishing hat 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_helmet_kz45",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_helmet_kz45/mindfront_helmet_kz45.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Helmet kz45",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_kimono",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_kimono/mindfront_kimono.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Kimono",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_knitted_hat_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_knitted_hat_01/mindfront_knitted_hat_01.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Knitted hat 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_knitted_sweater_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_knitted_sweater_01/mindfront_knitted_sweater_01.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Knitted sweater 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_knitted_sweater_02",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_knitted_sweater_02/mindfront_knitted_sweater_02.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Knitted sweater 02",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_lusekofta",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_lusekofta/mindfront_lusekofta.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Lusekofta",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_m_suit_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_m_suit_01/mindfront_m_suit_01.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "M suit 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_male_swimming_trunks_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_male_swimming_trunks_01/mindfront_male_swimming_trunks_01.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male swimming trunks 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_male_swimming_trunks_02",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_male_swimming_trunks_02/mindfront_male_swimming_trunks_02.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male swimming trunks 02",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_male_swimming_trunks_03",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_male_swimming_trunks_03/mindfront_male_swimming_trunks_03.mhclo",
+  "slot": "pants",
+  "category": "Unsorted/other",
+  "name": "Male swimming trunks 03",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_male_trousers_1",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_male_trousers_1/mindfront_male_trousers_1.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male trousers 1",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_male_trousers_2",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_male_trousers_2/mindfront_male_trousers_2.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male trousers 2",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_nails_01_short",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_nails_01_short/mindfront_nails_01_short.mhclo",
+  "slot": "nails",
+  "category": "Nails",
+  "name": "Nails 01 short",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_nails_02_medium",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_nails_02_medium/mindfront_nails_02_medium.mhclo",
+  "slot": "nails",
+  "category": "Nails",
+  "name": "Nails 02 medium",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_nails_03_long",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_nails_03_long/mindfront_nails_03_long.mhclo",
+  "slot": "nails",
+  "category": "Nails",
+  "name": "Nails 03 long",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_nails_toes_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_nails_toes_01/mindfront_nails_toes_01.mhclo",
+  "slot": "nails",
+  "category": "Nails",
+  "name": "Nails toes 01",
+  "author": "Mindfront",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_patrol_cap",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_patrol_cap/mindfront_patrol_cap.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Patrol cap",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_sherpa_hat",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_sherpa_hat/mindfront_sherpa_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Sherpa hat",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_shoes_biker_boots_female",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_shoes_biker_boots_female/mindfront_shoes_biker_boots_female.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Shoes biker boots female",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_shoes_biker_boots_male",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_shoes_biker_boots_male/mindfront_shoes_biker_boots_male.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Shoes biker boots male",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_shoes_monk_strap_female",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_shoes_monk_strap_female/mindfront_shoes_monk_strap_female.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Shoes monk strap female",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_shoes_monk_strap_male",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_shoes_monk_strap_male/mindfront_shoes_monk_strap_male.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Shoes monk strap male",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_shoes_oxford_female",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_shoes_oxford_female/mindfront_shoes_oxford_female.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Shoes oxford female",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_shoes_oxford_male",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_shoes_oxford_male/mindfront_shoes_oxford_male.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Shoes oxford male",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_tactical_vest_female",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_tactical_vest_female/mindfront_tactical_vest_female.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Tactical vest female",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mindfront_tactical_vest_male",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_tactical_vest_male/mindfront_tactical_vest_male.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Tactical vest male",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "mindfront_tank_top_01",
+  "dir": "clothes",
+  "rel": "clothes/mindfront_tank_top_01/mindfront_tank_top_01.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Tank top 01",
+  "author": "Mindfront",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mrgreaterthan_m1_helmet",
+  "dir": "clothes",
+  "rel": "clothes/mrgreaterthan_m1_helmet/mrgreaterthan_m1_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Mrgreaterthan m1 helmet",
+  "author": "MrGreaterThan",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "mtknife_low_mini_skirt",
+  "dir": "clothes",
+  "rel": "clothes/mtknife_low_mini_skirt/mtknife_low_mini_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Mtknife low mini skirt",
+  "author": "MTKnife",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "mtknife_pleated_mini_skirt",
+  "dir": "clothes",
+  "rel": "clothes/mtknife_pleated_mini_skirt/mtknife_pleated_mini_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Mtknife pleated mini skirt",
+  "author": "MTKnife",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "namuhekam_male_polo_shirt",
+  "dir": "clothes",
+  "rel": "clothes/namuhekam_male_polo_shirt/namuhekam_male_polo_shirt.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Namuhekam male polo shirt",
+  "author": "namuhekam",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_babydoll",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_babydoll/punkduck_babydoll.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Babydoll",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_bandeau_bikini_bra",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_bandeau_bikini_bra/punkduck_bandeau_bikini_bra.mhclo",
+  "slot": "top",
+  "category": "Unsorted/other",
+  "name": "Bandeau bikini bra",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_bandeau_bikini_slip",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_bandeau_bikini_slip/punkduck_bandeau_bikini_slip.mhclo",
+  "slot": "pants",
+  "category": "Unsorted/other",
+  "name": "Bandeau bikini slip",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_bandeau_bra",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_bandeau_bra/punkduck_bandeau_bra.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Bandeau bra",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_bicycle_helmet_time_trial_aero_helmet",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_bicycle_helmet_time_trial_aero_helmet/punkduck_bicycle_helmet_time_trial_aero_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Bicycle helmet time trial aero helmet",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_bikini02_bra",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_bikini02_bra/punkduck_bikini02_bra.mhclo",
+  "slot": "top",
+  "category": "Unsorted/other",
+  "name": "Bikini02 bra",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_bikini02_slip",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_bikini02_slip/punkduck_bikini02_slip.mhclo",
+  "slot": "pants",
+  "category": "Unsorted/other",
+  "name": "Bikini02 slip",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_black_cocktail_dress",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_black_cocktail_dress/punkduck_black_cocktail_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Black cocktail dress",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_black_mini_skirt",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_black_mini_skirt/punkduck_black_mini_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Black mini skirt",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_bracelet_infinity_love",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_bracelet_infinity_love/punkduck_bracelet_infinity_love.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Bracelet infinity love",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_brass_circlet_crown",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_brass_circlet_crown/punkduck_brass_circlet_crown.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Brass circlet crown",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_brazilian_bikini_bra",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_brazilian_bikini_bra/punkduck_brazilian_bikini_bra.mhclo",
+  "slot": "top",
+  "category": "Unsorted/other",
+  "name": "Brazilian bikini bra",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_brazilian_bikini_slip",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_brazilian_bikini_slip/punkduck_brazilian_bikini_slip.mhclo",
+  "slot": "pants",
+  "category": "Unsorted/other",
+  "name": "Brazilian bikini slip",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_comfortable_sneakers",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_comfortable_sneakers/punkduck_comfortable_sneakers.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Comfortable sneakers",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_cycling_shoes",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_cycling_shoes/punkduck_cycling_shoes.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Cycling shoes",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_deathnote_t-shirt",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_deathnote_t-shirt/punkduck_deathnote_t-shirt.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Deathnote t shirt",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_diver_scuba_rig",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_diver_scuba_rig/punkduck_diver_scuba_rig.mhclo",
+  "slot": "accessory",
+  "category": "Unsorted/other",
+  "name": "Diver scuba rig",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_diver_suit",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_diver_suit/punkduck_diver_suit.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Diver suit",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_evening_gown",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_evening_gown/punkduck_evening_gown.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Evening gown",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_female_half-boots",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_female_half-boots/punkduck_female_half-boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Female half boots",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_female_knee_boots",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_female_knee_boots/punkduck_female_knee_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Female knee boots",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_female_short_jeans",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_female_short_jeans/punkduck_female_short_jeans.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Female short jeans",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_female_strapless_bodysuit",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_female_strapless_bodysuit/punkduck_female_strapless_bodysuit.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Female strapless bodysuit",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_female_tight_jeans",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_female_tight_jeans/punkduck_female_tight_jeans.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Female tight jeans",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_figure_skating_dress",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_figure_skating_dress/punkduck_figure_skating_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Figure skating dress",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_french_lingerie_bra",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_french_lingerie_bra/punkduck_french_lingerie_bra.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "French lingerie bra",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_french_lingerie_mini_briefs",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_french_lingerie_mini_briefs/punkduck_french_lingerie_mini_briefs.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "French lingerie mini briefs",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_french_lingerie_stockings",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_french_lingerie_stockings/punkduck_french_lingerie_stockings.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "French lingerie stockings",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_french_lingerie_suspender_belt",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_french_lingerie_suspender_belt/punkduck_french_lingerie_suspender_belt.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "French lingerie suspender belt",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_french_lingerie_thong",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_french_lingerie_thong/punkduck_french_lingerie_thong.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "French lingerie thong",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_frill_bikini_bottom",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_frill_bikini_bottom/punkduck_frill_bikini_bottom.mhclo",
+  "slot": "pants",
+  "category": "Unsorted/other",
+  "name": "Frill bikini bottom",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_frill_bikini_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_frill_bikini_top/punkduck_frill_bikini_top.mhclo",
+  "slot": "top",
+  "category": "Unsorted/other",
+  "name": "Frill bikini top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_glasses_modern_form",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_glasses_modern_form/punkduck_glasses_modern_form.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Glasses modern form",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_goggles",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_goggles/punkduck_goggles.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Goggles",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_halterneck_romper",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_halterneck_romper/punkduck_halterneck_romper.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halterneck romper",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_head_mirror",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_head_mirror/punkduck_head_mirror.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Head mirror",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_high_neck_crop_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_high_neck_crop_top/punkduck_high_neck_crop_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "High neck crop top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_jeans_skirt",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_jeans_skirt/punkduck_jeans_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Jeans skirt",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_kill_bill_shoes",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_kill_bill_shoes/punkduck_kill_bill_shoes.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Kill bill shoes",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_lace-choker",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_lace-choker/punkduck_lace-choker.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Lace choker",
+  "author": "punkduck",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_lace_up_blouse",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_lace_up_blouse/punkduck_lace_up_blouse.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Lace up blouse",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_makehuman_medal",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_makehuman_medal/punkduck_makehuman_medal.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Makehuman medal",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_male_classic_jeans",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_male_classic_jeans/punkduck_male_classic_jeans.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Male classic jeans",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_medieval_boots",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_medieval_boots/punkduck_medieval_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Medieval boots",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_medieval_dress",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_medieval_dress/punkduck_medieval_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Medieval dress",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_middle_length_qipao",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_middle_length_qipao/punkduck_middle_length_qipao.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Middle length qipao",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_necklace_native_american_fashion_",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_necklace_native_american_fashion_/punkduck_necklace_native_american_fashion_.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Necklace native american fashion",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_off-shoulder_long-sleeve_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_off-shoulder_long-sleeve_top/punkduck_off-shoulder_long-sleeve_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Off shoulder long sleeve top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_one_piece_bikini01",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_one_piece_bikini01/punkduck_one_piece_bikini01.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "One piece bikini01",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_pearl-chain_earrings",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_pearl-chain_earrings/punkduck_pearl-chain_earrings.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Pearl chain earrings",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_retro_polka_dot_skirt",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_retro_polka_dot_skirt/punkduck_retro_polka_dot_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Retro polka dot skirt",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_retro_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_retro_top/punkduck_retro_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Retro top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_riding_boots",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_riding_boots/punkduck_riding_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Riding boots",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_riding_helmet",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_riding_helmet/punkduck_riding_helmet.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Riding helmet",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_running_shoes_01",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_running_shoes_01/punkduck_running_shoes_01.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Running shoes 01",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_shapewear",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_shapewear/punkduck_shapewear.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Shapewear",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_short_bodysuit_female",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_short_bodysuit_female/punkduck_short_bodysuit_female.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Short bodysuit female",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_skirt_native_american_fashion",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_skirt_native_american_fashion/punkduck_skirt_native_american_fashion.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Skirt native american fashion",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_sleeveless_crop_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_sleeveless_crop_top/punkduck_sleeveless_crop_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Sleeveless crop top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_sleeveless_shirt",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_sleeveless_shirt/punkduck_sleeveless_shirt.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Sleeveless shirt",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_spaghetti_strap_tank_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_spaghetti_strap_tank_top/punkduck_spaghetti_strap_tank_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Spaghetti strap tank top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_spike_collar",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_spike_collar/punkduck_spike_collar.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Spike collar",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_sport-sunglasses",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_sport-sunglasses/punkduck_sport-sunglasses.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Sport sunglasses",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_sport_bra",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_sport_bra/punkduck_sport_bra.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Sport bra",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_sport_briefs",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_sport_briefs/punkduck_sport_briefs.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "Sport briefs",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_stethoscope",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_stethoscope/punkduck_stethoscope.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Stethoscope",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_strappy_lace_thong",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_strappy_lace_thong/punkduck_strappy_lace_thong.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "Strappy lace thong",
+  "author": "punkduck",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_string_2",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_string_2/punkduck_string_2.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "String 2",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_string_4",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_string_4/punkduck_string_4.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "String 4",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_string_5",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_string_5/punkduck_string_5.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "String 5",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_sun_visor_sports_visor",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_sun_visor_sports_visor/punkduck_sun_visor_sports_visor.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Sun visor sports visor",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_swim_cap",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_swim_cap/punkduck_swim_cap.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Swim cap",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_teddy_erotic_lingerie",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_teddy_erotic_lingerie/punkduck_teddy_erotic_lingerie.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Teddy erotic lingerie",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_tennis_dress",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_tennis_dress/punkduck_tennis_dress.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Tennis dress",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_tennis_shoes",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_tennis_shoes/punkduck_tennis_shoes.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Tennis shoes",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_transparent_bra",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_transparent_bra/punkduck_transparent_bra.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Transparent bra",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_triathlon_suit_female",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_triathlon_suit_female/punkduck_triathlon_suit_female.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Triathlon suit female",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_tube_dress",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_tube_dress/punkduck_tube_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Tube dress",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_tube_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_tube_top/punkduck_tube_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Tube top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_twisted_pearl_necklace",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_twisted_pearl_necklace/punkduck_twisted_pearl_necklace.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Twisted pearl necklace",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_v_neck_top",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_v_neck_top/punkduck_v_neck_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "V neck top",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_wetsuit",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_wetsuit/punkduck_wetsuit.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Wetsuit",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "punkduck_winter_boots",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_winter_boots/punkduck_winter_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Winter boots",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_winter_coat",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_winter_coat/punkduck_winter_coat.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Winter coat",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "punkduck_wireless_headset",
+  "dir": "clothes",
+  "rel": "clothes/punkduck_wireless_headset/punkduck_wireless_headset.mhclo",
+  "slot": "accessory",
+  "category": "Accessory",
+  "name": "Wireless headset",
+  "author": "punkduck",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "rehmanpolanski_beard_viking",
+  "dir": "clothes",
+  "rel": "clothes/rehmanpolanski_beard_viking/rehmanpolanski_beard_viking.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Rehmanpolanski beard viking",
+  "author": "RehmanPolanski",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "rehmanpolanski_moustache_viking",
+  "dir": "clothes",
+  "rel": "clothes/rehmanpolanski_moustache_viking/rehmanpolanski_moustache_viking.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Rehmanpolanski moustache viking",
+  "author": "RehmanPolanski",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "rehmanpolanski_viking_boots",
+  "dir": "clothes",
+  "rel": "clothes/rehmanpolanski_viking_boots/rehmanpolanski_viking_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Rehmanpolanski viking boots",
+  "author": "RehmanPolanski",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "rehmanpolanski_viking_pants",
+  "dir": "clothes",
+  "rel": "clothes/rehmanpolanski_viking_pants/rehmanpolanski_viking_pants.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Rehmanpolanski viking pants",
+  "author": "RehmanPolanski",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "rehmanpolanski_viking_tunic",
+  "dir": "clothes",
+  "rel": "clothes/rehmanpolanski_viking_tunic/rehmanpolanski_viking_tunic.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Rehmanpolanski viking tunic",
+  "author": "RehmanPolanski",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "scailman_gogo_platform_boots",
+  "dir": "clothes",
+  "rel": "clothes/scailman_gogo_platform_boots/scailman_gogo_platform_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Scailman gogo platform boots",
+  "author": "scailman",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "scailman_low-heeled_boots",
+  "dir": "clothes",
+  "rel": "clothes/scailman_low-heeled_boots/scailman_low-heeled_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Scailman low heeled boots",
+  "author": "scailman",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "scailman_semitransparent_water_boots",
+  "dir": "clothes",
+  "rel": "clothes/scailman_semitransparent_water_boots/scailman_semitransparent_water_boots.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Scailman semitransparent water boots",
+  "author": "scailman",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "scsouza_mini_denin_skirt",
+  "dir": "clothes",
+  "rel": "clothes/scsouza_mini_denin_skirt/scsouza_mini_denin_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Scsouza mini denin skirt",
+  "author": "scsouza",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "shoes01",
+  "dir": "clothes",
+  "rel": "clothes/shoes01/shoes01.mhclo",
+  "slot": "shoes",
+  "category": "",
+  "name": "Shoes01",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "shoes02",
+  "dir": "clothes",
+  "rel": "clothes/shoes02/shoes02.mhclo",
+  "slot": "shoes",
+  "category": "",
+  "name": "Shoes02",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "shoes03",
+  "dir": "clothes",
+  "rel": "clothes/shoes03/shoes03.mhclo",
+  "slot": "shoes",
+  "category": "",
+  "name": "Shoes03",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "shoes04",
+  "dir": "clothes",
+  "rel": "clothes/shoes04/shoes04.mhclo",
+  "slot": "shoes",
+  "category": "",
+  "name": "Shoes04",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "shoes05",
+  "dir": "clothes",
+  "rel": "clothes/shoes05/shoes05.mhclo",
+  "slot": "shoes",
+  "category": "",
+  "name": "Shoes05",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "shoes06",
+  "dir": "clothes",
+  "rel": "clothes/shoes06/shoes06.mhclo",
+  "slot": "shoes",
+  "category": "",
+  "name": "Shoes06",
+  "author": "makehuman_system",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "skalldyrssuppe_tube_top_funky_colors",
+  "dir": "clothes",
+  "rel": "clothes/skalldyrssuppe_tube_top_funky_colors/skalldyrssuppe_tube_top_funky_colors.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Skalldyrssuppe tube top funky colors",
+  "author": "skalldyrssuppe",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "slayer227_spider-gwen",
+  "dir": "clothes",
+  "rel": "clothes/slayer227_spider-gwen/slayer227_spider-gwen.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Slayer227 spider gwen",
+  "author": "Slayer227",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "sonicteam998_maria_skirt",
+  "dir": "clothes",
+  "rel": "clothes/sonicteam998_maria_skirt/sonicteam998_maria_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Sonicteam998 maria skirt",
+  "author": "sonicteam998",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "spamrakuen_sagerfrogs_glasses_01",
+  "dir": "clothes",
+  "rel": "clothes/spamrakuen_sagerfrogs_glasses_01/spamrakuen_sagerfrogs_glasses_01.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Spamrakuen sagerfrogs glasses 01",
+  "author": "spamrakuen",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "spamrakuen_sagerfrogs_glasses_02",
+  "dir": "clothes",
+  "rel": "clothes/spamrakuen_sagerfrogs_glasses_02/spamrakuen_sagerfrogs_glasses_02.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Spamrakuen sagerfrogs glasses 02",
+  "author": "spamrakuen",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "spamrakuen_sagerfrogs_glasses_03",
+  "dir": "clothes",
+  "rel": "clothes/spamrakuen_sagerfrogs_glasses_03/spamrakuen_sagerfrogs_glasses_03.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Spamrakuen sagerfrogs glasses 03",
+  "author": "spamrakuen",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "spamrakuen_sagerfrogs_glasses_04",
+  "dir": "clothes",
+  "rel": "clothes/spamrakuen_sagerfrogs_glasses_04/spamrakuen_sagerfrogs_glasses_04.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Spamrakuen sagerfrogs glasses 04",
+  "author": "spamrakuen",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "spamrakuen_tbm_glasses_frames_01",
+  "dir": "clothes",
+  "rel": "clothes/spamrakuen_tbm_glasses_frames_01/spamrakuen_tbm_glasses_frames_01.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Spamrakuen tbm glasses frames 01",
+  "author": "spamrakuen",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "thegreatengineer_galactic_warrior_uniform",
+  "dir": "clothes",
+  "rel": "clothes/thegreatengineer_galactic_warrior_uniform/thegreatengineer_galactic_warrior_uniform.mhclo",
+  "slot": "outfit",
+  "category": "Uniform/Armor",
+  "name": "Thegreatengineer galactic warrior uniform",
+  "author": "TheGreatEngineer",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "tiomegamanx_skintight_body_suit_female",
+  "dir": "clothes",
+  "rel": "clothes/tiomegamanx_skintight_body_suit_female/tiomegamanx_skintight_body_suit_female.mhclo",
+  "slot": "outfit",
+  "category": "Underwear",
+  "name": "Tiomegamanx skintight body suit female",
+  "author": "TioMegamanX",
+  "license": "CC-BY",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "toigo_ankle_boots_female",
+  "dir": "clothes",
+  "rel": "clothes/toigo_ankle_boots_female/toigo_ankle_boots_female.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Ankle boots female",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "toigo_ankle_boots_male",
+  "dir": "clothes",
+  "rel": "clothes/toigo_ankle_boots_male/toigo_ankle_boots_male.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Ankle boots male",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_ballet_flats",
+  "dir": "clothes",
+  "rel": "clothes/toigo_ballet_flats/toigo_ballet_flats.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Ballet flats",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_ballet_flats_with_bows",
+  "dir": "clothes",
+  "rel": "clothes/toigo_ballet_flats_with_bows/toigo_ballet_flats_with_bows.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Ballet flats with bows",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_ballet_flats_with_flowers",
+  "dir": "clothes",
+  "rel": "clothes/toigo_ballet_flats_with_flowers/toigo_ballet_flats_with_flowers.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Ballet flats with flowers",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_basic_tucked_t-shirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_basic_tucked_t-shirt/toigo_basic_tucked_t-shirt.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Basic tucked t shirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_bodice-style_top",
+  "dir": "clothes",
+  "rel": "clothes/toigo_bodice-style_top/toigo_bodice-style_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Bodice style top",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_bodice_dress_with_lace_ruffle_skirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_bodice_dress_with_lace_ruffle_skirt/toigo_bodice_dress_with_lace_ruffle_skirt.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Bodice dress with lace ruffle skirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_camisole_dress_with_full_skirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_camisole_dress_with_full_skirt/toigo_camisole_dress_with_full_skirt.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Camisole dress with full skirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_camisole_top",
+  "dir": "clothes",
+  "rel": "clothes/toigo_camisole_top/toigo_camisole_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Camisole top",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_cut_out_dress",
+  "dir": "clothes",
+  "rel": "clothes/toigo_cut_out_dress/toigo_cut_out_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Cut out dress",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_diamond_ring_and_wedding_band",
+  "dir": "clothes",
+  "rel": "clothes/toigo_diamond_ring_and_wedding_band/toigo_diamond_ring_and_wedding_band.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Diamond ring and wedding band",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_dress_with_tiered_skirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_dress_with_tiered_skirt/toigo_dress_with_tiered_skirt.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Dress with tiered skirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_female_double-breasted_suit",
+  "dir": "clothes",
+  "rel": "clothes/toigo_female_double-breasted_suit/toigo_female_double-breasted_suit.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Female double breasted suit",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "toigo_female_suit",
+  "dir": "clothes",
+  "rel": "clothes/toigo_female_suit/toigo_female_suit.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Female suit",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "toigo_female_suit_2",
+  "dir": "clothes",
+  "rel": "clothes/toigo_female_suit_2/toigo_female_suit_2.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Female suit 2",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "toigo_fisherman_sweater",
+  "dir": "clothes",
+  "rel": "clothes/toigo_fisherman_sweater/toigo_fisherman_sweater.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Fisherman sweater",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_flats",
+  "dir": "clothes",
+  "rel": "clothes/toigo_flats/toigo_flats.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Flats",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_gloves_long",
+  "dir": "clothes",
+  "rel": "clothes/toigo_gloves_long/toigo_gloves_long.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Gloves long",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_gloves_medium",
+  "dir": "clothes",
+  "rel": "clothes/toigo_gloves_medium/toigo_gloves_medium.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Gloves medium",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_gloves_short",
+  "dir": "clothes",
+  "rel": "clothes/toigo_gloves_short/toigo_gloves_short.mhclo",
+  "slot": "gloves",
+  "category": "Gloves",
+  "name": "Gloves short",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_halter_dress_knee_length",
+  "dir": "clothes",
+  "rel": "clothes/toigo_halter_dress_knee_length/toigo_halter_dress_knee_length.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halter dress knee length",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_halter_dress_midi",
+  "dir": "clothes",
+  "rel": "clothes/toigo_halter_dress_midi/toigo_halter_dress_midi.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halter dress midi",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_halter_dress_with_fluted_skirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_halter_dress_with_fluted_skirt/toigo_halter_dress_with_fluted_skirt.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Halter dress with fluted skirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_harem_pants",
+  "dir": "clothes",
+  "rel": "clothes/toigo_harem_pants/toigo_harem_pants.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Harem pants",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_keyhole_neck_dress",
+  "dir": "clothes",
+  "rel": "clothes/toigo_keyhole_neck_dress/toigo_keyhole_neck_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Keyhole neck dress",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_keyhole_tank_top",
+  "dir": "clothes",
+  "rel": "clothes/toigo_keyhole_tank_top/toigo_keyhole_tank_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Keyhole tank top",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_lace_frill_socks",
+  "dir": "clothes",
+  "rel": "clothes/toigo_lace_frill_socks/toigo_lace_frill_socks.mhclo",
+  "slot": "socks",
+  "category": "Shoes/Boots/Socks",
+  "name": "Lace frill socks",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_leg_warmer_socks",
+  "dir": "clothes",
+  "rel": "clothes/toigo_leg_warmer_socks/toigo_leg_warmer_socks.mhclo",
+  "slot": "socks",
+  "category": "Shoes/Boots/Socks",
+  "name": "Leg warmer socks",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_long_fingernails_blue_butterfly",
+  "dir": "clothes",
+  "rel": "clothes/toigo_long_fingernails_blue_butterfly/toigo_long_fingernails_blue_butterfly.mhclo",
+  "slot": "nails",
+  "category": "Nails",
+  "name": "Long fingernails blue butterfly",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "toigo_long_full_skirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_long_full_skirt/toigo_long_full_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Long full skirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_maga_hat",
+  "dir": "clothes",
+  "rel": "clothes/toigo_maga_hat/toigo_maga_hat.mhclo",
+  "slot": "hat",
+  "category": "Hat/Helmet",
+  "name": "Maga hat",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_male_double-breasted_suit",
+  "dir": "clothes",
+  "rel": "clothes/toigo_male_double-breasted_suit/toigo_male_double-breasted_suit.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Male double breasted suit",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_male_suit_3",
+  "dir": "clothes",
+  "rel": "clothes/toigo_male_suit_3/toigo_male_suit_3.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Male suit 3",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_male_suit_tie_and_jacket",
+  "dir": "clothes",
+  "rel": "clothes/toigo_male_suit_tie_and_jacket/toigo_male_suit_tie_and_jacket.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Male suit tie and jacket",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_mj_cloth_shoes",
+  "dir": "clothes",
+  "rel": "clothes/toigo_mj_cloth_shoes/toigo_mj_cloth_shoes.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Mj cloth shoes",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_pearl_earrings",
+  "dir": "clothes",
+  "rel": "clothes/toigo_pearl_earrings/toigo_pearl_earrings.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Pearl earrings",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_pearl_necklace",
+  "dir": "clothes",
+  "rel": "clothes/toigo_pearl_necklace/toigo_pearl_necklace.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Pearl necklace",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_round_glasses_leopard",
+  "dir": "clothes",
+  "rel": "clothes/toigo_round_glasses_leopard/toigo_round_glasses_leopard.mhclo",
+  "slot": "glasses",
+  "category": "Accessory",
+  "name": "Round glasses leopard",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_shift_dress",
+  "dir": "clothes",
+  "rel": "clothes/toigo_shift_dress/toigo_shift_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Shift dress",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_skirt_with_lace_ruffle",
+  "dir": "clothes",
+  "rel": "clothes/toigo_skirt_with_lace_ruffle/toigo_skirt_with_lace_ruffle.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Skirt with lace ruffle",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_stiletto_booties",
+  "dir": "clothes",
+  "rel": "clothes/toigo_stiletto_booties/toigo_stiletto_booties.mhclo",
+  "slot": "shoes",
+  "category": "Shoes/Boots/Socks",
+  "name": "Stiletto booties",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_strapless_ruffle_top_dress",
+  "dir": "clothes",
+  "rel": "clothes/toigo_strapless_ruffle_top_dress/toigo_strapless_ruffle_top_dress.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Strapless ruffle top dress",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_suit_with_dinner_jacket",
+  "dir": "clothes",
+  "rel": "clothes/toigo_suit_with_dinner_jacket/toigo_suit_with_dinner_jacket.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Suit with dinner jacket",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_suit_with_jacket_and_bowtie",
+  "dir": "clothes",
+  "rel": "clothes/toigo_suit_with_jacket_and_bowtie/toigo_suit_with_jacket_and_bowtie.mhclo",
+  "slot": "outfit",
+  "category": "Unsorted/other",
+  "name": "Suit with jacket and bowtie",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_tiered_mini_skirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_tiered_mini_skirt/toigo_tiered_mini_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Tiered mini skirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_tiered_skirt",
+  "dir": "clothes",
+  "rel": "clothes/toigo_tiered_skirt/toigo_tiered_skirt.mhclo",
+  "slot": "skirt",
+  "category": "Skirt",
+  "name": "Tiered skirt",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_turtleneck_halter_top",
+  "dir": "clothes",
+  "rel": "clothes/toigo_turtleneck_halter_top/toigo_turtleneck_halter_top.mhclo",
+  "slot": "top",
+  "category": "Shirt/T-shirt/Sweater",
+  "name": "Turtleneck halter top",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_wedding_ring",
+  "dir": "clothes",
+  "rel": "clothes/toigo_wedding_ring/toigo_wedding_ring.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Wedding ring",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "toigo_wool_pants",
+  "dir": "clothes",
+  "rel": "clothes/toigo_wool_pants/toigo_wool_pants.mhclo",
+  "slot": "pants",
+  "category": "Pants",
+  "name": "Wool pants",
+  "author": "MargaretToigo",
+  "license": "CC0",
+  "genders": [
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_armsleeves_black_fishnet_large",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_armsleeves_black_fishnet_large/v0rt3x_armsleeves_black_fishnet_large.mhclo",
+  "slot": "gloves",
+  "category": "Underwear",
+  "name": "V0rt3x armsleeves black fishnet large",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_armsleeves_black_fishnet_medium",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_armsleeves_black_fishnet_medium/v0rt3x_armsleeves_black_fishnet_medium.mhclo",
+  "slot": "gloves",
+  "category": "Underwear",
+  "name": "V0rt3x armsleeves black fishnet medium",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_armsleeves_black_fishnet_small",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_armsleeves_black_fishnet_small/v0rt3x_armsleeves_black_fishnet_small.mhclo",
+  "slot": "gloves",
+  "category": "Underwear",
+  "name": "V0rt3x armsleeves black fishnet small",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_armsleeves_white_fishnet_large",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_armsleeves_white_fishnet_large/v0rt3x_armsleeves_white_fishnet_large.mhclo",
+  "slot": "gloves",
+  "category": "Underwear",
+  "name": "V0rt3x armsleeves white fishnet large",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_armsleeves_white_fishnet_medium",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_armsleeves_white_fishnet_medium/v0rt3x_armsleeves_white_fishnet_medium.mhclo",
+  "slot": "gloves",
+  "category": "Underwear",
+  "name": "V0rt3x armsleeves white fishnet medium",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_armsleeves_white_fishnet_small",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_armsleeves_white_fishnet_small/v0rt3x_armsleeves_white_fishnet_small.mhclo",
+  "slot": "gloves",
+  "category": "Underwear",
+  "name": "V0rt3x armsleeves white fishnet small",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_stockings_black_fishnet_large",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_stockings_black_fishnet_large/v0rt3x_stockings_black_fishnet_large.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "V0rt3x stockings black fishnet large",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_stockings_black_fishnet_medium",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_stockings_black_fishnet_medium/v0rt3x_stockings_black_fishnet_medium.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "V0rt3x stockings black fishnet medium",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_stockings_black_fishnet_small",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_stockings_black_fishnet_small/v0rt3x_stockings_black_fishnet_small.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "V0rt3x stockings black fishnet small",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_stockings_white_fishnet_large",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_stockings_white_fishnet_large/v0rt3x_stockings_white_fishnet_large.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "V0rt3x stockings white fishnet large",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_stockings_white_fishnet_medium",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_stockings_white_fishnet_medium/v0rt3x_stockings_white_fishnet_medium.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "V0rt3x stockings white fishnet medium",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "v0rt3x_stockings_white_fishnet_small",
+  "dir": "clothes",
+  "rel": "clothes/v0rt3x_stockings_white_fishnet_small/v0rt3x_stockings_white_fishnet_small.mhclo",
+  "slot": "socks",
+  "category": "Underwear",
+  "name": "V0rt3x stockings white fishnet small",
+  "author": "V0rT3X",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "wdg_mycenaean_tunic",
+  "dir": "clothes",
+  "rel": "clothes/wdg_mycenaean_tunic/wdg_mycenaean_tunic.mhclo",
+  "slot": "outfit",
+  "category": "Gown/Robe",
+  "name": "Wdg mycenaean tunic",
+  "author": "WDG",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "wdg_scruffy_beard",
+  "dir": "clothes",
+  "rel": "clothes/wdg_scruffy_beard/wdg_scruffy_beard.mhclo",
+  "slot": "beard",
+  "category": "Facialhair",
+  "name": "Wdg scruffy beard",
+  "author": "WDG",
+  "license": "CC0",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "wojackowl_belly_piercing",
+  "dir": "clothes",
+  "rel": "clothes/wojackowl_belly_piercing/wojackowl_belly_piercing.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Wojackowl belly piercing",
+  "author": "WojackOWL",
+  "license": "CC-BY",
+  "genders": [
+   "female",
+   "male"
+  ]
+ },
+ {
+  "id": "wolgade_diamond_ring_01",
+  "dir": "clothes",
+  "rel": "clothes/wolgade_diamond_ring_01/wolgade_diamond_ring_01.mhclo",
+  "slot": "jewelry",
+  "category": "Jewelry",
+  "name": "Wolgade diamond ring 01",
+  "author": "wolgade",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "wolgade_female_fingernails",
+  "dir": "clothes",
+  "rel": "clothes/wolgade_female_fingernails/wolgade_female_fingernails.mhclo",
+  "slot": "nails",
+  "category": "Nails",
+  "name": "Wolgade female fingernails",
+  "author": "wolgade",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "wolgade_female_panties_01",
+  "dir": "clothes",
+  "rel": "clothes/wolgade_female_panties_01/wolgade_female_panties_01.mhclo",
+  "slot": "underwear_bottom",
+  "category": "Underwear",
+  "name": "Wolgade female panties 01",
+  "author": "wolgade",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ },
+ {
+  "id": "wolgade_female_top_01",
+  "dir": "clothes",
+  "rel": "clothes/wolgade_female_top_01/wolgade_female_top_01.mhclo",
+  "slot": "underwear_top",
+  "category": "Underwear",
+  "name": "Wolgade female top 01",
+  "author": "wolgade",
+  "license": "CC0",
+  "genders": [
+   "female"
+  ]
+ }
+]

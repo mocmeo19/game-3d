@@ -1,0 +1,2173 @@
+{
+ "_doc": "app slider -> MPFB targets. pos = targets applied when slider is at +1, neg = when at -1. Each entry is [target-name, weight]; names without a side prefix are expanded to both l-/r- files. Sliders with no mesh equivalent are handled in the app (eye mesh, brows, scale).",
+ "faceWidth": {
+  "pos": [
+   [
+    "head-scale-horiz-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-scale-horiz-decr",
+    1
+   ]
+  ]
+ },
+ "faceLength": {
+  "pos": [
+   [
+    "head-scale-vert-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-scale-vert-decr",
+    1
+   ]
+  ]
+ },
+ "foreheadHeight": {
+  "pos": [
+   [
+    "forehead-scale-vert-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "forehead-scale-vert-decr",
+    1
+   ]
+  ]
+ },
+ "foreheadWidth": {
+  "pos": [
+   [
+    "forehead-temple-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "forehead-temple-decr",
+    1
+   ]
+  ]
+ },
+ "cheekbones": {
+  "pos": [
+   [
+    "cheek-bones-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "cheek-bones-decr",
+    1
+   ]
+  ]
+ },
+ "cheekFullness": {
+  "pos": [
+   [
+    "cheek-volume-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "cheek-volume-decr",
+    1
+   ]
+  ]
+ },
+ "eyeHeight": {
+  "pos": [
+   [
+    "eye-trans-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-trans-down",
+    1
+   ]
+  ]
+ },
+ "eyeSpacing": {
+  "pos": [
+   [
+    "eye-trans-out",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-trans-in",
+    1
+   ]
+  ]
+ },
+ "eyeSize": {
+  "pos": [
+   [
+    "eye-scale-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-scale-decr",
+    1
+   ]
+  ]
+ },
+ "eyeWidth": {
+  "pos": [
+   [
+    "eye-height1-incr",
+    0.5
+   ],
+   [
+    "eye-height3-incr",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "eye-height1-decr",
+    0.5
+   ],
+   [
+    "eye-height3-decr",
+    0.5
+   ]
+  ]
+ },
+ "eyeAngle": {
+  "pos": [
+   [
+    "eye-corner2-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-corner2-down",
+    1
+   ]
+  ]
+ },
+ "eyeOuterCorner": {
+  "pos": [
+   [
+    "eye-corner1-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-corner1-down",
+    1
+   ]
+  ]
+ },
+ "browHeight": {
+  "pos": [
+   [
+    "eyebrows-trans-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eyebrows-trans-down",
+    1
+   ]
+  ]
+ },
+ "browAngle": {
+  "pos": [
+   [
+    "eyebrows-angle-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eyebrows-angle-down",
+    1
+   ]
+  ]
+ },
+ "noseVertical": {
+  "pos": [
+   [
+    "nose-trans-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-trans-down",
+    1
+   ]
+  ]
+ },
+ "noseLength": {
+  "pos": [
+   [
+    "nose-scale-vert-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-scale-vert-decr",
+    1
+   ]
+  ]
+ },
+ "noseHeight": {
+  "pos": [
+   [
+    "nose-hump-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-hump-decr",
+    1
+   ]
+  ]
+ },
+ "noseBridgeWidth": {
+  "pos": [
+   [
+    "nose-width1-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-width1-decr",
+    1
+   ]
+  ]
+ },
+ "noseWidth": {
+  "pos": [
+   [
+    "nose-scale-horiz-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-scale-horiz-decr",
+    1
+   ]
+  ]
+ },
+ "noseTipWidth": {
+  "pos": [
+   [
+    "nose-point-width-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-point-width-decr",
+    1
+   ]
+  ]
+ },
+ "noseProjection": {
+  "pos": [
+   [
+    "nose-scale-depth-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-scale-depth-decr",
+    1
+   ]
+  ]
+ },
+ "mouthHeight": {
+  "pos": [
+   [
+    "mouth-trans-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-trans-down",
+    1
+   ]
+  ]
+ },
+ "mouthWidth": {
+  "pos": [
+   [
+    "mouth-scale-horiz-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-scale-horiz-decr",
+    1
+   ]
+  ]
+ },
+ "upperLip": {
+  "pos": [
+   [
+    "mouth-upperlip-volume-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-upperlip-volume-decr",
+    1
+   ]
+  ]
+ },
+ "lowerLip": {
+  "pos": [
+   [
+    "mouth-lowerlip-volume-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-lowerlip-volume-decr",
+    1
+   ]
+  ]
+ },
+ "lipFullness": {
+  "pos": [
+   [
+    "mouth-upperlip-volume-incr",
+    0.5
+   ],
+   [
+    "mouth-lowerlip-volume-incr",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-upperlip-volume-decr",
+    0.5
+   ],
+   [
+    "mouth-lowerlip-volume-decr",
+    0.5
+   ]
+  ]
+ },
+ "lipSmile": {
+  "pos": [
+   [
+    "mouth-angles-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-angles-down",
+    1
+   ]
+  ]
+ },
+ "mouthProtrusion": {
+  "pos": [
+   [
+    "mouth-trans-forward",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-trans-backward",
+    1
+   ]
+  ]
+ },
+ "chinLength": {
+  "pos": [
+   [
+    "chin-height-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "chin-height-decr",
+    1
+   ]
+  ]
+ },
+ "jawBackWidth": {
+  "pos": [
+   [
+    "chin-jaw-drop-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "chin-jaw-drop-decr",
+    1
+   ]
+  ]
+ },
+ "jawWidth": {
+  "pos": [
+   [
+    "chin-bones-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "chin-bones-decr",
+    1
+   ]
+  ]
+ },
+ "chinWidth": {
+  "pos": [
+   [
+    "chin-width-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "chin-width-decr",
+    1
+   ]
+  ]
+ },
+ "chinProtrusion": {
+  "pos": [
+   [
+    "chin-prominent-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "chin-prominent-decr",
+    1
+   ]
+  ]
+ },
+ "chinAngle": {
+  "pos": [
+   [
+    "chin-prognathism-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "chin-prognathism-decr",
+    1
+   ]
+  ]
+ },
+ "neckLength": {
+  "pos": [
+   [
+    "neck-scale-vert-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "neck-scale-vert-decr",
+    1
+   ]
+  ]
+ },
+ "neckThickness": {
+  "pos": [
+   [
+    "neck-scale-horiz-incr",
+    0.5
+   ],
+   [
+    "neck-scale-depth-incr",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "neck-scale-horiz-decr",
+    0.5
+   ],
+   [
+    "neck-scale-depth-decr",
+    0.5
+   ]
+  ]
+ },
+ "shoulderWidth": {
+  "pos": [
+   [
+    "measure-shoulder-dist-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-shoulder-dist-decr",
+    1
+   ]
+  ]
+ },
+ "shoulderSlope": {
+  "pos": [
+   [
+    "torso-vshape-decr",
+    0.4
+   ]
+  ],
+  "neg": [
+   [
+    "torso-vshape-incr",
+    0.4
+   ]
+  ]
+ },
+ "chestSize": {
+  "pos": [
+   [
+    "measure-bust-circ-incr",
+    0.4
+   ]
+  ],
+  "neg": [
+   [
+    "measure-bust-circ-decr",
+    0.4
+   ]
+  ]
+ },
+ "chestHeight": {
+  "pos": [
+   [
+    "breast-trans-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "breast-trans-down",
+    1
+   ]
+  ]
+ },
+ "chestSpacing": {
+  "pos": [
+   [
+    "breast-dist-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "breast-dist-decr",
+    1
+   ]
+  ]
+ },
+ "torsoLength": {
+  "pos": [
+   [
+    "torso-scale-vert-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "torso-scale-vert-decr",
+    1
+   ]
+  ]
+ },
+ "waistWidth": {
+  "pos": [
+   [
+    "measure-waist-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-waist-circ-decr",
+    1
+   ]
+  ]
+ },
+ "abdomen": {
+  "pos": [
+   [
+    "stomach-pregnant-incr",
+    0.6
+   ]
+  ],
+  "neg": [
+   [
+    "stomach-pregnant-decr",
+    0.6
+   ]
+  ]
+ },
+ "armLength": {
+  "pos": [
+   [
+    "measure-upperarm-length-incr",
+    0.5
+   ],
+   [
+    "measure-lowerarm-length-incr",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "measure-upperarm-length-decr",
+    0.5
+   ],
+   [
+    "measure-lowerarm-length-decr",
+    0.5
+   ]
+  ]
+ },
+ "armThickness": {
+  "pos": [
+   [
+    "measure-upperarm-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-upperarm-circ-decr",
+    1
+   ]
+  ]
+ },
+ "handSize": {
+  "pos": [
+   [
+    "hand-scale-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "hand-scale-decr",
+    1
+   ]
+  ]
+ },
+ "pelvisWidth": {
+  "pos": [
+   [
+    "measure-hips-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-hips-circ-decr",
+    1
+   ]
+  ]
+ },
+ "glutes": {
+  "pos": [
+   [
+    "buttocks-volume-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "buttocks-volume-decr",
+    1
+   ]
+  ]
+ },
+ "legLength": {
+  "pos": [
+   [
+    "upperlegs-height-incr",
+    0.5
+   ],
+   [
+    "lowerlegs-height-incr",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "upperlegs-height-decr",
+    0.5
+   ],
+   [
+    "lowerlegs-height-decr",
+    0.5
+   ]
+  ]
+ },
+ "thighThickness": {
+  "pos": [
+   [
+    "measure-thigh-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-thigh-circ-decr",
+    1
+   ]
+  ]
+ },
+ "calfThickness": {
+  "pos": [
+   [
+    "measure-calf-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-calf-circ-decr",
+    1
+   ]
+  ]
+ },
+ "footSize": {
+  "pos": [
+   [
+    "foot-scale-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "foot-scale-decr",
+    1
+   ]
+  ]
+ },
+ "headRound": {
+  "pos": [
+   [
+    "head-round",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-oval",
+    1
+   ]
+  ]
+ },
+ "headSquare": {
+  "pos": [
+   [
+    "head-square",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-rectangular",
+    1
+   ]
+  ]
+ },
+ "headTriangle": {
+  "pos": [
+   [
+    "head-triangular",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-invertedtriangular",
+    1
+   ]
+  ]
+ },
+ "headDepth": {
+  "pos": [
+   [
+    "head-scale-depth-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-scale-depth-decr",
+    1
+   ]
+  ]
+ },
+ "skullBack": {
+  "pos": [
+   [
+    "head-back-scale-depth-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-back-scale-depth-decr",
+    1
+   ]
+  ]
+ },
+ "faceFat": {
+  "pos": [
+   [
+    "head-fat-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "head-fat-decr",
+    1
+   ]
+  ]
+ },
+ "earSize": {
+  "pos": [
+   [
+    "ear-scale-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "ear-scale-decr",
+    1
+   ]
+  ]
+ },
+ "earHeight": {
+  "pos": [
+   [
+    "ear-trans-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "ear-trans-down",
+    1
+   ]
+  ]
+ },
+ "earPointed": {
+  "pos": [
+   [
+    "ear-shape-pointed",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "ear-shape-round",
+    1
+   ]
+  ]
+ },
+ "earWing": {
+  "pos": [
+   [
+    "ear-wing-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "ear-wing-decr",
+    1
+   ]
+  ]
+ },
+ "earLobe": {
+  "pos": [
+   [
+    "ear-lobe-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "ear-lobe-decr",
+    1
+   ]
+  ]
+ },
+ "earRotation": {
+  "pos": [
+   [
+    "ear-rot-forward",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "ear-rot-backward",
+    1
+   ]
+  ]
+ },
+ "eyeEpicanthus": {
+  "pos": [
+   [
+    "eye-epicanthus-in",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-epicanthus-out",
+    1
+   ]
+  ]
+ },
+ "eyeBag": {
+  "pos": [
+   [
+    "eye-bag-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-bag-decr",
+    1
+   ]
+  ]
+ },
+ "eyeFold": {
+  "pos": [
+   [
+    "eye-eyefold-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "eye-eyefold-down",
+    1
+   ]
+  ]
+ },
+ "eyeDepth": {
+  "pos": [
+   [
+    "eye-push1-in",
+    0.5
+   ],
+   [
+    "eye-push2-in",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "eye-push1-out",
+    0.5
+   ],
+   [
+    "eye-push2-out",
+    0.5
+   ]
+  ]
+ },
+ "noseCompression": {
+  "pos": [
+   [
+    "nose-compression-compress",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-compression-uncompress",
+    1
+   ]
+  ]
+ },
+ "noseCurve": {
+  "pos": [
+   [
+    "nose-curve-convex",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-curve-concave",
+    1
+   ]
+  ]
+ },
+ "noseFlaring": {
+  "pos": [
+   [
+    "nose-flaring-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-flaring-decr",
+    1
+   ]
+  ]
+ },
+ "nostrilWidth": {
+  "pos": [
+   [
+    "nose-nostrils-width-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-nostrils-width-decr",
+    1
+   ]
+  ]
+ },
+ "noseTilt": {
+  "pos": [
+   [
+    "nose-point-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-point-down",
+    1
+   ]
+  ]
+ },
+ "noseBase": {
+  "pos": [
+   [
+    "nose-base-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "nose-base-down",
+    1
+   ]
+  ]
+ },
+ "cupidsBow": {
+  "pos": [
+   [
+    "mouth-cupidsbow-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-cupidsbow-decr",
+    1
+   ]
+  ]
+ },
+ "philtrum": {
+  "pos": [
+   [
+    "mouth-philtrum-volume-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-philtrum-volume-decr",
+    1
+   ]
+  ]
+ },
+ "mouthDimples": {
+  "pos": [
+   [
+    "mouth-dimples-in",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-dimples-out",
+    1
+   ]
+  ]
+ },
+ "lowerLipWidth": {
+  "pos": [
+   [
+    "mouth-lowerlip-width-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "mouth-lowerlip-width-decr",
+    1
+   ]
+  ]
+ },
+ "chinCleft": {
+  "pos": [
+   [
+    "chin-cleft-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "chin-cleft-decr",
+    1
+   ]
+  ]
+ },
+ "cheekHeight": {
+  "pos": [
+   [
+    "cheek-trans-up",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "cheek-trans-down",
+    1
+   ]
+  ]
+ },
+ "cheekHollow": {
+  "pos": [
+   [
+    "cheek-inner-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "cheek-inner-decr",
+    1
+   ]
+  ]
+ },
+ "foreheadSlope": {
+  "pos": [
+   [
+    "forehead-trans-forward",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "forehead-trans-backward",
+    1
+   ]
+  ]
+ },
+ "foreheadBulge": {
+  "pos": [
+   [
+    "forehead-nubian-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "forehead-nubian-decr",
+    1
+   ]
+  ]
+ },
+ "pectoral": {
+  "pos": [
+   [
+    "torso-muscle-pectoral-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "torso-muscle-pectoral-decr",
+    1
+   ]
+  ]
+ },
+ "backMuscle": {
+  "pos": [
+   [
+    "torso-muscle-dorsi-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "torso-muscle-dorsi-decr",
+    1
+   ]
+  ]
+ },
+ "armMuscle": {
+  "pos": [
+   [
+    "upperarm-muscle-incr",
+    0.5
+   ],
+   [
+    "lowerarm-muscle-incr",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "upperarm-muscle-decr",
+    0.5
+   ],
+   [
+    "lowerarm-muscle-decr",
+    0.5
+   ]
+  ]
+ },
+ "armFat": {
+  "pos": [
+   [
+    "upperarm-fat-incr",
+    0.5
+   ],
+   [
+    "lowerarm-fat-incr",
+    0.5
+   ]
+  ],
+  "neg": [
+   [
+    "upperarm-fat-decr",
+    0.5
+   ],
+   [
+    "lowerarm-fat-decr",
+    0.5
+   ]
+  ]
+ },
+ "shoulderMuscle": {
+  "pos": [
+   [
+    "upperarm-shoulder-muscle-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "upperarm-shoulder-muscle-decr",
+    1
+   ]
+  ]
+ },
+ "thighMuscle": {
+  "pos": [
+   [
+    "upperleg-muscle-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "upperleg-muscle-decr",
+    1
+   ]
+  ]
+ },
+ "thighFat": {
+  "pos": [
+   [
+    "upperleg-fat-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "upperleg-fat-decr",
+    1
+   ]
+  ]
+ },
+ "calfMuscle": {
+  "pos": [
+   [
+    "lowerleg-muscle-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "lowerleg-muscle-decr",
+    1
+   ]
+  ]
+ },
+ "bellyTone": {
+  "pos": [
+   [
+    "stomach-tone-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "stomach-tone-decr",
+    1
+   ]
+  ]
+ },
+ "torsoDepth": {
+  "pos": [
+   [
+    "torso-scale-depth-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "torso-scale-depth-decr",
+    1
+   ]
+  ]
+ },
+ "torsoWidth": {
+  "pos": [
+   [
+    "torso-scale-horiz-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "torso-scale-horiz-decr",
+    1
+   ]
+  ]
+ },
+ "underbust": {
+  "pos": [
+   [
+    "measure-underbust-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-underbust-circ-decr",
+    1
+   ]
+  ]
+ },
+ "waistToHip": {
+  "pos": [
+   [
+    "measure-waisttohip-dist-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-waisttohip-dist-decr",
+    1
+   ]
+  ]
+ },
+ "hipDepth": {
+  "pos": [
+   [
+    "hip-scale-depth-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "hip-scale-depth-decr",
+    1
+   ]
+  ]
+ },
+ "navel": {
+  "pos": [
+   [
+    "stomach-navel-out",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "stomach-navel-in",
+    1
+   ]
+  ]
+ },
+ "kneeSize": {
+  "pos": [
+   [
+    "measure-knee-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-knee-circ-decr",
+    1
+   ]
+  ]
+ },
+ "legShape": {
+  "pos": [
+   [
+    "leg-valgus-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "leg-valgus-decr",
+    1
+   ]
+  ]
+ },
+ "ankleSize": {
+  "pos": [
+   [
+    "measure-ankle-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-ankle-circ-decr",
+    1
+   ]
+  ]
+ },
+ "wristSize": {
+  "pos": [
+   [
+    "measure-wrist-circ-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "measure-wrist-circ-decr",
+    1
+   ]
+  ]
+ },
+ "fingerLength": {
+  "pos": [
+   [
+    "hand-fingers-length-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "hand-fingers-length-decr",
+    1
+   ]
+  ]
+ },
+ "fingerThick": {
+  "pos": [
+   [
+    "hand-fingers-diameter-incr",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "hand-fingers-diameter-decr",
+    1
+   ]
+  ]
+ },
+ "earFlap1": {
+  "pos": [
+   [
+    "elvs_flap_ears_1",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "earFlap2": {
+  "pos": [
+   [
+    "elvs_flap_ears_2",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "earFlap3": {
+  "pos": [
+   [
+    "elvs_flap_ears_3",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "earFlapBottom": {
+  "pos": [
+   [
+    "elvs_ear_flap_bottom_out",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "earCanal": {
+  "pos": [
+   [
+    "jujube_ear_canal",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "earDetail": {
+  "pos": [
+   [
+    "mindfront_ear_details",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "earIn": {
+  "pos": [
+   [
+    "mindfront_ear_in",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "earFlatten": {
+  "pos": [
+   [
+    "rehmanpolanski_ear_flatten",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "cheekFull": {
+  "pos": [
+   [
+    "elvs_high_chubby_cheekbones_1",
+    1
+   ]
+  ],
+  "neg": [
+   [
+    "elvs_sunken_cheeks_1",
+    1
+   ]
+  ]
+ },
+ "cheekChipmunkHigh": {
+  "pos": [
+   [
+    "elvs_chipmunk_cheeks_high_1",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "cheekChipmunkLow": {
+  "pos": [
+   [
+    "elvs_chipmunk_cheeks_low_1",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "jowls": {
+  "pos": [
+   [
+    "elvs_jowls_1",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "noseBulbous": {
+  "pos": [
+   [
+    "elvs_bulbous_nose_1",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "noseWidening": {
+  "pos": [
+   [
+    "elvs_nose_widening_1",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "noseGreek": {
+  "pos": [
+   [
+    "jujube_greek_statue_nose",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "noseColumella": {
+  "pos": [
+   [
+    "jujube_nose_straight_columella",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "alarRounding": {
+  "pos": [
+   [
+    "habanero_nostril_alar_rounding",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "alarCrease": {
+  "pos": [
+   [
+    "mindfront_nose_alar_crease",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "nostrilBean": {
+  "pos": [
+   [
+    "jujube_nostril_bean_shape",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "nostrilDeepen": {
+  "pos": [
+   [
+    "jujube_nostril_deepen",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "nostrilRim": {
+  "pos": [
+   [
+    "jujube_nostril_rim_sharp",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "nostrilShrink": {
+  "pos": [
+   [
+    "jujube_nostril_shrink",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "nostrilUp": {
+  "pos": [
+   [
+    "jujube_nostril_up",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "noseHoleCenter": {
+  "pos": [
+   [
+    "mindfront_nose_hole_center",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "noseHoleUp": {
+  "pos": [
+   [
+    "mindfront_nose_hole_up",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "nasolabialSharp": {
+  "pos": [
+   [
+    "jujube_nasiolabial_sharp_angle",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "nasolabialCrease": {
+  "pos": [
+   [
+    "jujube_nasolabial_angle_crease",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "elbowDimples": {
+  "pos": [
+   [
+    "elvs_ladies_elbow_dimples",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "armLowerShape": {
+  "pos": [
+   [
+    "mindfront_arm_lower_shape",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "armUpperShape": {
+  "pos": [
+   [
+    "mindfront_arm_upper_shape",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "wristUlna": {
+  "pos": [
+   [
+    "mindfront_arm_wrist_ulna",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "armpit": {
+  "pos": [
+   [
+    "mindfront_armpit",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "knuckles": {
+  "pos": [
+   [
+    "jujube_knobby_knuckles",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "fingerShape": {
+  "pos": [
+   [
+    "mindfront_hand_fingers_correction",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "handHypothenar": {
+  "pos": [
+   [
+    "mindfront_hand_hypothenar",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "handThenar": {
+  "pos": [
+   [
+    "mindfront_hand_thenar_eminence",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "xBlinkL": {
+  "pos": [
+   [
+    "expression/units/caucasian/eye-left-closure",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "xBlinkR": {
+  "pos": [
+   [
+    "expression/units/caucasian/eye-right-closure",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "xSmile": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-corner-puller",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "xMouthOpen": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-open",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "xBrowUp": {
+  "pos": [
+   [
+    "expression/units/caucasian/eyebrows-left-up",
+    1
+   ],
+   [
+    "expression/units/caucasian/eyebrows-right-up",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "xBrowDown": {
+  "pos": [
+   [
+    "expression/units/caucasian/eyebrows-left-down",
+    1
+   ],
+   [
+    "expression/units/caucasian/eyebrows-right-down",
+    1
+   ]
+  ],
+  "neg": []
+ },
+ "xSquint": {
+  "pos": [
+   [
+    "expression/units/caucasian/eye-left-slit",
+    0.6
+   ],
+   [
+    "expression/units/caucasian/eye-right-slit",
+    0.6
+   ]
+  ],
+  "neg": []
+ },
+ "xVisAA": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-open",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/mouth-depression",
+    0.3
+   ]
+  ],
+  "neg": []
+ },
+ "xVisEE": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-part-later",
+    0.8
+   ],
+   [
+    "expression/units/caucasian/mouth-retraction",
+    0.5
+   ],
+   [
+    "expression/units/caucasian/mouth-open",
+    0.25
+   ]
+  ],
+  "neg": []
+ },
+ "xVisOO": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-pursing",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/mouth-protusion",
+    0.6
+   ],
+   [
+    "expression/units/caucasian/mouth-open",
+    0.2
+   ]
+  ],
+  "neg": []
+ },
+ "xVisOH": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-open",
+    0.65
+   ],
+   [
+    "expression/units/caucasian/mouth-pursing",
+    0.55
+   ],
+   [
+    "expression/units/caucasian/mouth-protusion",
+    0.25
+   ]
+  ],
+  "neg": []
+ },
+ "xVisFV": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-upward-retraction",
+    0.6
+   ],
+   [
+    "expression/units/caucasian/mouth-compression",
+    0.2
+   ],
+   [
+    "expression/units/caucasian/mouth-open",
+    0.1
+   ]
+  ],
+  "neg": []
+ },
+ "xVisMM": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-compression",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/mouth-eversion",
+    0.2
+   ]
+  ],
+  "neg": []
+ },
+ "xSad": {
+  "pos": [
+   [
+    "expression/units/caucasian/eyebrows-left-inner-up",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/eyebrows-right-inner-up",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/mouth-depression-retraction",
+    0.8
+   ],
+   [
+    "expression/units/caucasian/eye-left-slit",
+    0.15
+   ],
+   [
+    "expression/units/caucasian/eye-right-slit",
+    0.15
+   ]
+  ],
+  "neg": []
+ },
+ "xSurprise": {
+  "pos": [
+   [
+    "expression/units/caucasian/eyebrows-left-up",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/eyebrows-right-up",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/eye-left-opened-up",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/eye-right-opened-up",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/mouth-open",
+    0.45
+   ]
+  ],
+  "neg": []
+ },
+ "xSneer": {
+  "pos": [
+   [
+    "expression/units/caucasian/nose-left-elevation",
+    0.7
+   ],
+   [
+    "expression/units/caucasian/nose-right-elevation",
+    0.7
+   ],
+   [
+    "expression/units/caucasian/mouth-upward-retraction",
+    0.8
+   ],
+   [
+    "expression/units/caucasian/eyebrows-left-down",
+    0.4
+   ],
+   [
+    "expression/units/caucasian/eyebrows-right-down",
+    0.4
+   ]
+  ],
+  "neg": []
+ },
+ "xPout": {
+  "pos": [
+   [
+    "expression/units/caucasian/mouth-eversion",
+    0.8
+   ],
+   [
+    "expression/units/caucasian/mouth-protusion",
+    0.8
+   ],
+   [
+    "expression/units/caucasian/mouth-pursing",
+    0.3
+   ]
+  ],
+  "neg": []
+ },
+ "xEyeWide": {
+  "pos": [
+   [
+    "expression/units/caucasian/eye-left-opened-up",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/eye-right-opened-up",
+    1.0
+   ]
+  ],
+  "neg": []
+ },
+ "xAnger": {
+  "pos": [
+   [
+    "expression/units/caucasian/eyebrows-left-down",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/eyebrows-right-down",
+    1.0
+   ],
+   [
+    "expression/units/caucasian/mouth-compression",
+    0.6
+   ],
+   [
+    "expression/units/caucasian/nose-left-dilatation",
+    0.5
+   ],
+   [
+    "expression/units/caucasian/nose-right-dilatation",
+    0.5
+   ],
+   [
+    "expression/units/caucasian/eye-left-slit",
+    0.4
+   ],
+   [
+    "expression/units/caucasian/eye-right-slit",
+    0.4
+   ]
+  ],
+  "neg": []
+ }
+}
